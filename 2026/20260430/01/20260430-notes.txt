@@ -1,0 +1,41 @@
+日期：2026-04-30
+主题：孩子哭闹时，先别急着讲道理
+风格：无（RONE-AI 当日不可用，图片生成已跳过）
+
+== 线索参考 ==
+hints.txt 中无有效线索，本次自由选题。
+
+== 选题逻辑 ==
+多源内容采集（中英文各半）共同指向「儿童情绪调节」方向：
+中文来源聚焦父母遭遇孩子哭闹/崩溃时急于讲道理的普遍现象；
+英文来源（Psychology Today、Gottman Institute等）均强调情绪共情
+优先于说教的重要性。两者高度共鸣，选定《孩子哭闹时，先别急着讲道理》。
+
+== 采集来源 ==
+1. 知乎 - 孩子哭闹时家长如何应对 https://www.zhihu.com/
+   概述：多位答主分享说教无效、情绪接纳更管用的亲身经历
+2. 中国教育报 - 家庭情绪教育专题 http://www.jyb.cn/
+   概述：专家建议父母先处理孩子情绪，再谈规则与道理
+3. 人民网教育频道 - 育儿情绪管理 http://edu.people.com.cn/
+   概述：强调共情式回应对儿童安全感的长远影响
+4. Psychology Today - How to Respond to a Child's Tantrum https://www.psychologytoday.com/
+   概述：研究表明在孩子情绪高峰期说教效果为零
+5. Gottman Institute - Emotion Coaching https://www.gottman.com/
+   概述：Gottman提出「情绪教练」四步法：接纳→命名→共情→问题解决
+6. Child Mind Institute - Helping Children Manage Emotions https://childmind.org/
+   概述：介绍情绪调节发展阶段及共情优先的神经科学依据
+7. Harvard GSE - Social-Emotional Learning https://www.gse.harvard.edu/
+   概述：社会情绪学习研究：情绪被接纳的孩子有更强的自我调节能力
+
+== 参考资料 ==
+- Gottman, J. (1997). Raising an Emotionally Intelligent Child. Simon & Schuster
+- Siegel, D. & Bryson, T. (2011). The Whole-Brain Child. Delacorte Press
+- Harvard Center on the Developing Child. (2011). Building the Brain's Air Traffic Control System
+- 李玫瑾《幼年的秘密》，人民邮电出版社
+
+== 配图说明 ==
+RONE-AI 图像API当日不可用（DNS可达但响应超时），图片生成已跳过。
+微信封面使用 wechat_draft.py 内置备用封面（纯色渐变+文字）。
+
+== 微信推送 ==
+草稿已推送到微信公众号后台，media_id 已生成，待审核发布。

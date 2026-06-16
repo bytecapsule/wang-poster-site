@@ -1,0 +1,55 @@
+日期：2026-05-05
+主题：孩子总是担心这担心那，怎么回事？（儿童焦虑与担心管理）
+风格：治愈绘本（mode=0，Iwasaki Chihiro 水彩手绘风）
+
+== 选题来源 ==
+今日线索：无（hints.txt 为空，自由选题）
+
+采集到的主要内容：
+
+中文方向（关键词：儿童心理、亲子教育、育儿焦虑）：
+1. 知乎、中国教育报等平台 — 搜索结果未返回可用 URL，仅供话题参考
+   概述：儿童情绪管理、焦虑与担心是家长最关注的亲子教育话题之一
+
+英文方向（实际采集，含真实 URL）：
+2. Child Mind Institute - What to Do (and Not Do) When Children Are Anxious
+   https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/
+   概述：针对家长面对焦虑儿童时的常见误区，提供实操建议，反复保证反而强化焦虑
+
+3. Child Mind Institute - What Role Do Parents Play in Kids' Anxiety? (Feb 2025)
+   https://childmind.org/article/what-role-do-parents-play-in-kids-anxiety/
+   概述：研究表明父母行为（特别是回避模式）对儿童焦虑的形成有显著影响
+
+4. Harvard Graduate School of Education - Strategies for Helping Children Manage Anxiety (Mar 2025)
+   https://www.gse.harvard.edu/ideas/usable-knowledge/25/03/strategies-helping-children-manage-anxiety
+   概述：哈佛教育学院提供的儿童焦虑管理策略，强调接纳情绪而非消除焦虑
+
+5. American Psychological Association - Managing Children's Anxiety
+   https://www.apa.org/topics/anxiety/children
+   概述：APA 关于儿童焦虑的概述，包括识别信号和专业干预建议
+
+== 选题逻辑 ==
+儿童焦虑是一个多源高度共鸣的话题——中文育儿圈"孩子总担心"是高频提问，英文方向有 Child Mind Institute、Harvard、APA 等权威支撑。
+主题贴近家长日常（孩子睡前担心、去幼儿园担心、担心考试），情感共鸣强。
+多个英文来源指向同一核心：家长的"反复安慰"和"替孩子回避"反而是推手——这个反直觉角度适合做爆款标题。
+今日文章聚焦：正常担心 vs 需关注的焦虑信号，以及家长的日常应对策略。
+
+== 参考资料 ==
+- Child Mind Institute: https://childmind.org/article/what-to-do-and-not-do-when-children-are-anxious/
+- Child Mind Institute: https://childmind.org/article/what-role-do-parents-play-in-kids-anxiety/
+- Harvard GSE: https://www.gse.harvard.edu/ideas/usable-knowledge/25/03/strategies-helping-children-manage-anxiety
+- American Psychological Association: https://www.apa.org/topics/anxiety/children
+
+== 配图说明 ==
+风格：治愈绘本（mode=0），水彩+蜡笔手绘，岩崎知弘风
+共生成 5 张图，片段场景：
+1. 01-bedtime-worry — 夜晚睡前担心，妈妈床边陪伴握手
+2. 02-listening-together — 家长蹲下与孩子平视倾听
+3. 03-small-brave-steps — 孩子踏进幼儿园门口的小勇气
+4. 04-naming-emotions — 亲子桌边画情绪小本子
+5. 05-family-warmth — 一家人沙发读绘本暖光温馨
+
+== 微信推送 ==
+草稿已成功推送至「小汪老师的心理乐园」公众号草稿箱
+media_id: xzyzB2R_5xd4dG_UIxp470jCbnSroLhM3TA6_ugYgoSdXNGYt6vRGDGCSY-xwgg_
+封面图：AI生成（风格3，189KB），含5张正文嵌入图

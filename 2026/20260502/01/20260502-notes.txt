@@ -1,0 +1,68 @@
+日期：2026-05-02
+主题：儿童焦虑管理——帮助孩子走出过度担心
+风格：温暖漫画（mode_index=3）
+
+== 线索参考 ==
+本次运行前检查了 hints.txt，未发现距上次运行（2026-05-01 15:15）之后新增的有效线索。
+按正常自由选题流程进行。
+
+== 选题来源 ==
+采集到的主要内容：
+1. Child Mind Institute — Helping Kids Who Worry (2025)
+   URL: https://childmind.org/article/helping-kids-who-worry/
+   概述：儿童焦虑的成因、家长常见误区（过度安慰/回避），以及循证干预建议（CBT暴露疗法）
+
+2. Gottman Institute — How to Build Emotional Intelligence in Children
+   URL: https://www.gottman.com/blog/how-to-build-emotional-intelligence-in-children/
+   概述：情绪辅导五步骤（接纳、标签、共情、引导、塑造），强调家长情绪管理的重要性
+
+3. Harvard Center on the Developing Child — Brain Architecture
+   URL: https://developingchild.harvard.edu/science/key-concepts/brain-architecture/
+   概述：童年早期负面体验对大脑压力应对系统的长期影响，强调成人情感缓冲的保护作用
+
+4. 中国心理学会《2025年儿童心理健康白皮书》
+   概述：焦虑是学龄儿童最常见的心理健康问题之一，有明显焦虑症状的比例较五年前上升约15%
+
+5. 人民网教育频道 — 儿童心理健康教育的重要性
+   URL: http://edu.people.com.cn/n1/2024/0315/c1053-40195432.html
+   概述：国内儿童心理健康现状综述，强调家庭教育在情绪管理中的关键角色
+
+6. Psychology Today — Childhood Anxiety: What Parents Need to Know
+   概述：气质、遗传与环境交互作用对儿童焦虑的影响，及认知行为疗法的有效性证据
+
+7. 知乎专栏 — 为什么越安慰孩子反而越焦虑？
+   概述：焦虑循环机制的通俗解释，贴近中国家庭实际场景的案例
+
+8. Parents.com — How to Help an Anxious Child
+   概述：渐进式暴露练习的实操建议，家长自身焦虑对孩子的示范效应
+
+== 选题逻辑 ==
+儿童焦虑是当下中国家长最关注也最困惑的话题之一。本次采集中英文来源均集中指向这一方向：
+中方数据（白皮书）显示发生率上升趋势，英方研究（CMI + Gottman）提供了循证干预框架。
+选题切入角度"为什么安慰反而会让孩子更焦虑"具有强烈反直觉性，能引发家长共鸣和点击意愿。
+与近期已发文章（20260426-20260501）主题无重复。
+
+== 参考资料 ==
+- Child Mind Institute (2025). Helping Kids Who Worry: https://childmind.org/article/helping-kids-who-worry/
+- Gottman Institute. Emotional Intelligence in Children: https://www.gottman.com/blog/how-to-build-emotional-intelligence-in-children/
+- Harvard Developing Child Center. Brain Architecture: https://developingchild.harvard.edu/science/key-concepts/brain-architecture/
+- 中国心理学会《2025年儿童心理健康白皮书》
+- 人民网教育：http://edu.people.com.cn/n1/2024/0315/c1053-40195432.html
+
+== 配图说明 ==
+风格：温暖漫画（mode_index=3）
+模型：gemini-3-pro-image（RONE-AI）
+共生成 5 张图，片段场景：
+1. 20260502-01-yinyan.png — 孩子夜间坐在床边，仰望担忧的表情，父母在一旁倾听（引言场景）
+2. 20260502-02-jiaolv-xunhuan.png — 家长蹲下安慰背着书包的焦虑孩子（焦虑循环机制）
+3. 20260502-03-qingxu-fudao.png — 亲子面对面坐在客厅地板，孩子表达情绪，家长共情倾听（情绪辅导）
+4. 20260502-04-jiangjin-yonggan.png — 孩子独自迈步，家长在身后鼓励（渐进式勇敢）
+5. 20260502-05-qinzi-yuedu.png — 亲子依偎在沙发读书，温馨午后阳光（结语）
+
+== 微信推送 ==
+公众号：小汪老师的心理乐园（AppID: wxa5b5bfbcf63b79bb）
+草稿 media_id：xzyzB2R_5xd4dG_UIxp478qNNbiU2zEPVwVxjXgFFSeIZUxrshLp7lWfnhyX40Ts
+状态：推送成功，待审核发布
+
+== 飞书文档 ==
+URL：https://tutuboss.feishu.cn/docx/JbVQdhHNuouJiZxl1prc8adlnEd

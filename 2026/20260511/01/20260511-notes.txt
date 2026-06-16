@@ -1,0 +1,52 @@
+日期：2026-05-11
+主题：表扬方式与成长型思维
+风格：治愈绘本（Mode 0）
+
+== 今日线索来源 ==
+参考了 hints.txt 中线索2：「表扬式养育 / 别再盲目夸孩子——Carol Dweck 成长型思维研究」
+线索未标注时间戳，与线索1（成绩焦虑）、线索3（空心病）一起提交。
+选择线索2原因：与所有历史主题无高度重叠，且 Dweck 经典研究在中国家长圈反直觉性强、科普价值高。
+
+== 采集到的主要内容 ==
+1. Child Mind Institute - How to Praise Kids
+   URL: https://childmind.org/article/how-to-praise-kids/
+   概述：综合德韦克研究与临床建议，警告「你真聪明」会降低动机，推荐过程性、具体性表扬
+
+2. ASCD - The Perils and Promises of Praise（Carol Dweck, 2007）
+   URL: https://www.ascd.org/el/articles/the-perils-and-promises-of-praise
+   概述：德韦克团队实验——被夸聪明的五年级学生选更简单任务、成绩下滑20%、40%谎报成绩
+
+3. 果壳网 - 夸孩子聪明可能是最失败的教育方式
+   URL: https://www.guokr.com/article/441523/
+   概述：中文科普版Dweck实验详解，触达中国家长群体
+
+4. 知乎专栏 - Carol Dweck夸孩子的方式决定了孩子的未来
+   URL: https://zhuanlan.zhihu.com/p/358921034
+   概述：结合育儿经历深度分析固定型vs成长型思维，提供落地话术
+
+5. 壹心理 - 夸孩子的正确方式
+   URL: https://www.xinli001.com/info/100432876
+   概述：区分人格性表扬与过程性表扬，纵向研究数据支撑
+
+== 选题逻辑 ==
+Carol Dweck 的「夸聪明vs夸努力」实验是儿童教育领域最被引用的发现之一，反直觉性强（「夸孩子反而害孩子」）。
+中国家长「你真聪明/你真棒」式表扬极为普遍，读者代入感高。
+与历史16篇文章去重：20260427聚焦情绪验证/安慰机制（情感层面），今日聚焦智力属性标签/成长型思维机制（认知层面），本质差异明显。
+选题既有权威研究背书，又有当下家庭场景的真实共鸣。
+
+== 参考资料 ==
+- Carol Dweck, Mindset: The New Psychology of Success, 2006
+- Child Mind Institute: https://childmind.org/article/how-to-praise-kids/
+- ASCD Dweck 2007: https://www.ascd.org/el/articles/the-perils-and-promises-of-praise
+- Roy Baumeister et al., Does High Self-Esteem Cause Better Performance? Psychological Science in the Public Interest, 2003
+- Jean Twenge, The Narcissism Epidemic, 2009
+- 果壳网: https://www.guokr.com/article/441523/
+
+== 配图说明 ==
+风格：治愈绘本（Mode 0，Iwasaki Chihiro风，水彩/蜡笔，暖色调）
+共生成 5 张图，片段场景：
+1. 20260511-01-exams.png：孩子在书桌前犹豫，父母在旁温柔鼓励
+2. 20260511-02-smartlabel.png：孩子拿着金色星星贴纸，骄傲又略带焦虑
+3. 20260511-03-challenge.png：孩子搭积木倒塌后微笑重来，父母在后方温暖守望
+4. 20260511-04-process-praise.png：父母跪下来指着孩子画作细节温柔表扬
+5. 20260511-05-growth.png：亲子在向日葵小径同行，孩子充满好奇向上看

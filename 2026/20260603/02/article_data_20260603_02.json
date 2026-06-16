@@ -1,0 +1,45 @@
+{
+  "title": "当老人走进博物馆",
+  "lead": "非洲有句谚语：当老人去世，一座图书馆就消失了。我们习惯用数字备份记忆，却忘了人脑里那些没目录的珍藏。",
+  "sections": [
+    {
+      "heading": "打字机与档案柜",
+      "content": "档案室的光总是昏黄。空气里有纸浆和灰尘混合的气味，像凝固的时间。角落那台老式打字机，机身上有几个字母键的漆已经磨没了，剩下黄铜色的底。打字员老周退休前，最后一次擦拭它。\n\n他的手指记得每个键的阻力。某个字母回弹慢半拍，某个需要多用一分力。这些细微的触觉反馈，是他与机器之间长达三十年的默契。新来的年轻人用电脑，鼠标轻点，文件归档，没有声音。老周觉得，那像是往深井里扔石头，听不见回响。",
+      "image_prompts": "An old manual typewriter under a single warm desk lamp in a dusty archive room, shallow depth of field, mechanical keys close up showing wear marks and patina, film grain, muted colors, vintage office setting"
+    },
+    {
+      "heading": "没有索引的记忆",
+      "content": "他的记忆不是硬盘，无法关键词检索。某个下午，关于一份七十年代的土地规划图，他就记起那天窗外在下雨，领带溅上了泥点。他记得提出异议的那个工程师，说话时总摩挲左手的无名指。这些细节，档案里不会有。\n\n数字档案精确、整齐，像一排排玻璃罐头。但它丢失了铁皮罐头打开时，那声闷响带来的期待。老周的经验是一团活物，带着当时环境的湿度，带着对话时的语气。它沉默，因为它没有被“格式化”过。你无法对它下命令，只能等它在某个相似的午后，自己浮现。",
+      "image_prompts": "Close-up of weathered hands carefully handling a yellowed architectural blueprint with handwritten notes, warm side lighting from a window, visible paper texture and fading ink, analog textures, nostalgic mood"
+    },
+    {
+      "heading": "消失是另一种在场",
+      "content": "我们总在哀叹“失传”。老师傅的手艺，老村官的调解智慧，老护士对某种罕见并发症的直觉判断。它们随着一个人的退休或离世，忽然断流。我们试图录像、口述、建档，像是抢救性发掘。\n\n但另一种真相是：每一代人的“消失”，本就是历史筛选的必经程序。不是所有经验都该被永久保存，时间有自己的淘洗法则。真正重要的，或许不是那些具体的技巧，而是在处理那些无档案可查的、混沌的日常时，所培养出的判断力和温度。这种能力，无法下载，只能活出来。",
+      "image_prompts": "An old filing cabinet with many drawers slightly ajar, files spilling out with mixed paper textures, a beam of light cutting diagonally through dust motes, emphasizing the passage of time, realistic details"
+    },
+    {
+      "heading": "橱窗内的背影",
+      "content": "海德拉巴有了一座“体验监狱”博物馆。游客进去，模拟感受囚徒的生活。这很现代，把封闭的经验做成可参观的展品。长者的人生，何尝不是一座正在走进博物馆的“体验馆”？\n\n我们用“数字反哺”教他们用手机，用“适老化改造”包装他们的生活空间。这些是善意，也是一种温柔的收编。他们的世界，那些关于饥饿、集体、单位、书信往来、看露天电影的记忆，正在变成展板上的文字和背景音。我们成了自己历史的游客，在展柜外驻足，拍照，感叹一声“那时候不容易”，然后走进下一个展厅。\n\n那座随着老人而逝的图书馆，里面没有珍本，只有一生日常的琐碎。可正是这些琐碎，垒成了我们脚下站的地方。当最后一个记得如何用煤球炉生火的人离开，我们不是少了一项技能，而是与一个世界彻底失联。",
+      "image_prompts": "Elderly person walking slowly away from camera down a long museum corridor with modern display cases on either side, soft overhead lighting, slight blur on the figure, sense of solitude and transition, cinematic composition"
+    }
+  ],
+  "tips": "我们这一代人，用二十年学会了联网，却可能要用余生学习如何面对断联。每一次技术跃进，都像一次小型的“经验灭绝事件”。我们不必悲情，但该偶尔停下，想想自己脑子里，那些没上过云端，也绝不可能被上传的“私人图书馆”，到底藏了些什么。\n\n或许，最好的纪念不是把旧物放进博物馆，而是在自己变成展品前，认真活过。",
+  "image_prompts": [],
+  "references": [
+    {
+      "title": "African proverb of the day: 'When an old man dies, a library is...' Life lessons on culture, knowledge, human nature and why elders' experience matters",
+      "source": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com/news/international/us/african-proverb-of-the-day-when-an-old-man-dies-a-library-is-life-lessons-on-culture-knowledge-human-nature-and-why-elders-experience-matters/articleshow/131019178.cms"
+    },
+    {
+      "title": "Hyderabad's new 'Feel the Jail' museum lets visitors see what prison life feels like",
+      "source": "India Today",
+      "url": "https://www.indiatoday.in/trending-news/story/hyderabads-new-feel-the-jail-museum-lets-visitors-see-what-prison-life-feels-like-2911045-2026-05-13"
+    },
+    {
+      "title": "Viral social media star Retnamma passes away, leaving fans heartbroken",
+      "source": "Malayala Manorama",
+      "url": "https://www.onmanorama.com/entertainment/entertainment-news/2026/06/01/internet-sensation-retnamma-passes-away-zootopia-famous-reel.html"
+    }
+  ]
+}

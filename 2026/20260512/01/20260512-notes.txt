@@ -1,0 +1,32 @@
+日期：2026-05-12
+主题：盯得越紧，成绩越差
+风格：温暖漫画（mode_index=3）
+
+== 选题来源 ==
+采集到的主要内容：
+1. Carol Dweck 成长型思维研究 — Stanford University
+   概述：掌握目标 vs 表现目标的长期追踪研究，证明"证明自己"导向的学习模式会导致回避行为和成绩下降。
+2. Sian Beilock 考试焦虑研究 — University of Chicago
+   概述：焦虑占用工作记忆（大脑"内存条"），导致考试发挥失常，Choke(2010)专著。
+3. Edward Deci 过度理由效应实验 (1971)
+   概述：外部奖励削弱内在动机的经典实验，为学习动力研究奠基。
+4. 北京师范大学中学生考试焦虑调查
+   概述：北京中学生样本中，成绩排名前10%的学生近四成存在中度以上考试焦虑。
+
+== 选题逻辑 ==
+多个来源共同指向一个反直觉结论：家长对成绩的过度关注会反向损害学业表现。Dweck的目标导向理论、Beilock的工作记忆研究、Deci的过度理由效应分别从认知模式、神经机制、动机系统三个维度印证这一结论。选题具有强烈实操价值——直接回应中国家庭普遍存在的"盯作业"焦虑，且提供5条可落地建议。
+
+== 参考资料 ==
+- Carol Dweck, Stanford University - Growth Mindset research on mastery vs performance goals
+- Sian Beilock, University of Chicago - Choke: What the Secrets of the Brain Reveal About Getting It Right When You Have To (2010)
+- Edward Deci (1971) - Intrinsic motivation and overjustification effect experiment
+- 北京师范大学 - 北京中学生考试焦虑调查研究
+
+== 配图说明 ==
+风格：温暖漫画（mode_index=3，单格漫画感，表情张力强，橙黄暖系）
+共生成 5 张图，片段场景：
+1. 20260512-01-盯作业场景.png — 妈妈坐在孩子旁边盯作业，孩子紧张攥笔
+2. 20260512-02-大脑内存被占满.png — 焦虑思想泡泡占据孩子大脑的"内存"
+3. 20260512-03-奖励撤走动力消失.png — 奖励撤走后孩子对学习失去兴趣
+4. 20260512-04-焦虑传染.png — 妈妈的焦虑像波浪一样传向孩子
+5. 20260512-05-退后一步孩子发光.png — 家长退后一步，孩子自信发光地学习

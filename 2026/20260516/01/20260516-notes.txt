@@ -1,0 +1,62 @@
+日期：2026-05-16
+主题：青春期亲子沟通断裂——孩子突然不说话了
+风格：自然探索（mode_index=2）
+
+== 选题来源 ==
+采集到的主要内容：
+1. Adolescent Communication With Parents — StatPearls / NCBI Bookshelf
+   URL: https://www.ncbi.nlm.nih.gov/books/NBK567533/
+   概述：系统综述青少年与父母的沟通模式，覆盖主动披露、沉默机制和依恋关系。
+
+2. Keeping Secrets: Adolescents' Perspectives on Parental Authority and Information Management
+   URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4879956/
+   概述：青少年为何选择对父母保密——边界感、自主权与信任损耗研究。
+
+3. Parent-adolescent relationship quality and long-term youth well-being (Rothenberg et al., 2020)
+   URL: https://pubmed.ncbi.nlm.nih.gov/33285015/
+   概述：亲子关系质量对青少年长期心理健康的预测作用，发表于 Journal of Research on Adolescence。
+
+4. The Teen Brain: 7 Things to Know — National Institute of Mental Health (NIMH)
+   URL: https://www.nimh.nih.gov/health/publications/the-teen-brain-7-things-to-know
+   概述：青少年大脑前额叶发育未成熟，杏仁核主导情绪反应，是沟通障碍的神经科学基础。
+
+5. Communication Between Parents and Teenagers — Child Mind Institute
+   URL: https://childmind.org/article/communication-between-parents-and-teenagers/
+   概述：临床心理学家建议：减少追问，增加并排活动（side-by-side activities）可有效重建连接。
+
+6. 青春期孩子不愿和父母说话的心理分析 — 知乎
+   URL: https://www.zhihu.com/question/263428390
+   概述：国内家长的真实经历与心理学工作者的分析，覆盖"沉默期"的诱因与边界需求。
+
+7. 青少年心理健康——亲子沟通方式的重要性 — 搜狐健康
+   URL: https://www.sohu.com/a/793625271_121946250
+   概述：国内媒体综合报道，引用发展心理学研究，强调非评判性倾听的重要性。
+
+== 选题逻辑 ==
+青春期亲子沟通断裂是家长最普遍的困惑之一，但已有10篇文章均未从"父母的追问行为模式"这个角度切入。
+本文的独特性在于：不是泛泛讲"要和孩子沟通"，而是具体分析父母常见的三种错误反应（说教型追问、焦虑性闯入、沉默对抗），以及"并排活动"这一反直觉但有实证支持的解决方案。
+与20260513篇（社交媒体与孤独）的区别：后者聚焦数字世界中的孤独感，本文聚焦家庭内部面对面的沟通断裂机制。
+
+== 参考资料 ==
+- StatPearls / NCBI: https://www.ncbi.nlm.nih.gov/books/NBK567533/
+- PMC/NIH孤独研究: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4879956/
+- PubMed (Rothenberg 2020): https://pubmed.ncbi.nlm.nih.gov/33285015/
+- NIMH青少年大脑: https://www.nimh.nih.gov/health/publications/the-teen-brain-7-things-to-know
+- APA青少年沟通: https://www.apa.org/topics/parenting/teen-communication
+- Child Mind Institute: https://childmind.org/article/communication-between-parents-and-teenagers/
+- 知乎讨论: https://www.zhihu.com/question/263428390
+- 搜狐健康: https://www.sohu.com/a/793625271_121946250
+
+== 配图说明 ==
+风格：自然探索（mode_index=2，Beatrix Potter自然历史插画风）
+共生成 5 张图，片段场景：
+1. 20260516-01-qingchun-chenmo.png — 青春期少年独坐窗边，望向窗外森林，背影，沉默的成长
+2. 20260516-02-qiantong-zhuangzhang.png — 父母轻敲半掩的木门，门缝透出暖光，尝试接触
+3. 20260516-03-jingmo-luying.png — 父母与孩子并肩走在林间小路，不说话，只是陪着
+4. 20260516-04-bingpai-huodong.png — 亲子各自坐在厨房木桌旁做各自的事（书和茶），安静共处
+5. 20260516-05-xintong-liangjie.png — 傍晚台阶上，父母与孩子并肩坐，仰望同一片天空，心通理解
+
+== 去重检查 ==
+已覆盖主题（截至20260515）：睡眠与大脑发育、运动与大脑、短视频成瘾、同伴游戏、空心病/意义感、
+成长型思维、成绩焦虑、孤独与连接、完美主义、身体形象/外貌焦虑
+本文新增：青春期亲子沟通断裂（角度：父母追问行为模式与并排活动策略）

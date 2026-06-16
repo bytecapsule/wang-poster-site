@@ -1,0 +1,44 @@
+日期：2026-05-10
+主题：空心病——高成就青少年的意义感危机
+风格：治愈绘本（mode 0）
+
+== 选题来源 ==
+采集到的主要内容：
+1. 徐凯文「空心病」演讲 — 知乎讨论，内容来自北京大学心理咨询中心主任2016年演讲
+   概述：高学历青少年缺乏内在意义感，有明确症状但不符合抑郁诊断标准
+2. 澎湃思想市场 — 高中生厌学与空心病报道
+   概述：在升学压力体系下，孩子把「考上好大学」当作唯一意义支点
+3. 三联生活周刊 — 内卷与青少年心理健康专题
+   概述：高竞争环境催生了高成就但低意义感的一代
+4. Madeline Levine《The Price of Privilege》— Psychology Today 书评及原书
+   概述：中产家庭过度表扬/成就导向养育与青少年空洞感的研究
+5. Suniya Luthar 研究（哥伦比亚大学/APA）— 特权青少年心理脆弱性研究
+   概述：高成就高收入家庭青少年反而有更高焦虑、抑郁、药物滥用比例
+6. Jean Twenge《iGen》— 社交媒体世代与意义感缺失研究
+   概述：手机和社交媒体加速了青少年意义感空洞化进程
+7. Carol Dweck 成长型思维研究（斯坦福大学心理学系）
+   概述：固定式思维（结果导向）vs 成长型思维对自我认同发展的影响
+8. Child Mind Institute — 青少年高成就压力与焦虑报告
+   概述：学业竞争压力与青少年焦虑率上升的关联
+
+== 选题逻辑 ==
+hints.txt 中 [2026-05-10 11:51:57] 提到「空心病」与「徐凯文」，触发本次选题。
+国内外资料均有强呼应：徐凯文的临床观察与 Luthar/Levine 的实证研究形成东西方呼应。
+话题对家长有强情感冲击力（「成功孩子竟然最脆弱」的反直觉），且与历史文章无重复。
+
+== 参考资料 ==
+- 徐凯文，《空心病》2016年北京大学开学演讲，北京大学心理咨询中心
+- Luthar, S.S. (2003). The culture of affluence: Psychological costs of material wealth. Child Development, 74(6), 1581-1593.
+- Levine, M. (2006). The Price of Privilege. Harper Collins.
+- Twenge, J.M. (2017). iGen. Atria Books.
+- Dweck, C.S. (2006). Mindset: The New Psychology of Success. Random House.
+- Child Mind Institute — childrenmind.org
+
+== 配图说明 ==
+风格：治愈绘本（mode 0，水彩蜡笔，岩崎知弘风）
+共生成 5 张图，片段场景：
+1. 20260510-01-empty-student.png — 孤独小孩坐在奖状和奖杯前，神情茫然
+2. 20260510-02-hollow-feeling.png — 孩子面对空白日历，思绪飘向远方
+3. 20260510-03-obedient-education.png — 父母引导路线，孩子低头跟着走
+4. 20260510-04-meaningful-talk.png — 亲子在温暖室内真诚对话
+5. 20260510-05-finding-self.png — 孩子在自然中自由探索，神情轻松

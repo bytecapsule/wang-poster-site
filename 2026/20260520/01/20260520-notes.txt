@@ -1,0 +1,40 @@
+日期：2026-05-20
+主题：共情的武器化与认知操控
+风格：超现实油画（C2）
+
+== 选题来源 ==
+采集到的主要内容：
+1. Times of India: 5 weird things people do in love and why, as per psychology (2026-05-13)
+   URL: https://timesofindia.indiatimes.com/relationships/5-weird-things-people-do-in-love-and-why-as-per-psychology/photostory/131070719.cms
+   概述：爱情中的非理性行为如何被心理学解释，涉及情绪驱动行为决策
+2. Phys.org: Does emotional intelligence stop us from being rude? Here's what the science says (2026-05-19)
+   URL: https://phys.org/news/2026-05-emotional-intelligence-rude-science.html
+   概述：情绪反应被误认为稳定人格特质，实际高度依赖情境框架，情绪智能与行为反应的关系
+3. Economic Times: Psychology says women often mature faster than men (2026-05-19)
+   URL: https://economictimes.indiatimes.com/news/international/us/psychology-says-women-often-mature-faster-than-men-and-its-not-just-stereotype-or-biology-but-the-truth-involves-a-more-complex-reason/articleshow/131209022.cms
+   概述：性别社会化对情绪成熟度的影响，情商与社会期望的交互
+
+== 线索参考 ==
+- [2026-05-20 10:32:51] 专题线索：认知绑架与网络共识失真
+  核心洞察：同情心被提升为认知工具后，成为比逻辑更原始、更难以抵抗的动员力量
+- [2026-05-20 09:34:37] 专题线索：气场与注意力训练
+  核心洞察：注意力被长期训练后形成的肌肉记忆（本文未直接采用，留作后续专题）
+
+== 选题逻辑 ==
+今日两条线索中，第一条（认知绑架与同情心武器化）深度极高，且近期10篇文章全部聚焦儿童/青少年具体议题（厌学、抑郁、睡眠、沟通等），完全无重叠。
+C类成人思辨话题，与Phys.org情绪智能研究形成跨源共鸣。
+选题理由：在信息操控无处不在的时代，"善良被武器化"是每个成年读者都需要的认知升级话题。
+
+== 参考资料 ==
+- Phys.org: Does emotional intelligence stop us from being rude? (2026-05-19) https://phys.org/news/2026-05-emotional-intelligence-rude-science.html
+- 贾科莫·里佐拉蒂（Giacomo Rizzolatti）镜像神经元研究，帕尔马大学（无URL）
+- PNAS: 道德情绪内容在社交媒体上传播速度研究（无具体URL）
+
+== 配图说明 ==
+风格：超现实油画（C2）
+共生成 5 张图，片段场景：
+1. 人群中被伸出的手包围的孤独身影——伪装成关心的情绪操控
+2. 光线木偶连接到心脏——看不见的操控线
+3. 黑暗中被屏幕光照亮的脸——数字内容触发共情
+4. 两面镜子的无限反射，一面扭曲——共情的放大与扭曲
+5. 十字路口——情绪之火与理性之光之间的抉择

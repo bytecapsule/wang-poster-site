@@ -1,0 +1,57 @@
+日期：2026-05-15
+主题：青少年身体形象焦虑与社交媒体审美压力
+风格：简约北欧（mode_index=1）
+
+== 选题来源 ==
+采集到的主要内容：
+1. 中国科学院心理研究所《心理科学进展》2024 — 短视频平台对女性青少年身体满意度的影响
+   URL: https://journal.psych.ac.cn/xlkxjz/CN/10.16719/j.cnki.1671-6981.20240318
+   概述：实证研究显示短视频内容对女性青少年身体满意度有显著负面影响，与抑郁风险正相关。
+
+2. 美国国立卫生研究院（NIH）综述 — Social media use and body image disorders
+   URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9817135/
+   概述：跨群体研究，被动刷内容与身体不满存在稳定关联，男女青少年均受影响。
+
+3. Psychology Today 2023-10 — Social Media Use and Body Image in Adolescent Boys
+   URL: https://www.psychologytoday.com/us/blog/the-teenage-mind/202310/social-media-use-and-body-image-in-adolescent-boys
+   概述：聚焦男性青少年，健身类/精英生活方式内容导致身体不满和问题行为。
+
+4. 美国心理学会（APA） — Teen girls and body image
+   URL: https://www.apa.org/topics/social-media-internet/body-image
+   概述：主动创作内容vs被动消费对身体满意度的差异影响，政策建议。
+
+5. 万方数据《心理学报》2024 — 社会比较的中介作用研究
+   概述：向上比较完全中介社交媒体频率与自尊下降的关系。
+
+6. 中国青少年研究中心2024年大规模调查
+   概述：62%青春期子女觉得父母不理解自己，沟通质量落差显著。
+
+== 选题逻辑 ==
+近期文章已覆盖：焦虑成因、完美主义、孤独感、成绩焦虑、空心病、短视频成瘾（算法角度）。
+今日选题青少年身体形象焦虑与20260508的短视频成瘾角度本质不同：前者聚焦算法多巴胺机制，本篇聚焦审美标准与外貌焦虑，切入点为身体自尊与向上社会比较机制，国内来源有中科院期刊、万方论文支撑，读者共鸣强烈。
+
+去重检查：
+- 与近期文章对比：20260508（短视频算法与大脑发育），本文差异点在于关注「身体形象焦虑」而非「成瘾机制」，核心概念不同（自尊/外貌 vs 多巴胺/前额叶）
+- ✅ 无标签重叠超过3个（20260508的标签：短视频、多巴胺、青少年、前额叶、成瘾、算法；本篇：身体形象、社交媒体、青少年、外貌焦虑、自尊、抖音）
+- 共同标签：「社交媒体」「青少年」= 仅2个重叠，未达禁止阈值
+
+== 参考资料 ==
+- 中国科学院心理研究所《心理科学进展》2024: https://journal.psych.ac.cn/xlkxjz/CN/10.16719/j.cnki.1671-6981.20240318
+- NIH综述 PMC9817135: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC9817135/
+- Psychology Today 2023: https://www.psychologytoday.com/us/blog/the-teenage-mind/202310/social-media-use-and-body-image-in-adolescent-boys
+- APA body image: https://www.apa.org/topics/social-media-internet/body-image
+- 世界卫生组织中国官网（2024）
+- 万方数据《心理学报》2024
+
+== 配图说明 ==
+风格：简约北欧（mode_index=1）
+共生成 5 张图，片段场景：
+1. 少女放学回家刷手机，镜子前叹气，对比手机屏幕和镜中自己
+2. 社交媒体屏幕上密集的精美面孔，一个孩子在列表里向下滚动
+3. 男孩在手机上看到健身博主，低头看自己身体的神情对比
+4. 父母与青少年围坐，翻看手机内容，一起讨论的温暖场景
+5. 孩子放下手机，在户外跑步，阳光下自信的笑容
+
+== 线索参考说明 ==
+hints.txt中3条线索（空心病、表扬方式、成绩焦虑）均已于20260510-20260512发布，今日未参考。
+本次选题来自独立网络采集与去重判断。

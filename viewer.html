@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>纯文本 · 小汪老师的成长洞察</title>
+  <link rel="stylesheet" href="assets/site.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>小汪老师的成长洞察</h1>
+    <span>纯文本</span>
+  </header>
+  <div class="viewer-wrap">
+    <div class="viewer-toolbar">
+      <a class="btn" href="index.html">← 返回</a>
+      <span id="viewer-title" class="viewer-title"></span>
+      <button class="btn btn-primary" id="copy-btn">复制全文</button>
+    </div>
+    <pre id="txt-content" class="txt-block">加载中…</pre>
+  </div>
+  <div class="copy-toast" id="toast">已复制到剪贴板 ✓</div>
+  <script>
+    (async () => {
+      const params = new URLSearchParams(location.search);
+      const path = params.get('p');
+      const titleEl = document.getElementById('viewer-title');
+      const contentEl = document.getElementById('txt-content');
+
+      if (!path) { contentEl.textContent = '未指定文件'; return; }
+
+      const m = path.match(/(\d{8})_(\d+)/);
+      if (m) {
+        const [, date, slot] = m;
+        const label = `${date.slice(0,4)}年${date.slice(4,6)}月${date.slice(6,8)}日`;
+        titleEl.textContent = label;
+        document.title = label + ' · 小汪老师的成长洞察';
+      }
+
+      try {
+        const res = await fetch(path);
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        contentEl.textContent = await res.text();
+      } catch (e) {
+        contentEl.textContent = '加载失败：' + e.message;
+      }
+
+      document.getElementById('copy-btn').addEventListener('click', async () => {
+        try {
+          await navigator.clipboard.writeText(contentEl.textContent);
+        } catch {
+          const sel = window.getSelection();
+          const range = document.createRange();
+          range.selectNodeContents(contentEl);
+          sel.removeAllRanges();
+          sel.addRange(range);
+        }
+        const toast = document.getElementById('toast');
+        toast.classList.add('show');
+        setTimeout(() => toast.classList.remove('show'), 2200);
+      });
+    })();
+  </script>
+</body>
+</html>
