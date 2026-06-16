@@ -43,6 +43,71 @@
     sidebar.innerHTML = html;
   }
 
+  // ── Bottom sheet viewer ───────────────────────────────────────
+  const sheet = document.createElement('div');
+  sheet.id = 'txt-sheet';
+  sheet.innerHTML = `
+    <div id="sheet-backdrop"></div>
+    <div id="sheet-panel">
+      <div id="sheet-toolbar">
+        <button id="sheet-close" class="btn">✕ 关闭</button>
+        <span id="sheet-title"></span>
+        <button id="sheet-copy" class="btn btn-primary">复制全文</button>
+      </div>
+      <pre id="sheet-content"></pre>
+    </div>`;
+  document.body.appendChild(sheet);
+
+  const backdrop  = document.getElementById('sheet-backdrop');
+  const panel     = document.getElementById('sheet-panel');
+  const sheetTitle   = document.getElementById('sheet-title');
+  const sheetContent = document.getElementById('sheet-content');
+  const sheetCopy    = document.getElementById('sheet-copy');
+
+  function closeSheet() {
+    sheet.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  backdrop.addEventListener('click', closeSheet);
+  document.getElementById('sheet-close').addEventListener('click', closeSheet);
+
+  function execCommandCopy(text) {
+    const ta = document.createElement('textarea');
+    ta.value = text;
+    ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;font-size:16px;';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select();
+    try { document.execCommand('copy'); } finally { document.body.removeChild(ta); }
+  }
+
+  sheetCopy.addEventListener('click', () => {
+    const text = sheetContent.textContent;
+    const flash = () => {
+      sheetCopy.textContent = '已复制 ✓';
+      setTimeout(() => { sheetCopy.textContent = '复制全文'; }, 2000);
+    };
+    if (navigator.clipboard && window.isSecureContext) {
+      navigator.clipboard.writeText(text).then(flash).catch(() => { execCommandCopy(text); flash(); });
+    } else {
+      execCommandCopy(text); flash();
+    }
+  });
+
+  async function openSheet(txtPath, title) {
+    sheetTitle.textContent = title;
+    sheetContent.textContent = '加载中…';
+    sheet.classList.add('open');
+    document.body.style.overflow = 'hidden';
+    panel.scrollTop = 0;
+    try {
+      const res = await fetch(txtPath);
+      if (!res.ok) throw new Error('HTTP ' + res.status);
+      sheetContent.textContent = await res.text();
+    } catch (e) {
+      sheetContent.textContent = '加载失败：' + e.message;
+    }
+  }
+
   // ── Rendering ────────────────────────────────────────────────
   function fmtDate(d) {
     return `${d.slice(0, 4)}年${d.slice(4, 6)}月${d.slice(6, 8)}日`;
@@ -56,7 +121,7 @@
       ? `<a class="btn btn-primary" href="${a.html}" target="_blank" rel="noopener">查看文章</a>`
       : '';
     const txtBtn = a.txt
-      ? `<a class="btn" href="viewer.html?p=${encodeURIComponent(a.txt)}">纯文本</a>`
+      ? `<button class="btn" data-txt="${a.txt}" data-title="${a.title}">纯文本</button>`
       : '';
     const lead = a.lead ? `<div class="article-lead">${a.lead}</div>` : '';
     return `<div class="article-card">
@@ -82,6 +147,11 @@
     }
     main.innerHTML = out;
   }
+
+  main.addEventListener('click', e => {
+    const btn = e.target.closest('[data-txt]');
+    if (btn) openSheet(btn.dataset.txt, btn.dataset.title);
+  });
 
   // ── Navigation ───────────────────────────────────────────────
   function hashKey() {
