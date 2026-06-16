@@ -45,12 +45,7 @@
         contentEl.textContent = '加载失败：' + e.message;
       }
 
-      function copyText(text) {
-        // 现代浏览器
-        if (navigator.clipboard && window.isSecureContext) {
-          return navigator.clipboard.writeText(text);
-        }
-        // iOS Safari fallback：textarea + execCommand
+      function execCommandCopy(text) {
         const ta = document.createElement('textarea');
         ta.value = text;
         ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;font-size:16px;';
@@ -58,15 +53,20 @@
         ta.focus();
         ta.select();
         try { document.execCommand('copy'); } finally { document.body.removeChild(ta); }
-        return Promise.resolve();
       }
 
       document.getElementById('copy-btn').addEventListener('click', () => {
-        copyText(contentEl.textContent).then(() => {
+        const text = contentEl.textContent;
+        const done = () => {
           const toast = document.getElementById('toast');
           toast.classList.add('show');
           setTimeout(() => toast.classList.remove('show'), 2200);
-        });
+        };
+        if (navigator.clipboard && window.isSecureContext) {
+          navigator.clipboard.writeText(text).then(done).catch(() => { execCommandCopy(text); done(); });
+        } else {
+          execCommandCopy(text); done();
+        }
       });
     })();
   </script>
