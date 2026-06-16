@@ -34,10 +34,5 @@
 
 规则允许的事，就等于道德允许的事吗？这才是那片真正的社会土壤。当制度给出了一个边界模糊的容器，无数普通人的选择会在不知不觉中滑向灰色的一侧。他们并不觉得自己在作恶，只是觉得“这不算什么”。而正是这些“不算什么”的累积，让一条裂缝变成了一条通道。
 
-── 写在最后 ──
 
 我们总在谈论“那个女人”，可是她只是走过了一扇被造好的门。真正值得追问的是——为什么那扇门会出现在那里？它被设计得如此友好，如此低门槛，却从未标注明确的边界线。当规则把可能性递到每个人手中，我们该用哪一把尺子衡量那些走进去的人？这把尺子，我们每个人手里都攥着，却很少愿意用它量一量自己。
-
-── 参考资料 ──
-  {'title': 'Psychology says adults who learned to depend on no one as children don’t grow into self-sufficient adults; they grow into people who confuse asking for help with weakness, and slowly build a life no one else knows how to step into', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-says-adults-who-learned-to-depend-on-no-one-as-children-dont-grow-into-self-sufficient-adults-they-grow-into-people-who-confuse-asking-for-help-with-weakness-and-slowly-build-a-life-no-one-else-knows-how-to-step-int/articleshow/131584751.cms'}
-  {'title': 'Psychology says most people only pretend to care about your life and are just looking for juicy gossip: Why bad news is more interesting for them', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-says-most-people-only-pretend-to-care-about-your-life-and-are-just-looking-for-juicy-gossip-why-bad-news-is-more-interesting-for-them/articleshow/131515692.cms'}

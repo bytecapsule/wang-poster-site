@@ -34,12 +34,7 @@
 
 让座只是一个窗口。透过它，我们看到的是一个更大的侵蚀过程：公共空间里的相互体谅、邻里间的守望相助、陌生人之间最基本的善意预设……这些构成社会基础信任的“软性规范”，都在经历同样被流量叙事拆解的命运。当这些规范被系统性侵蚀，我们失去的远不只是一个让座的习惯。我们失去的，是那种身处公共空间、知道彼此共享一套基本行为准则的安全感。这种安全感的丧失，才是最难以察觉、也最难挽回的损失。
 
-── 写在最后 ──
 
 我们总在讨论道德滑坡，却很少追问：是谁，用什么方式，改变了道德的运行环境？也许更值得警惕的是，当“曝光”和“批判”成为流量密码时，我们每一次对负面事件的愤怒转发，都在无意中为剪断那根集体规范的剪刀，增加了一分力道。
 
 下次当你在公共场合，面对一个需要帮助的人却感到犹豫时，可以想一想：此刻束缚住你的，是你内心的冷漠，还是你脑子里那个被算法精心塑造过的、关于“这类人”和“这类事”的风险剧本？我们以为自己在独立思考，但很多时候，只是在执行一套被灌输的认知程序。
-
-── 参考资料 ──
-  {'title': 'Psychology says most people only pretend to care about your life and are just looking for juicy gossip: Why bad news is more interesting for them', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-says-most-people-only-pretend-to-care-about-your-life-and-are-just-looking-for-juicy-gossip-why-bad-news-is-more-interesting-for-them/articleshow/131515692.cms'}
-  {'title': 'Psychology says people who speak less carry more authority because talking is how most people seek approval, and the absence of having to prove yourself registers as power no amount of articulation can replicate', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-says-people-who-speak-less-carry-more-authority-because-talking-is-how-most-people-seek-approval-and-the-absence-of-having-to-prove-yourself-registers-as-power-no-amount-of-articulation-can-replicate/articleshow/131566463.cms'}

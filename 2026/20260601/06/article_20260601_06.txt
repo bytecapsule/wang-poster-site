@@ -42,13 +42,7 @@
 
 所以，永远不要只审查通过接口传递的内容——要审查接口本身。谁设计了这个社交接口？它的规则（点赞、评论、转发）在鼓励什么行为？它的算法在推送什么情绪？当你说「我看了很多新闻」，你真正要说的是「我经过了某个新闻应用的接口过滤」。接口不透明，但它的影响无处不在。我们思考接口，就是思考我们自身被塑造的方式。理工科研究如何把那张脸设计得更易用；人文学科追问那张脸背后藏着什么，以及，谁有权决定藏什么。这两个问题，是同一个时代的正反面。
 
-── 写在最后 ──
 
 所以，下一次当你觉得和某人「沟通不畅」时，别急着去修复内容。先看一看你们之间竖立着什么接口。是微信文字？是客气的邮件？还是某个特定场合的社交面具？接口在无声地定义你们关系的可能性。
 
 我们活在接口里。但偶尔，你可以试着去摸一摸那些脸。不是为了打碎它，而是为了知道：你看见的，从来都不是全部。
-
-── 参考资料 ──
-  {'title': "I've studied over 200 kids-the ones with high emotional intelligence do 7 things", 'source': 'CNBC', 'url': 'https://www.cnbc.com/2026/05/31/ive-studied-over-200-kidsthe-ones-with-high-emotional-intelligence-do-7-things.html'}
-  {'title': '5 weird things people do in love and why, as per psychology', 'source': 'Times of India', 'url': 'https://timesofindia.indiatimes.com/relationships/5-weird-things-people-do-in-love-and-why-as-per-psychology/photostory/131070719.cms'}
-  {'title': 'Blame easy social media access, not immigration, for poor U.S. test scores, top psychologist says', 'source': 'Fortune', 'url': 'https://fortune.com/2026/05/31/us-school-reading-math-test-scores-immigration-ed-tech-social-media/'}

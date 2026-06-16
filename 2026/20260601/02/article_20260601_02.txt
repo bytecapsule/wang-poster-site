@@ -26,12 +26,7 @@
 
 或许，根本没有一个固定的「真我」在后面。我们就是一个由多重接口动态组装而成的系统。这未必是坏事。接口让我们能在不同场景里灵活切换，保护内心的复杂与脆弱不被随意穿透。问题在于，我们是否意识到了接口的存在，以及，我们是否在盲目地维护着那些早已过时、甚至伤害自己的接口？
 
-── 写在最后 ──
 
 下次，当你觉得一段关系很「顺畅」，或者一个系统很「好用」时，试着去想：是什么东西被隐藏了？顺畅的代价是什么？
 
 真正成熟的思考，不是看穿别人的接口，而是看清自己身上，有哪些接口是主动选择的，哪些是被强加的。我们既是使用者，也可以成为设计者。
-
-── 参考资料 ──
-  {'title': 'Psychology suggests adults who leave parties without long goodbyes aren’t rude: They’re protecting the social energy they still need after the room stops watching', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-suggests-adults-who-leave-parties-without-long-goodbyes-arent-rude-theyre-protecting-the-social-energy-they-still-need-after-the-room-stops-watching/articleshow/131422150.cms'}
-  {'title': 'Why do smart investors still lose money? Bernard Baruch’s guide to investing discipline', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/markets/stocks/news/why-do-smart-investors-still-lose-money-bernard-baruchs-guide-to-investing-discipline/articleshow/131418435.cms'}

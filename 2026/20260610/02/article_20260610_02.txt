@@ -34,12 +34,7 @@
 
 这不是因为人变坏了，而是因为系统性地失去了默认信任的能力。我们建起了防御，却也在防御里慢慢失去了一些东西。那是一种社会性的默认善意，一种“有人找你大概是有事”的初始假设。现在这个假设已经反转。我们失去了这种从容。
 
-── 写在最后 ──
 
 年轻一代普遍有电话恐惧症，但这不只是性格问题，是理性的条件反射。每一次电话响起，都是对注意力的一次强制打断，且大概率是消耗性的。这种条件反射被训练出来后，人会变得对突如其来的联系越来越抗拒。这不是内向，是被环境塑造出来的防御模式。
 
 当一个社会普遍进入这种状态，影响的远不只是接不接电话这件事。它改变了人际连接的默认方式，让人与人之间的临时性联系变得越来越困难。而那些临时性的、没有事先约定的联系，恰恰是很多意外善意和机会的来源。我们防住了骚扰，也防住了可能性。这笔账，没人算得清。
-
-── 参考资料 ──
-  {'title': "Psychology says adults who learned to depend on no one as children don't grow into self-sufficient adults; they grow into people who confuse asking for help with weakness, and slowly build a life no one else knows how to step into", 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-says-adults-who-learned-to-depend-on-no-one-as-children-dont-grow-into-self-sufficient-adults-they-grow-into-people-who-confuse-asking-for-help-with-weakness-and-slowly-build-a-life-no-one-else-knows-how-to-step-int/articleshow/131584751.cms'}
-  {'title': 'Psychology of punctuality: Is arriving early a sign of childhood attachment and hidden love language?', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-of-punctuality-is-arriving-early-a-sign-of-childhood-attachment-and-hidden-love-language/articleshow/131448956.cms'}

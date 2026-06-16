@@ -26,12 +26,7 @@
 
 日本的垃圾分类是个有意思的反例。它的成功，很少是靠撤掉垃圾桶来施压。更多是依靠深入社区的、反复的、温和的沟通。分类不是一项冰冷的市政规则，而是“我们这个社区的人，就是这样做的”。它激活的是归属感和文化认同，而不是外部强制。这提示了一条微小的路径：或许，美德的传播，如果能尽量停留在“文化”与“认同”的层面，而谨慎地、缓慢地进入“规则”与“执行”的层面，它的腐化速度，也许能慢一点。但这很难。因为系统天性追求效率和控制，它等不及文化慢慢发酵，它总是急于把一切可用的东西，都铸造成硬性的工具。
 
-── 写在最后 ──
 
 我们活在一个极其善于识别、命名和利用一切的社会系统中。系统看到你善良，就想把你的善良变成一条标准；看到你自律，就想把你的自律变成一个KPI。这是效率的本能，也是管理的诱惑。
 
 问题在于，当你的每一个自发行为，都可能被迅速识别为一种“资源”或“漏洞”时，你还敢不敢轻易地善良？当“做好事”可能立刻被塑造成一面让他人无地自容的镜子时，那种最朴素的、不假思索的善意，究竟该如何安放？
-
-── 参考资料 ──
-  {'title': 'Expert says these 5 toddler behaviours may feel frustrating to parents, but they are completely normal', 'source': 'Times of India', 'url': 'https://timesofindia.indiatimes.com/life-style/parenting/toddler-year-and-beyond/expert-says-these-5-toddler-behaviours-may-feel-frustrating-to-parents-but-they-are-completely-normal/photostory/131485091.cms'}
-  {'title': 'Beyond marks and grades: How Sharani Ponguru redefines education, transform students’ lives', 'source': 'Zee News', 'url': 'https://zeenews.india.com/consumer-connect/beyond-marks-and-grades-how-sharani-ponguru-redefines-education-transform-students-lives-3052505.html'}

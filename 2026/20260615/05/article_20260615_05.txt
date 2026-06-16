@@ -48,10 +48,5 @@
 
 我们还能分辨“被陪伴”和“被销售”的界限吗？录播和直播的界限正在清晰起来。但直播和AI直播的界限，可能根本不存在。因为AI主播完美满足了直播的核心价值——大规模亲密感、认知外包、真实稀缺的模拟。而且它不会累，不会有情绪，不会犯错。当陪伴本身被工业化生产，我们花钱买的到底是什么？
 
-── 写在最后 ──
 
 你有没有在直播间买过根本不需要的东西？收到货后拆开包裹的那一刻，你有没有感到一丝后悔？那种后悔不是对商品质量的不满，而是一种“我为什么会下单”的困惑。现在你知道了，不是你的判断力出了问题。是有人用你大脑里最古老的那部分回路，替你做出了决定。下次再点进直播间时，你可以试着问自己一个问题：此刻的我，是在买商品，还是在买被陪伴的感觉？这两个答案，通向完全不同的消费行为。
-
-── 参考资料 ──
-  {'title': 'Psychology says adults who learned to depend on no one as children don’t grow into self-sufficient adults; they grow into people who confuse asking for help with weakness', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-says-adults-who-learned-to-depend-on-no-one-as-children-dont-grow-into-self-sufficient-adults-they-grow-into-people-who-confuse-asking-for-help-with-weakness-and-slowly-build-a-life-no-one-else-knows-how-to-step-int/articleshow/131584751.cms'}
-  {'title': 'Psychology suggests reason so many older parents won’t ask for help is a fear they’d never say aloud', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-suggests-the-reason-so-many-older-parents-wont-ask-for-help-is-a-fear-theyd-never-say-aloud-that-the-moment-they-need-their-children-more-than-their-children-need-them-they-stop-being-the-parent-and-become-the-responsibility/articleshow/131634110.cms'}

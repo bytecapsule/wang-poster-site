@@ -36,10 +36,5 @@
 
 也许真正的卡点不是制度设计，而是我们都不敢承认：人生本来就是随机的。接受这一点，可能反而活得轻松些。
 
-── 写在最后 ──
 
 如果高考的排名真有那么科学，为什么企业还是招不到合适的人？如果每一分都凝聚了汗水，为什么名校毕业后的平庸比比皆是？也许我们早就在别处接受了随机——长相、聪明、生在哪个家庭——却唯独在考试这件事上犯强迫症。放开那最后几分的执念，或许才能把注意力从无休止的竞争中抽出来，放回真正的成长和创造上去。
-
-── 参考资料 ──
-  {'title': "Is your child hearing 'yes' too often? Get ready for dark personality traits: 5 parenting habits that has negative effect on kids", 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/magazines/panache/is-your-child-hearing-yes-too-often-get-ready-for-dark-personality-traits-5-parenting-habits-that-has-negative-effect-on-kids/articleshow/131610816.cms'}
-  {'title': "Psychology says adults who learned to depend on no one as children don't grow into self-sufficient adults; they grow into people who confuse asking for help with weakness, and slowly build a life no one else knows how to step into", 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-says-adults-who-learned-to-depend-on-no-one-as-children-dont-grow-into-self-sufficient-adults-they-grow-into-people-who-confuse-asking-for-help-with-weakness-and-slowly-build-a-life-no-one-else-knows-how-to-step-int/articleshow/131584751.cms'}

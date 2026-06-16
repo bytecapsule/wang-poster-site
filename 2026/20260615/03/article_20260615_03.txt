@@ -34,9 +34,5 @@ AI不是一个孤立的专业。它是一个由十几个学科共同撑起来的
 
 两个毕业生同时面试AI岗位：一个是CS的，算法能力85分，但领域知识0分；一个是学生物医学工程的，算法能力60分，但懂医学影像。后者可能输掉所有纯算法岗，但在AI医疗赛道，前者的简历可能连初筛都过不了。因为这个岗位看的是你有没有在人身上用过算法，不是你的算法精度比别人高0.5%。反直觉的核心洞察在这里：CS的理论亲近度最高，但恰恰因为太多人涌入，纯CS做AI的竞争优势在稀释。反而是AI加领域知识的交叉人才更加稀缺且不可替代。选专业时，不要把「跟AI最近」当成最高优先级，要把「我有什么别人补不上的东西」当成最高优先级。
 
-── 写在最后 ──
 
 如果现在高考，十年后刚好是AI for Science这股浪潮的中坚力量。AlphaFold拿了诺贝尔化学奖，这是一个分水岭——AI进入基础科学研究不是趋势，是正在发生的事实。未来十年最值钱的不是会写AI代码的人，是既懂某个古老学科、又懂如何把AI放进去的人。选专业的那个下午，你面对的不只是一张志愿表。你面对的是一种判断：你是想去一个挤满人的竞技场比谁跑得快，还是想去一个还没什么人走的路，成为那个定义规则的人。数学不好的话，做AI算法会非常痛苦——不是不能，是非常痛苦，要做好心理准备。诚实是这个话题最稀缺的态度。
-
-── 参考资料 ──
-  {'title': 'Words of Wisdom by Sandra Carey: "Never mistake knowledge for wisdom. One helps you make a living; the other helps you make a..."', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/words-of-wisdom-by-sandra-carey-never-mistake-knowledge-for-wisdom-one-helps-you-make-a-living-the-other-helps-you-make-a-why-life-success-needs-more-than-information/articleshow/131659778.cms'}

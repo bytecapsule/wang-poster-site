@@ -42,11 +42,7 @@ AI像一面镜子，照出我们对自己价值的误解。它逼迫我们回答
 
 AI真正的礼物，也许不是它能替我们做的那些事，而是它逼我们正视：我们一直用错误的标准衡量人，包括我们自己。这个问题，没有简单答案，但光是意识到，就已经是松动的开始。
 
-── 写在最后 ──
 
 你有没有想过，你每天焦虑孩子‘不够好’，焦虑自己‘被淘汰’，这些情绪的背后，是不是都在用同一个标尺——有用？这个标尺，是环境悄悄塞给你的。
 
 如果有一天，你发现自己的价值不依赖任何功能，你会感到自由，还是恐慌？这个答案，可能比AI本身更值得探索。
-
-── 参考资料 ──
-  {'title': 'Blame easy social media access, not immigration, for poor U.S. test scores, top psychologist says', 'source': 'Fortune', 'url': 'https://fortune.com/2026/05/31/us-school-reading-math-test-scores-immigration-ed-tech-social-media/'}

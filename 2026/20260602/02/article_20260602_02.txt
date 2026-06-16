@@ -42,11 +42,5 @@ AI是一面诚实的镜子。它不说话，却逼我们看清：我们一直在
 
 AI逼我们重新回答这个问题：如果不是因为有用，我为什么值得被爱？父母需要替孩子想清楚，我们也需要替自己想清楚。
 
-── 写在最后 ──
 
 当机器替你工作时，你终于有时间问自己：我是谁？不是'我能做什么'的那个我，是那个在深夜醒来、看着天花板、感到一阵莫名安心的我。存在先于功能，这道理古老得像石头。但今天，AI把它捡起来，塞回我们手里。
-
-── 参考资料 ──
-  {'title': "African proverb of the day: 'When an old man dies, a library is...' Life lessons on culture, knowledge, human nature and why elders' experience matters", 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/african-proverb-of-the-day-when-an-old-man-dies-a-library-is-life-lessons-on-culture-knowledge-human-nature-and-why-elders-experience-matters/articleshow/131019178.cms'}
-  {'title': "Quote of the day by Bruce Willis: 'Hair loss is God’s way of telling me...' Life lessons on human behavior, society, fame, genetics and spirituality by American actor battling dementia and popular for", 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/quote-of-the-day-by-bruce-willis-hair-loss-is-gods-way-of-telling-me-life-lessons-on-human-behavior-society-fame-genetics-and-spirituality-by-american-actor-battling-dementia-and-popular-for-playing-lead-role-in-die-hard-film-series/articleshow/131316655.cms'}
-  {'title': 'Jill Biden on life in, and after, the White House', 'source': 'CBS News', 'url': 'https://www.cbsnews.com/news/jill-biden-on-life-in-and-after-the-white-house/'}

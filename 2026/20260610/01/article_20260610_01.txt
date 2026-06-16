@@ -42,9 +42,5 @@
 
 他或许从没意识到，那本点菜手册带给他的，不只是一种接待技巧。而是一种面对复杂世界的方法论：再混沌的人情世故，都可以被拆成步骤。这个信念一旦种下去，就再也不会消失。
 
-── 写在最后 ──
 
 那批捧着手册背流程的工科生，后来都去做了什么？有人可能成了产品经理，又把业务流程拆解成了产品逻辑；有人去做AI训练师，教模型理解人类对话的潜规则。那个把饭局当成系统来优化的灵魂，从来没有消失，它只是换了个战场。今天你在各种管理工具里看到标准化流程，在AI提示词工程里看到步骤分解，本质上都是那本手册的变体。那问题就来了：如果情商可以被工程化，那下一个被工程化的会是什么？
-
-── 参考资料 ──
-  {'title': "African proverb of the day: 'When an old man dies, a library is...' Life lessons on culture, knowledge, human nature and why elders' experience matters", 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/african-proverb-of-the-day-when-an-old-man-dies-a-library-is-life-lessons-on-culture-knowledge-human-nature-and-why-elders-experience-matters/articleshow/131019178.cms'}

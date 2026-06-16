@@ -36,10 +36,5 @@ AI触碰的不是体力劳动者的自尊，是脑力劳动者的自尊。写代
 
 历史反复证明：技术消灭的是任务，不是职业。降低的是入门门槛，抬高的是天花板。ATM机没有消灭银行柜员，柜员数量在ATM普及后反而增加了，因为开分行变得更便宜，柜员从数钱的人变成了卖金融产品的人。AI很可能会走同样的路。它消灭的是执行任务的人，增加的是定义任务的人。而定义任务的能力，恰恰是高等教育最核心的产出。
 
-── 写在最后 ──
 
 如果AI让做事的成本趋近于零，那知道做什么事是变便宜了还是变贵了？这个问题不需要马上回答，但它值得你带进每一次关于教育与技术的争论里。我们害怕的不是AI太聪明，而是自己不再被需要。但历史告诉我们，被需要的方式会变，被需要这件事本身不会消失。只是如果你停止学习，你就放弃了重新定义自己位置的权利。
-
-── 参考资料 ──
-  {'title': "Words of Wisdom by Sandra Carey: 'Never mistake knowledge for wisdom. One helps you make a living; the other helps you make a...' — Why life success needs more than information", 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/words-of-wisdom-by-sandra-carey-never-mistake-knowledge-for-wisdom-one-helps-you-make-a-living-the-other-helps-you-make-a-why-life-success-needs-more-than-information/articleshow/131659778.cms'}
-  {'title': 'Psychology says people who think others are lying to them may be wrong more times than they realise', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/magazines/panache/psychology-says-people-who-think-others-are-lying-to-them-may-be-wrong-more-times-than-they-realise/articleshow/131725737.cms'}

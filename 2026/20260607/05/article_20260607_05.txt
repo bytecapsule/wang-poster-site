@@ -26,10 +26,5 @@
 
 三重世界，三种逻辑。一种是恐惧驱动的进攻（码农），一种是依赖惯性的防守（老北京），一种是失去坐标的悬浮（部分大院子弟）。我们所有的教育选择，看似是深思熟虑的决策，实则不过是某种阶层文化，在我们血液里的又一次表达和续写。我们以为自己在选择道路，或许，我们只是被道路选择。
 
-── 写在最后 ──
 
 教育军备竞赛里，没有人是旁观者。码农在替孩子跑，老北京在替自己歇，北七家的孩子在替生活认。你以为你在规划孩子的未来，其实你只是在复制你的过去，或者反抗你的过去。这场竞赛没有裁判，但每个参与者都默认了规则。最累的是那些既不甘于认命，又找不到新路的人——而北京，塞满了这样的人。
-
-── 参考资料 ──
-  {'title': "African proverb of the day: 'When an old man dies, a library is...' Life lessons on culture, knowledge, human nature and why elders' experience matters", 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/african-proverb-of-the-day-when-an-old-man-dies-a-library-is-life-lessons-on-culture-knowledge-human-nature-and-why-elders-experience-matters/articleshow/131019178.cms'}
-  {'title': 'Mamie Van Doren, 95, exposes Hollywood casting couch in new memoir', 'source': 'Fox News', 'url': 'https://www.foxnews.com/entertainment/teachers-pet-star-mamie-van-doren-says-she-felt-used-young-actress-navigating-hollywoods-dark-side'}

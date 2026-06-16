@@ -30,9 +30,5 @@
 
 那么，什么情况下知识才有用？是当你的直觉面对完全超出其训练集边界的新场景时。这时候，来自外部的、经过验证的新知识，可以作为一个“补丁”来修正和扩展直觉的判断。但核心关系应该是：直觉是主系统，负责快速扫描和模式识别；知识是补丁包，只在主系统明确失效的边界区域提供补充。而我们，却把主系统关成了静音模式，让一个参数寥寥的补丁包来主持大局。
 
-── 写在最后 ──
 
 下次当你感觉“这事有点不对劲”，但理智告诉你“数据不支持，别多想”时，不妨停一秒。问问自己：我压制这个感觉的依据，是一条被灌输的、参数极少的“规则”，还是一次来自真实经历的、高密度的“数据反馈”？有时候，你只是用一本薄薄的说明书，在对抗一台见过世面的机器。
-
-── 参考资料 ──
-  {'title': 'Psychology says students who get Exam Fever right before tests aren’t weak or unprepared but their minds are entering survival mode', 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/psychology-says-students-who-get-exam-fever-right-before-tests-arent-weak-or-unprepared-but-their-minds-are-entering-survival-mode/articleshow/131356002.cms'}

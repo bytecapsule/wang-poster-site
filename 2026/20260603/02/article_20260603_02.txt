@@ -28,13 +28,7 @@
 
 那座随着老人而逝的图书馆，里面没有珍本，只有一生日常的琐碎。可正是这些琐碎，垒成了我们脚下站的地方。当最后一个记得如何用煤球炉生火的人离开，我们不是少了一项技能，而是与一个世界彻底失联。
 
-── 写在最后 ──
 
 我们这一代人，用二十年学会了联网，却可能要用余生学习如何面对断联。每一次技术跃进，都像一次小型的“经验灭绝事件”。我们不必悲情，但该偶尔停下，想想自己脑子里，那些没上过云端，也绝不可能被上传的“私人图书馆”，到底藏了些什么。
 
 或许，最好的纪念不是把旧物放进博物馆，而是在自己变成展品前，认真活过。
-
-── 参考资料 ──
-  {'title': "African proverb of the day: 'When an old man dies, a library is...' Life lessons on culture, knowledge, human nature and why elders' experience matters", 'source': 'The Economic Times', 'url': 'https://economictimes.indiatimes.com/news/international/us/african-proverb-of-the-day-when-an-old-man-dies-a-library-is-life-lessons-on-culture-knowledge-human-nature-and-why-elders-experience-matters/articleshow/131019178.cms'}
-  {'title': "Hyderabad's new 'Feel the Jail' museum lets visitors see what prison life feels like", 'source': 'India Today', 'url': 'https://www.indiatoday.in/trending-news/story/hyderabads-new-feel-the-jail-museum-lets-visitors-see-what-prison-life-feels-like-2911045-2026-05-13'}
-  {'title': 'Viral social media star Retnamma passes away, leaving fans heartbroken', 'source': 'Malayala Manorama', 'url': 'https://www.onmanorama.com/entertainment/entertainment-news/2026/06/01/internet-sensation-retnamma-passes-away-zootopia-famous-reel.html'}
