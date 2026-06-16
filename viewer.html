@@ -37,12 +37,20 @@
         document.title = label + ' · 小汪老师的成长洞察';
       }
 
-      try {
-        const res = await fetch(path);
-        if (!res.ok) throw new Error('HTTP ' + res.status);
-        contentEl.textContent = await res.text();
-      } catch (e) {
-        contentEl.textContent = '加载失败：' + e.message;
+      // 优先读上一页预取的缓存，没有再 fetch
+      const cacheKey = 'txt:' + path;
+      const cached = sessionStorage.getItem(cacheKey);
+      if (cached) {
+        contentEl.textContent = cached;
+        sessionStorage.removeItem(cacheKey);
+      } else {
+        try {
+          const res = await fetch(path);
+          if (!res.ok) throw new Error('HTTP ' + res.status);
+          contentEl.textContent = await res.text();
+        } catch (e) {
+          contentEl.textContent = '加载失败：' + e.message;
+        }
       }
 
       function execCommandCopy(text) {
