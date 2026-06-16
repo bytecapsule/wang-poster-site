@@ -45,19 +45,28 @@
         contentEl.textContent = '加载失败：' + e.message;
       }
 
-      document.getElementById('copy-btn').addEventListener('click', async () => {
-        try {
-          await navigator.clipboard.writeText(contentEl.textContent);
-        } catch {
-          const sel = window.getSelection();
-          const range = document.createRange();
-          range.selectNodeContents(contentEl);
-          sel.removeAllRanges();
-          sel.addRange(range);
+      function copyText(text) {
+        // 现代浏览器
+        if (navigator.clipboard && window.isSecureContext) {
+          return navigator.clipboard.writeText(text);
         }
-        const toast = document.getElementById('toast');
-        toast.classList.add('show');
-        setTimeout(() => toast.classList.remove('show'), 2200);
+        // iOS Safari fallback：textarea + execCommand
+        const ta = document.createElement('textarea');
+        ta.value = text;
+        ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;font-size:16px;';
+        document.body.appendChild(ta);
+        ta.focus();
+        ta.select();
+        try { document.execCommand('copy'); } finally { document.body.removeChild(ta); }
+        return Promise.resolve();
+      }
+
+      document.getElementById('copy-btn').addEventListener('click', () => {
+        copyText(contentEl.textContent).then(() => {
+          const toast = document.getElementById('toast');
+          toast.classList.add('show');
+          setTimeout(() => toast.classList.remove('show'), 2200);
+        });
       });
     })();
   </script>
