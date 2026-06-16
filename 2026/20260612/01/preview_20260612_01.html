@@ -7,22 +7,22 @@
 
 <blockquote style="border-left:4px solid #f4a261;background:#fff8ee;padding:14px 18px;margin:0 0 28px;border-radius:0 8px 8px 0;font-size:15px;color:#555;font-style:italic;line-height:1.8;">一家云服务商的后台凌晨三点崩溃，根因查了四天，最后躺在角落里的一行C代码：一个指针在错误的时间被释放了。有人叹气：早该用Rust。可也有声音反问：AI不是已经能写出安全的C代码了吗？编译器的严苛检查，在这个AI生成代码的年代，会不会只是上个时代的遗产？</blockquote>
 
-<p style="text-align:center;margin:20px 0 28px;"><img src="file:///home/runner/work/wang-poster/wang-poster/2026/20260612/01/image_20260612_01_01.png" style="max-width:100%;border-radius:8px;"/></p>
+<p style="text-align:center;margin:20px 0 28px;"><img src="image_20260612_01_01.png" style="max-width:100%;border-radius:8px;"/></p>
 <h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">直觉的陷阱：99.9%的准确率为什么让人不安</h2>
 <p style="margin:0 0 18px;line-height:1.9;">这个直觉很有市场。既然AI模型越来越强，检测工具也越来越聪明，为什么还要用borrow checker把人卡得半死？写一段Rust代码，AI要多消耗百分之二十甚至更多的token，全耗在满足编译器的所有权检查上。</p>
 <p style="margin:0 0 18px;line-height:1.9;">从成本上看，用C或Go让AI写，再跑一个高精度检测工具，似乎更划算。但这里偷了一个关键变量。检测做得再好，也是概率游戏。99.9%的准确率放在一百行代码里，可能只漏掉0.1个问题，约等于没事。但放在几百万行的系统里，0.1%的漏报就是几千个潜在的内存漏洞。</p>
 <p style="margin:0 0 18px;line-height:1.9;">内存安全不是容错场景。一个use-after-free，就足以让整个系统的防护归零。这个数字放大效应，很多人没算过。他们以为准确率提高了就万事大吉，却没意识到代码产量在以十倍百倍的速度膨胀。漏网的绝对值不是在减少，而是在增加。</p>
-<p style="text-align:center;margin:20px 0;"><img src="file:///home/runner/work/wang-poster/wang-poster/2026/20260612/01/image_20260612_01_02.png" style="max-width:100%;border-radius:8px;"/></p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260612_01_02.png" style="max-width:100%;border-radius:8px;"/></p>
 <h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">安检员和物理法则，是两种不同的安全</h2>
 <p style="margin:0 0 18px;line-height:1.9;">把检测式安全和约束式安全混为一谈，是这场争论里最大的认知错位。检测像机场安检员，受过训练，能发现99.9%的违禁品。但剩下那0.1%，只要有一件上了飞机，后果就可能是灾难性的。</p>
 <p style="margin:0 0 18px;line-height:1.9;">Rust的所有权机制走的不是这条路。它不是在你写完代码后拿放大镜去找问题，而是从根本上消除了那些问题的原材料。它不是说“我发现这个内存操作有风险”，而是“这个程序的结构里就不可能产生数据竞争、use-after-free和double-free”。这不是概率担保，是数学证明。</p>
 <p style="margin:0 0 18px;line-height:1.9;">编译通过的那个瞬间，你就得到了一个结构性承诺：你不需要再去猜这段代码安不安全。不是“大概率没事”，是“结构上不可能有事”。这种安全哲学从物理层面切断了祸根，而不是靠一次次的事后检测去打补丁。在系统安全史上，从来没有一个时候，这种前置约束像今天一样重要。</p>
-<p style="text-align:center;margin:20px 0;"><img src="file:///home/runner/work/wang-poster/wang-poster/2026/20260612/01/image_20260612_01_03.png" style="max-width:100%;border-radius:8px;"/></p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260612_01_03.png" style="max-width:100%;border-radius:8px;"/></p>
 <h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">谁来审计AI的代码？编译器就是答案</h2>
 <p style="margin:0 0 18px;line-height:1.9;">更深层的焦虑藏在一个不常被讨论的问题里：你怎么知道AI写的代码是对的？以前是人写代码，可以由同事review，虽然review也有遗漏，但至少过程里有人类判断。现在代码大量由AI生成，review的力量跟不上。逐行审阅变成了一种奢望。</p>
 <p style="margin:0 0 18px;line-height:1.9;">在C的生态里，就算AI写出了一段看起来没问题的代码，没有人能轻易保证它没有隐蔽的内存暗伤。你可能得依赖测试，等着某个边缘条件在线上爆发。但Rust不一样，编译通过本身就是一份强有力的审计报告。你不再需要信任AI写得好不好，你只需要信任编译器——一个确定性的、可审计的软件。</p>
 <p style="margin:0 0 18px;line-height:1.9;">这让Rust从“写代码的语言”升级成了“AI代码的自动审计框架”。它的所有权系统和类型系统，相当于给每一行生成代码套上了一个结构化的安全锁。代码产量越高，人工审计越不现实，这种编译器级别的自动化审计就越珍贵。这不正是供应链安全里SLSA provenance想做的事吗？不去事后检查产物有没有问题，而是从构建过程本身确保可信。</p>
-<p style="text-align:center;margin:20px 0;"><img src="file:///home/runner/work/wang-poster/wang-poster/2026/20260612/01/image_20260612_01_04.png" style="max-width:100%;border-radius:8px;"/></p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260612_01_04.png" style="max-width:100%;border-radius:8px;"/></p>
 <h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">摩擦是真实的，但摩擦的收益在加速增长</h2>
 <p style="margin:0 0 18px;line-height:1.9;">AI写Rust确实比写Python费劲，眼下这是事实。每次和borrow checker搏斗，都是模型在消耗token去修正自己。不过这个差距在快速收窄。每隔几个月，大模型对Rust的生成质量就有一次跃升。</p>
 <p style="margin:0 0 18px;line-height:1.9;">而且，这种搏斗本身有隐藏价值。每次编译失败，都意味着编译器抓到了一个潜在的内存隐患。AI被迫去调整，就等于被Rust强行纠了一次错。同样的内存问题如果写在C里，编译阶段不会暴露，它会安静地滑过测试，上线，然后等攻击者来发现。</p>
