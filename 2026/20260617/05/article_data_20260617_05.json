@@ -1,0 +1,49 @@
+{
+  "title": "每个分子都在乱跑，但气压表纹丝不动——这可能是对人类社会最深刻的物理隐喻",
+  "lead": "你无法预测任何一个空气分子下一秒会撞向哪里。但气压表的指针永远稳如磐石。微观的彻底混沌与宏观的精确稳定同时成立，这可能就是人类社会秩序最深层的物理钥匙。",
+  "cover_image_prompt": "A dark, moody scene of countless tiny glowing particles moving chaotically inside a large transparent glass chamber. A brass pressure gauge attached to the chamber shows a perfectly steady needle, lit by a single shaft of dim amber light, casting long shadows across an old wooden table.",
+  "sections": [
+    {
+      "heading": "一个被嘲笑了近两百年的假说",
+      "content": "A dimly lit 18th-century study, a man in a powdered wig sketching chaotic particle trajectories on a chalkboard, while three other scholars turn away dismissively. Faint glowing particles float in the air, mocking the unseen."
+    },
+    {
+      "heading": "当城市变成气体分子",
+      "content": "A dark aerial view of a massive urban expressway at night, headlights forming a steady stream of red and white light rivers. In the foreground, a faint glowing digital gauge shows a stable traffic index, the whole scene bathed in deep indigo and amber."
+    },
+    {
+      "heading": "压强的三个启示",
+      "content": "A surreal close-up of a giant analog pressure gauge, its face cracked slightly. Beneath the glass, instead of a dial mechanism, a chaotic dance of millions of tiny glowing particles pounds against the inner surface. The scene is dark with cold metallic tones and a single red indicator needle."
+    },
+    {
+      "heading": "因果的层级与预测的极限",
+      "content": "A layered visual composition: the bottom layer shows a blurred, chaotic tangle of tiny human figures, all moving randomly. The top layer reveals a sharp, clear geometric pattern emerging from their collective motion, like a crystalline lattice formed from dust. Deep shadows separate the layers, lit by a cool, analytical light from above."
+    },
+    {
+      "heading": "容器的形状",
+      "content": "A vast dark space filled with a transparent geometric container made of faintly glowing lines, like a cage of light. Inside, countless abstract humanoid figures move freely, but the overall flow is shaped by the container's curves. A single distant light source casts the container's shadow as a perfect, orderly pattern on the floor."
+    }
+  ],
+  "tips": "所以，当我们谈论“改变社会”时，到底应该从哪个层面着手？改变一千个人的行为，还是改变这些人所处的容器形状？气体分子运动论的答案是第二个。但第二个的难度大得多——它要求你不再沉迷于个体的故事，而是去理解那个无形的、由规则和结构铸成的器壁。下一次你看到某个社会指标纹丝不动而身边一切都在剧变时，也许可以想一想那个气压表，和它背后乱跑的无数分子。",
+  "image_prompts": [
+    "A dimly lit 18th-century study, a man in a powdered wig sketching chaotic particle trajectories on a chalkboard, while three other scholars turn away dismissively. Faint glowing particles float in the air, mocking the unseen.",
+    "A dark aerial view of a massive urban expressway at night, headlights forming a steady stream of red and white light rivers. In the foreground, a faint glowing digital gauge shows a stable traffic index, the whole scene bathed in deep indigo and amber.",
+    "A surreal close-up of a giant analog pressure gauge, its face cracked slightly. Beneath the glass, instead of a dial mechanism, a chaotic dance of millions of tiny glowing particles pounds against the inner surface. The scene is dark with cold metallic tones and a single red indicator needle.",
+    "A layered visual composition: the bottom layer shows a blurred, chaotic tangle of tiny human figures, all moving randomly. The top layer reveals a sharp, clear geometric pattern emerging from their collective motion, like a crystalline lattice formed from dust. Deep shadows separate the layers, lit by a cool, analytical light from above.",
+    "A vast dark space filled with a transparent geometric container made of faintly glowing lines, like a cage of light. Inside, countless abstract humanoid figures move freely, but the overall flow is shaped by the container's curves. A single distant light source casts the container's shadow as a perfect, orderly pattern on the floor."
+  ],
+  "references": [
+    {
+      "title": "Psychology suggests reason so many older parents won’t ask for help is a fear they’d never say aloud",
+      "source": "The Economic Times",
+      "date": "Jun 2026",
+      "url": "https://economictimes.indiatimes.com/news/international/us/psychology-suggests-the-reason-so-many-older-parents-wont-ask-for-help-is-a-fear-theyd-never-say-aloud-that-the-moment-they-need-their-children-more-than-their-children-need-them-they-stop-being-the-parent-and-become-the-responsibility/articleshow/131634110.cms"
+    },
+    {
+      "title": "In 1971, volunteers entered a mock prison basement and sparked one of psychology’s biggest debates",
+      "source": "The Economic Times",
+      "date": "Jun 2026",
+      "url": "https://economictimes.indiatimes.com/news/international/us/in-1971-volunteers-entered-a-mock-prison-basement-and-sparked-one-of-psychologys-biggest-debates/articleshow/131767739.cms"
+    }
+  ]
+}
