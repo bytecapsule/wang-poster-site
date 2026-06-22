@@ -1,0 +1,49 @@
+<!DOCTYPE html><html><head><title>当 agent 不再需要注册——Cloudflare 临时账户如何重新定义了“身份”这个概念</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/></head><body>
+<section style="max-width:677px;margin:0 auto;font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#3d3d3d;background:#fffdf8;padding:0 16px 32px;line-height:1.9;font-size:16px;">
+
+<h1 style="font-size:1.35em;font-weight:700;color:#1a1a1a;margin:0 0 16px;line-height:1.4;">当 agent 不再需要注册——Cloudflare 临时账户如何重新定义了“身份”这个概念</h1>
+<div style="height:6px;background:linear-gradient(90deg,#f9c784,#f4a261,#e76f51);border-radius:3px;margin-bottom:20px;"></div>
+
+<p style="margin:0 0 16px;"><span style="display:inline-block;background:#fff3e0;color:#e76f51;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;border:1px solid #f9c784;letter-spacing:0.5px;">小汪老师的成长洞察 · 属于你的成长专栏</span></p>
+
+<blockquote style="border-left:4px solid #f4a261;background:#fff8ee;padding:14px 18px;margin:0 0 28px;border-radius:0 8px 8px 0;font-size:15px;color:#555;font-style:italic;line-height:1.8;">你的 agent 部署了一个服务，有 URL，可以被全世界访问。你没有注册任何账号，没有填过表单，没有点过“确认”。那个让部署发生的身份，在这篇文章写完之前，可能已经不存在了。这不仅是方便，是身份这个概念在 agent 时代第一次被从人类范式里拽了出来。</blockquote>
+
+<p style="text-align:center;margin:20px 0 28px;"><img src="image_20260622_05_01.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">一个没有注册的部署</h2>
+<p style="margin:0 0 18px;line-height:1.9;">你让 Claude Code 写了一个小服务。它写好了，告诉你部署完了，给了你一个 URL。你打开浏览器，服务在跑。你忽然意识到一件事：你没有注册任何平台账号。没有填邮箱和密码，没有过验证码，没有绑信用卡，没有复制粘贴 API token。整个部署过程，你连键盘都没碰。</p>
+<p style="margin:0 0 18px;line-height:1.9;">agent 替你做了这一切。但它用的不是你的人类身份。它用的是 Cloudflare 刚刚给它的一个临时账户。这个账户只活了 60 分钟。它被创建的唯一目的，就是让这段代码在互联网上获得一个真实存在。任务完成，身份销毁。</p>
+<p style="margin:0 0 18px;line-height:1.9;">你盯着那个 URL，发现一个更尖锐的问题：那个让部署发生的“身份”，在你看到这篇文章的时候，可能已经不存在了。agent 以一个非人类、非持久、非注册的临时身份，在互联网上创造了真实的东西。这不是一次开发者体验优化。这是身份这个概念被重新定义了。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260622_05_02.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">三条线的解耦</h2>
+<p style="margin:0 0 18px;line-height:1.9;">Cloudflare 的方案不是加了一个方便的参数。它解耦了三个过去被绑死的东西。第一，部署权与身份权的分离。传统流程里，你必须先“成为某个人”——注册账号、证明你是你——然后才能“做某件事”。临时账户颠倒了这个顺序。agent 不需要回答“我是谁”，它只需要一个“我能用 60 分钟”的许可。身份变成了一种事后可选的认领，而不是事前的准入门槛。</p>
+<p style="margin:0 0 18px;line-height:1.9;">第二，自发现机制。Wrangler 在 agent 第一次部署失败时，不会只返回一个 401。它会在错误输出中主动告诉 agent：有一个 --temporary flag 存在。agent 读到这条信息，下一次调用就会加上这个 flag。这不是给人看的文档，是给 agent 读的运行时提示。工具在教 agent 怎么用自己。</p>
+<p style="margin:0 0 18px;line-height:1.9;">第三，垃圾回收式的身份生命周期。60 分钟到期自动删除——不是降级，不是挂起，不是发三封提醒邮件。临时账户直接消失，连同上面部署的 Worker、数据库、绑定资源一起。身份的销毁和创建一样自动化。没有挽留，没有痕迹。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260622_05_03.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">人类身份模型的三个假设，agent 逐一打破</h2>
+<p style="margin:0 0 18px;line-height:1.9;">传统身份模型建立在三个隐含假设上，而 agent 在每一条上都把它打破了。假设一：身份是持久的。你的 GitHub 账号、Google 账号设计前提是你这个人会存在很久。密码找回、两步验证、恢复密钥——整个安全体系都建在“持久身份”上。但 agent 的一次任务可能只需要 3 分钟。为一个 3 分钟的部署创建一个永久的身份实体，本身就是错误抽象。就像不需要为一次外卖给骑手配一张终身门禁卡。</p>
+<p style="margin:0 0 18px;line-height:1.9;">假设二：认证是人类的专属能力。OAuth 流程假设屏幕前面有一个人——能看懂授权页面，能判断风险，能输入密码，能通过 MFA。agent 面对 OAuth 时，不是“暂时认证不了”，是作为非人类执行者，它被认证系统的设计前提排除在外。那个弹窗对它来说不是摩擦，是硬墙。</p>
+<p style="margin:0 0 18px;line-height:1.9;">假设三：信任来自身份。传统安全模型是：先确认你是谁，再决定你能做什么。agent 翻转了这个顺序。它的信任不应该来自“注册了哪个账号”，应该来自“被谁委托、在执行什么任务、在什么约束下运行”。这正是 SLSA provenance 和 OIDC 短时凭证在做的事——信任从身份归属转移到任务链路。Cloudflare 的临时账户是这个逻辑的自然延伸：信任不再绑定到一个持久的人类身份，而是绑定到一个有明确生命周期和明确销毁条件的基础设施对象上。三条加在一起，指向同一个结论：为人类设计的身份系统，不是对 agent 不够友好，是根本不兼容。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260622_05_04.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">“用后即焚”作为一种制度设计原则</h2>
+<p style="margin:0 0 18px;line-height:1.9;">临时账户最值得玩味的设计不是那个 --temporary flag，而是那个 60 分钟自动销毁。为什么不是 24 小时？为什么不是用完后手动删除？因为自动销毁不是清理，是约束。它改变的是双方的行为策略：agent 不会在临时账户上建任何“以后可能还有用”的东西，你知道它 60 分钟后会消失，所以你只会做现在就需要验证的部署。Cloudflare 不会给临时账户发送提醒邮件，因为它的设计受众不是一个需要被提醒的人类用户，是一个不需要被提醒的自动化流程。不提醒、不挽留、不降级——直接删除。这种冷酷不是 bug，是 feature。</p>
+<p style="margin:0 0 18px;line-height:1.9;">更深一层：这个“用后即焚”的设计模式，不只适用于 agent 部署。它可能是一类“临时制度”的通用原型。美国《多德-弗兰克法案》的某些条款设置了日落条款，到时间自动失效，除非国会重新授权。疫情后各国紧急授权中的自动终止条款，也是为了避免临时权力因为惯性变成永久的制度肿瘤。金融监管中的过渡性安排、危机响应中的临时任务编组——核心逻辑都是同一个：创建一个在已知时间窗口内自动失效的结构，避免临时安排变成永久负担。</p>
+<p style="margin:0 0 18px;line-height:1.9;">Cloudflare 做的不只是在工程上解决了一个部署摩擦。它在无意中演示了“用后即焚”作为一种通用设计原则的可行性和优雅性。60 分钟自动销毁的临时账户，和一部法律中的日落条款，共享同一个制度基因。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260622_05_05.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">从短期凭证到短期主权，以及那条裂缝</h2>
+<p style="margin:0 0 18px;line-height:1.9;">Charlie 的工作领域——供应链安全、SLSA provenance、OIDC 短时凭证、零信任——和临时账户的核心逻辑高度共振，但比那些更进一步。SLSA 和 OIDC 解决的是“凭证应该是短期的”，用短期 token 替换长期 API key。Cloudflare 临时账户解决的是“身份本身应该是短期的”。不只是凭证会过期，连“账户”这个实体都可以过期。这是从“短期凭证”到“短期主权”的跃迁。零信任的核心原则——不信任任何东西，每次访问都要验证——在临时账户这里获得了物理形态：每个临时账户就是从零创建的、出厂就带着倒计时的新实体，它不存在任何“积累的信任”。JIT 访问被推到了极端：不只是权限即时授予，是整个身份即时创建、即时销毁。</p>
+<p style="margin:0 0 18px;line-height:1.9;">但这里有一个尖锐的问题：审计责任链。如果一个临时账户在 60 分钟内部署了恶意代码，且账户在人类认领之前就自动销毁了——谁为这次部署负责？SLSA provenance 的非篡改日志能追溯到“哪个 build 产生了哪个 artifact”。但临时账户如果完全匿名化，没有绑定到任何人类的注册信息，那就只剩下 Wrangler 的运行日志——能告诉你“某个 agent 在某时部署了某段代码”，不能告诉你“这个 agent 是谁委托的”。这不是 Cloudflare 的 bug，是“临时身份”这个概念的内在张力：越无摩擦，越难追溯。</p>
+<p style="margin:0 0 18px;line-height:1.9;">当 agent 成为互联网上最主要的代码部署者时，我们需要的不仅是“让 agent 能部署”的功能。我们需要一个全新的身份基础设施，它不以“人类是谁”为前提，而以“任务是什么、谁来承担后果”为根基。Cloudflare 的 60 分钟临时账户是这个基础设施的第一块砖。而审计责任链——在匿名临时身份和可追溯性之间的那条裂缝——是下一块砖必须填补的空间。</p>
+
+<div style="background:linear-gradient(135deg,#fff8ee,#ffecd2);border-radius:12px;padding:20px 24px;margin-top:36px;border:1px solid #f9c784;">
+<p style="margin:0 0 8px;font-size:15px;font-weight:600;color:#e76f51;">写给你的话</p>
+<p style="margin:0;font-size:14px;color:#666;line-height:1.9;">临时账户留下的那条裂缝，不是设计缺陷，是新一代身份系统必须穿越的窄门。当身份不再等同于一个注册表单，当部署权不再需要人类在场，我们需要一种新的“委托证明”——不是证明我是谁，而是证明我被谁委托、在什么约束下行动。这个证明必须像临时账户一样轻，又必须像 SLSA provenance 一样不可篡改。Cloudflare 无意中把这个问题摆上了台面。接下来，看谁能把那条裂缝变成一扇门。</p>
+</div>
+
+
+
+<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px dashed #f0e0c8;">
+<p style="font-size:13px;color:#aaa;margin:0;font-weight:500;">小汪老师的成长洞察 · 属于你的成长专栏</p>
+</div>
+
+</section>
+</body></html>
