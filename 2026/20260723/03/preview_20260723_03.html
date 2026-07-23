@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><title>从冯·诺依曼到Engram：AI模型的「存算分离」——为什么把记忆从计算里拆出来是持续学习的第一步</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/></head><body>
+<section style="max-width:677px;margin:0 auto;font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#3d3d3d;background:#fffdf8;padding:0 16px 32px;line-height:1.9;font-size:16px;">
+
+<h1 style="font-size:1.35em;font-weight:700;color:#1a1a1a;margin:0 0 16px;line-height:1.4;">从冯·诺依曼到Engram：AI模型的「存算分离」——为什么把记忆从计算里拆出来是持续学习的第一步</h1>
+<div style="height:6px;background:linear-gradient(90deg,#f9c784,#f4a261,#e76f51);border-radius:3px;margin-bottom:20px;"></div>
+
+<p style="margin:0 0 16px;"><span style="display:inline-block;background:#fff3e0;color:#e76f51;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;border:1px solid #f9c784;letter-spacing:0.5px;">小汪老师的成长洞察 · 属于你的成长专栏</span></p>
+
+<blockquote style="border-left:4px solid #f4a261;background:#fff8ee;padding:14px 18px;margin:0 0 28px;border-radius:0 8px 8px 0;font-size:15px;color:#555;font-style:italic;line-height:1.8;">1945年6月，一份名为《关于EDVAC的报告草案》的文件从宾夕法尼亚大学流出。作者约翰·冯·诺依曼。这份101页的报告没有申请专利，没有加密，被油印了若干份寄给同行。但它画下了一张图——一张把计算机分成五个部分的逻辑图。从此，存储和计算被明确地划开。八十年来，每一台计算机都在重复这张图的结构。直到今天，最前沿的AI模型却意外地回到了这张图出现之前的世界。Engram项目的开源，像是历史的一次回响：把记忆从计算里拆出来，这件事我们做过一次，现在又得再做一次。</blockquote>
+
+<p style="text-align:center;margin:20px 0 28px;"><img src="image_20260723_03_01.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">冯·诺依曼的那张图</h2>
+<p style="margin:0 0 18px;line-height:1.9;">1943年，宾夕法尼亚大学开始建造ENIAC。这台机器用了18000个真空管，重30吨。它计算弹道轨迹的速度比人工快一千倍。但它有一个致命的麻烦：每次换任务，工程师得重新插拔几百根电缆，转动几千个开关。这个过程叫“编程”，本质是重新接线。改一次程序可能要花几天。</p>
+<p style="margin:0 0 18px;line-height:1.9;">冯·诺依曼在1944年加入这个项目时，立刻看到了问题。他在那份著名的报告草案里提出：把程序也当作数据，存进机器内部。这样，计算机可以读一段指令，执行，再读下一段。不需要重新接线。他把计算机分成五个部分：运算器、控制器、存储器、输入设备、输出设备。存储和计算在逻辑上分开了。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这个架构的核心洞见很简单：把“做什么”和“怎么做”分开。存储器里放着指令和数据，运算器只负责执行。中间有一条总线来回搬运信息。这种分离让计算机第一次可以通用。你今天用的手机、笔记本、云服务器，全是这个架构的子孙。冯·诺依曼的这张图，是计算机史上最基础的一次解耦。</p>
+<p style="margin:0 0 18px;line-height:1.9;">但有一个细节容易被忽略。在冯·诺依曼之前，计算机的“知识”（程序）和“计算能力”是焊死在一起的。ENIAC知道怎么算弹道，是因为它的电路结构本身就是那个算法。换算法等于换机器。冯·诺依曼把算法从电路里抽出来，变成可以随时替换的“软件”。这个动作，让计算机从专用走向通用。</p>
+<p style="margin:0 0 18px;line-height:1.9;">八十年后，我们站在了一个奇怪的对称点上。今天的AI模型，又一次把“知识”和“计算”焊在了一起。一个1750亿参数的Transformer，每一个参数既是存储单元也是计算工具。模型知道“法国首都是巴黎”，这个事实不是存放在某个专门区域，而是分散在几千亿个参数之间的一张连接图里。每次你问它，它都从头重新激活所有相关连接，跑一遍完整的矩阵乘法。这就像ENIAC每次算弹道都要重新接线——只不过现在接线是在数字空间里完成的，速度快了无数倍，但逻辑上没有本质区别。</p>
+<p style="margin:0 0 18px;line-height:1.9;">存算分离这件事，我们做过一次。现在，又得再做一次。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260723_03_02.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">大模型回到了手工接线时代</h2>
+<p style="margin:0 0 18px;line-height:1.9;">要理解今天的AI模型为什么是存算混在一起的，得先看Transformer是怎么记住东西的。Transformer没有专门的记忆单元。它的“知识”以参数的形式存在。参数是什么？是神经网络层与层之间的权重值。一个1750亿参数的模型，就像一张有1750亿个节点的极复杂连接图。每个节点都参与计算，也都参与存储。</p>
+<p style="margin:0 0 18px;line-height:1.9;">当模型学到“法国首都是巴黎”时，这个事实不是被写进某个格子。它被拆解成无数微小的信号，分散在注意力机制、前馈网络、嵌入层里。这些信号加在一起，在输出时指向“巴黎”这个token。这个过程极其优美，也极其浪费。每次你问同一个问题，模型都从头算一遍。它不查表，不缓存，不记忆。它重新走过所有路径，在概率最高处停下。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这种机制带来了三个后果。第一，浪费。推理一个token的能耗可以点亮一盏小灯。而其中大量计算是在重复确认已知事实。第二，不能更新。你想让模型记住“布基纳法索新换了首都”，唯一的方法是重新训练或微调整个模型。因为知识不按条目存储，你没法只改那一行。第三，不能积累。模型训练完就定格在那一时刻的知识集合里。之后世界发生的任何事，它不知道。它无法真正“学会”，只能“被重新教”。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这很像一个厨师的菜谱和他的手长在一起。他做菜时，每切一刀都要重新回忆整本菜谱。你想让他学一道新菜，他得把全身的肌肉记忆重新长一遍。在这个过程中，他可能忘了怎么炒蛋。这就是fine-tuning的困境——微调一个领域知识，可能导致另一个领域的能力丢失。灾难性遗忘的根源，就是存算混合。</p>
+<p style="margin:0 0 18px;line-height:1.9;">人类大脑不是这样工作的。我们有海马体专门负责编码新记忆，有皮层专门负责长期存储，有前额叶专门负责推理决策。你今天学会一个单词，不意味着你的整个人格需要重新长一遍。记忆和推理是两个独立的认知功能。但在今天的AI模型里，它们是搅在一起的。大模型在架构逻辑上，回到了冯·诺依曼之前的时代。物理形态变了，底层困境没变。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260723_03_03.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">Engram：在神经网络里装上一块硬盘</h2>
+<p style="margin:0 0 18px;line-height:1.9;">2026年，DeepSeek和北京大学合作发表了一篇论文，开源了一个叫Engram的项目。论文署名有梁文锋。Engram做的事情用一句话就能说清楚：在Transformer内部，把记忆从计算里拆出来。</p>
+<p style="margin:0 0 18px;line-height:1.9;">具体怎么拆？他们给模型加了一个叫Engram的模块。这个模块本质上是一个可学习的键值记忆表。训练时，模型会把那些反复被需要的、已经稳定的静态知识从参数里抽出来，存进这个表。推理时，对每一个token，模型会先判断：这个token需要动态推理，还是静态查表？如果是静态查表，直接走Engram的记忆路径，不跑重的矩阵乘法。只有需要动态推理的token，才走正常的Transformer计算路径。</p>
+<p style="margin:0 0 18px;line-height:1.9;">论文的README第一段就写明了它和MoE的区别。MoE是条件计算——让你在“用哪个计算单元”上做选择。Engram是条件记忆——让你在“这个token需不需要计算”上做选择。它把一部分token的整个计算步骤直接省略了。这就像在CPU旁边加了一个大容量缓存，但比缓存更根本。缓存存的是临时数据，Engram存的是“已知事实的答案路径”。</p>
+<p style="margin:0 0 18px;line-height:1.9;">论文还引了一个更本质的类比——N-gram语言模型。在深度学习出现之前，传统N-gram模型就是纯查表。你输入前几个词，它查表给出下一个词的概率。深度学习取代了N-gram，因为表太大了，语言的可能性无法穷举。但Engram做的事有趣就在这里。它在Transformer这个深度学习架构内部，重新装回了一个可学习的、可扩展的查表机制。不是倒退到N-gram，是把查表的效率和深度学习的泛化能力融合在同一个架构里。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这听起来像工程优化。但在底层逻辑上，它敲的是一扇更大的门。这是第一次有人系统性地在模型内部把“记忆”从“计算”里拎出来，给它一个独立的物理结构。冯·诺依曼花了101页报告把存储和计算分开。Engram的论文，可能为AI架构写下了类似的第一章。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260723_03_04.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">持续学习为什么卡在存算混合上</h2>
+<p style="margin:0 0 18px;line-height:1.9;">梁文锋公开过他的AGI路线图：CoT（思维链）→Agent（智能体）→持续学习→渐进奇点→具身智能。持续学习在这条线的中间，是关键转折点。为什么持续学习这么难？因为今天的大模型学新东西，等于把所有旧东西重新搅一遍。</p>
+<p style="margin:0 0 18px;line-height:1.9;">想象你有一本百科全书。你想在“法国”条目下加一行“2026年首都是巴黎”。如果这本书是用现在大模型的方式写的，你没法只改那一行。你得一页一页重新校对整本书，因为所有条目之间的交叉引用会因为这个改动而重新调整。更糟的是，改完之后，“德国”条目可能莫名其妙地少了几行。这就是灾难性遗忘。</p>
+<p style="margin:0 0 18px;line-height:1.9;">存算分离解决的就是这个。如果知识单独存在记忆模块里，更新一个事实就只更新那条记录。推理核心不变，知识表更新。这跟人类大脑更接近。你今天学会一个单词，海马体编码，皮层巩固，前额叶的推理能力不受影响。记忆和推理是两个独立的系统，所以你能一边学新东西，一边保持旧能力。</p>
+<p style="margin:0 0 18px;line-height:1.9;">Engram目前还没有做到运行时持续更新。论文的实现是训练时构建记忆表，推理时使用。但框架已经出来了。下一步是读写接口——让模型在运行时，持续把新经验写回记忆，同时不干扰已有知识。这需要解决记忆写入时的冲突问题、索引问题、以及旧记忆的巩固问题。这些恰好是人类记忆系统花了几亿年进化出来的机制。</p>
+<p style="margin:0 0 18px;line-height:1.9;">从冯·诺依曼到Engram，历史转了一个大圈。1945年，我们把程序从电路里抽出来，存进内存，让计算机可以换软件。2026年，我们开始把知识从参数里抽出来，存进记忆模块，让AI可以持续学习。这两次解耦，面对的是同一个问题：如何让一个系统在保持稳定运行的同时，还能不断吸收新东西。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260723_03_05.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">三层架构与那条进化之路</h2>
+<p style="margin:0 0 18px;line-height:1.9;">顺着Engram的方向往前推，未来通用AI不太可能永远是Transformer大一统形态。更可能的形态是三层架构。第一层，一个巨大、可扩展、可增量更新的长期记忆层。它存所有静态知识和经验，像一座不断生长的数字图书馆。第二层，一个相对精简、高度激活的推理核心。它负责动态推理和决策，像大脑的前额叶。第三层，高效的读写接口。它让模型运行时持续把新经验写回记忆，同时检索所需知识，像海马体和皮层之间的那条通路。</p>
+<p style="margin:0 0 18px;line-height:1.9;">今天Transformer的问题是，这三层被压缩在一层参数堆里，互相干扰。Engram是第一次系统性地把第一层“记忆”从参数堆里拎出来。它还没有做到第三层“读写接口”，但已经指明了方向。从N-gram到RNN/LSTM到Transformer到MoE，模型架构的每一次跃迁，都在增加一种新的分工。N-gram只有查表，RNN有了循环状态，Transformer有了注意力，MoE有了条件计算。现在Engram增加的分工是——“你不需要为已知的事再算一遍”。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这个分工可能是从“大模型”到“通用智能”的架构跃迁中，最基础的那一次解耦。人类大脑的进化史也走过同样的路。最初，神经系统的信号处理和记忆是混在一起的。后来，专门的记忆结构演化出来——海马体、杏仁核、皮层。这让哺乳动物可以在经验中学习，而不丢失本能。AI如今站到了这个进化节点上。</p>
+<p style="margin:0 0 18px;line-height:1.9;">你每次问ChatGPT“法国首都是哪里”，它在跑几千亿参数的所有链接。而你的大脑直接从某个专门存事实的区域拿出来，不需要任何矩阵乘法。人类用了几十亿年进化出这个机制，AI用了十年才发现需要往这个方向走。不是AI太慢。是分清楚“什么是需要算的、什么是只需要记的”这件事，本来就比我们以为的更深。</p>
+<p style="margin:0 0 18px;line-height:1.9;">Engram不是终点。它是这条路的起点。这条路的方向，和人类大脑进化史的方向一模一样。</p>
+
+<div style="background:linear-gradient(135deg,#fff8ee,#ffecd2);border-radius:12px;padding:20px 24px;margin-top:36px;border:1px solid #f9c784;">
+<p style="margin:0 0 8px;font-size:15px;font-weight:600;color:#e76f51;">值得思考的几个问题</p>
+<p style="margin:0;font-size:14px;color:#666;line-height:1.9;">我们总以为智能的核心是计算。但也许记忆才是更古老的智能基础。冯·诺依曼把程序存进内存，让人可以写软件。Engram把知识存进记忆表，也许能让AI开始写自己的经验。存算分离不是技术细节，是智能体能否在时间里生存的前提。一个不能更新记忆的系统，永远活在训练结束的那一刻。人类用了几十亿年学会把记忆和思考分开。现在我们教机器做同样的事。这个过程，可能比我们预想的要漫长得多。</p>
+</div>
+
+
+
+<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px dashed #f0e0c8;">
+<p style="font-size:13px;color:#aaa;margin:0;font-weight:500;">小汪老师的成长洞察 · 属于你的成长专栏</p>
+</div>
+
+</section>
+</body></html>
