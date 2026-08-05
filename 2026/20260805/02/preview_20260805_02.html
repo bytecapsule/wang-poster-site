@@ -1,0 +1,64 @@
+<!DOCTYPE html><html><head><title>【对话】Palantir本体论（三）——四条核心设计原则：别照搬源系统，建模真实世界</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/></head><body>
+<section style="max-width:677px;margin:0 auto;font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#3d3d3d;background:#fffdf8;padding:0 16px 32px;line-height:1.9;font-size:16px;">
+
+<h1 style="font-size:1.35em;font-weight:700;color:#1a1a1a;margin:0 0 16px;line-height:1.4;">【对话】Palantir本体论（三）——四条核心设计原则：别照搬源系统，建模真实世界</h1>
+<div style="height:6px;background:linear-gradient(90deg,#f9c784,#f4a261,#e76f51);border-radius:3px;margin-bottom:20px;"></div>
+
+<p style="margin:0 0 16px;"><span style="display:inline-block;background:#fff3e0;color:#e76f51;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;border:1px solid #f9c784;letter-spacing:0.5px;">小汪老师的成长洞察 · 属于你的成长专栏</span></p>
+
+<blockquote style="border-left:4px solid #f4a261;background:#fff8ee;padding:14px 18px;margin:0 0 28px;border-radius:0 8px 8px 0;font-size:15px;color:#555;font-style:italic;line-height:1.8;">很多企业建完数据平台，发现AI找不到东西，业务人员看不懂字段。小汪老师告诉我，问题往往出在第一步：他们把源系统的表结构直接搬进了Ontology。这不是建模，是搬家。Palantir从上百个政府和企业项目里总结了四条设计原则，每一条背后都是真金白银的教训。今天我们一条条拆开看。</blockquote>
+
+<p style="text-align:center;margin:20px 0 28px;"><img src="image_20260805_02_01.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">别照搬源系统，建模真实世界</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：小汪老师，Ontology建起来之后，最容易犯什么错？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：第一条也是最优先的一条：照搬源系统的结构，而不是建模真实世界。Palantir给它起了个名字叫Kitchen Sink——你把一个数据源的字段一对一映射成对象类型的属性，然后觉得自己做完了。比如有人给你一个CSV，上面有order_id、customer_name、customer_email、product_sku、quantity。最偷懒的做法是建一个叫OrderData的对象类型，把这五个字段全部塞进去。但这一行数据其实描述了三个真实世界的实体——订单、客户、产品。正确的做法是拆成三个对象类型：Order里面只放order_id和quantity，通过链接指向Customer对象和Product对象。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：听起来像是把数据从「表的形式」翻译成「现实的形式」？但很多工程师会说，直接映射最快，业务急着用数据，建模太花时间。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：快是假象。你今天省了建模的时间，明天业务部门来问“能不能拉出所有客户去年的采购总额”，你发现要做跨表查询、写一堆SQL，还得理解那个CSV里的customer_name到底是不是唯一标识。如果当初拆成了Customer对象，这个查询就是点一下链接的事。而且，命名本身就决定了翻译的质量。Palantir特别强调命名——用商业语言，不要用源系统里的字段缩写。dtLastInspMod改成lastInspectionDate。linkedChildPersonObjects改成children。这些不是审美偏好——当一百个不同部门的用户都在用同一个Ontology时，一个叫dtLastInspMod的字段，只有当初导出这个CSV的那个IT工程师看得懂。而Ontology的设计目标是让一个从来没碰过原始数据的人也能凭直觉找到需要的东西。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：所以你这是把技术债前置了？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：对，而且是复利式的技术债。你不建模，后续每个使用者都在为当初的偷懒付利息。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260805_02_02.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">同一东西建三次，就该重构</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：那第二条原则呢？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：如果同一个东西你建了三次，就该重构。Palantir管它叫Rule of Three——一条是巧合，两条是模式，三条就该动手了。最常见的反模式是：销售团队建了一个Customer类型，售后团队也建了一个Customer类型，财务团队又建了第三个，三个类型的属性有80%是重叠的但名字不一样。后果是：人类和AI Agent看到三个几乎一样的Customer，不知道该信哪个；改了其中一个的属性定义，另外两个还在跑旧的逻辑；三个团队各自维护各自的操作按钮，同一个业务动作在三个地方各自实现了一遍。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：等等，这不就是典型的“领域驱动设计”里的统一语言问题吗？为什么团队会各自建一套？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：因为组织墙。每个部门只看自己那块数据源，没人抬头看整个企业。销售从CRM导数据，售后从工单系统导，财务从ERP导。他们各自建Ontology的时候，都觉得“我的Customer才是对的”。但Ontology是给整个组织用的，不是给某个部门的。解法是：要么合并成一个单一权威类型，要么如果三个Customer确实长得不一样——比如有的是潜在客户有的是已签约客户——就用一个Interface定义共同属性，三个具体类型分别实现它。关键动作是：你得有一个人或者一个机制，能站在高处看到这三个Customer其实是一个东西。这往往是Ontology架构师的职责。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：但合并会不会引发权限问题？销售不想让售后看到某些字段。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：好问题。权限不是在类型层面解决的，而是在属性层面。你可以对同一个Customer类型的不同属性设置不同的安全策略。合并类型反而让权限管理更清晰——所有Customer相关的规则都在一个地方，不用在三个地方重复配置。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260805_02_03.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">核心模型只准扩展，不准修改</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：第三条原则是什么？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：核心模型建好之后，只准扩展，不准修改。Open for extension, closed for modification——这是软件工程里的老原则，但Palantir在Ontology上给它找到了最疼的反面教材。一个Equipment对象类型已经在生产环境跑了好几个月，十几条工作流依赖着它。突然一个新团队过来，说我们需要给某些设备加上认证信息。最省事的做法是在Equipment上直接加certificationAuthority、certificationExpiry、certificationStatus这几个新属性。后果是：所有没有认证信息的设备，这三个字段全是null；所有依赖Equipment的现有工作流，突然多收到了一组不知道该怎么处理的新字段；而这个新团队的安全策略可能和原团队完全不同，一次核心类型的修改可能意外放宽了数据权限。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：那正确的做法呢？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：Equipment保持不动，新建一个Equipment Certification链接类型挂在Equipment旁边；新建一个Certifiable接口让需要认证的设备类型去实现。核心类型不受影响，新能力通过扩展接入，安全边界清晰。这背后是一个更深的原则：Ontology的演化应该是加法的，不是修改的。你每改一次核心类型，所有下游的依赖都要重新验证。而在一个大组织里，你根本不知道有多少工作流、多少AI Agent已经在用这个类型。一次看似无害的修改，可能让某个关键决策仪表盘在下周一早上突然报错。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：但业务需求在变，不可能永远不改核心模型。什么时候该改？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：当核心模型本身对现实世界的抽象错了的时候。比如你一开始把“设备”和“位置”建成了一个类型，后来发现它们是两个独立实体。这种概念错误必须改。但如果只是增加新属性、新关联，永远用扩展。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260805_02_04.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">用接口组合，别用深层继承</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：最后一条原则呢？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：用接口组合，不要用深层继承。Foundry的Ontology支持多接口实现，所以一个实体可以同时是Building和SchedulableResource，而不是非要走过一大串继承链——Asset→PhysicalAsset→Building→SchedulableBuilding→Arena。深层继承的问题是：每出现一种新的能力组合，你就得在继承链上新建一层中间类型。一个能排期的会议室的父类叫SchedulableRoom，一个能排期的仓库需要一个SchedulableWarehouse，一个能排期的停车场需要一个SchedulableParkingLot——你会发现你建了十几个中间类型，每一个本质上都在重复同一句话：「这个实体是可以排期的」。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：我见过有些系统就是这样设计的，当时觉得挺“面向对象”的。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：那是教科书上的面向对象，不是真实世界的面向对象。真实世界里，Arena是一个体育馆，它同时是建筑物，也是可排期的资源。但它不是“可排期的建筑物”这样一个新物种。用接口组合的话，你只需要建一个SchedulableResource接口，所有能排期的东西——会议室、仓库、停车场——各自实现它。写一条排期工作流的时候，你面向的是这个接口，不是某个具体的类型。以后再加一个能排期的新实体，不需要动继承链，实现接口就行。Palantir特别强调了一句：组合出来的实体不应该创造新的语义怪物。SchedulableBuilding不是一个真实世界的概念。Arena是一个真实世界的概念，它恰好同时是Building和SchedulableResource。这两句话的区别，就是接口设计和继承设计的区别。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：但接口组合会不会导致类型爆炸？一个实体实现十几个接口，维护起来也很复杂。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：会，但比继承链爆炸好。接口是能力的声明，继承是身份的绑定。一个实体实现多个接口，只是说“我能做这些事”，而不是“我属于这些分类”。而且接口可以按需实现，不强制。如果你发现一个实体真的需要十几个接口，那可能你的接口粒度太细了，该合并接口了。这是另一个层面的重构，但至少它不会绑架你的类型体系。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260805_02_05.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">原则冲突时，实用主义优先</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：这四条原则如果互相冲突怎么办？比如Rule of Three让你合并类型，但开闭原则又说核心类型不能改。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：按优先级。Domain-driven design永远排第一——先确认你在建模的东西是真实世界里的什么，然后才轮到要不要去重、要不要扩展、要不要组合接口。另外Palantir在文档最后加了一节叫「实用主义与取舍」，很诚实。这些原则是向导，不是戒律。工期紧可以先建一个够用的版本，但要明确记下来你在哪里抄了近路，以后什么条件下要回来补。命名质量、语义清晰度、安全设计——这三样不要抄近路。它们是Ontology的骨头，成形之后很难再换。其他的可以迭代。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：所以完美的Ontology不存在？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：不存在，也不值得追求。一个被真实使用、产生价值的、稍不完美的Ontology，比一个还在设计中、理论完美的Ontology好得多。Ontology的价值是在使用中涌现的——用户点击、AI Agent的调用、工作流的执行，这些反馈会告诉你哪里建模对了、哪里错了。你越早让它被使用，越早获得这些反馈。Palantir有一句话我很认同：别为了追求理论上的完美Ontology，而推迟它开始被使用的第一天。它只要在被用了，就在为下一次迭代提供真实反馈。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：这听起来像是在说，Ontology是一个活的东西，不是建完就封存的项目。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：对。它更像一个花园，需要持续修剪和施肥。但一开始你得先把种子埋下去，而不是在图纸上画一辈子。</p>
+
+<div style="background:linear-gradient(135deg,#fff8ee,#ffecd2);border-radius:12px;padding:20px 24px;margin-top:36px;border:1px solid #f9c784;">
+<p style="margin:0 0 8px;font-size:15px;font-weight:600;color:#e76f51;">尾声</p>
+<p style="margin:0;font-size:14px;color:#666;line-height:1.9;">很多人问我，Ontology建模和传统数据建模到底区别在哪？我觉得核心区别是：传统建模回答“数据怎么存”，Ontology建模回答“世界怎么运作”。一个是面向存储，一个是面向决策。当你把数据按照现实世界的实体和关系组织起来，AI就不再是猜谜，而是沿着你铺好的路走。这条路铺得越真实，AI走得越远。下次你打开一个CSV，别急着建表。先问自己：这一行数据里，藏着几个真实存在的东西？</p>
+</div>
+
+
+
+<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px dashed #f0e0c8;">
+<p style="font-size:13px;color:#aaa;margin:0;font-weight:500;">小汪老师的成长洞察 · 属于你的成长专栏</p>
+</div>
+
+</section>
+</body></html>
