@@ -1,0 +1,35 @@
+{
+  "title": "负优化——为什么很多产品你越不理，反而越好用",
+  "lead": "DeepSeek的创始人说，C端只是副产品。很多人解读为战略定力。但更朴素的解释是：很多互联网产品的C端运营本身就是负优化。弹窗、推送、加功能，每一样都在为KPI服务，没有一样是用户真正需要的。如果你减少对产品的重视，关掉那些KPI驱动的骚扰，产品反而更好用。DeepSeek不押注C端，和战略定力无关。它恰好站在了那套激励系统的射程之外。",
+  "cover_image_prompt": "A person holding a smartphone that emits a chaotic swarm of pop-up windows, red notification dots, and push messages, forming a dense cloud around the device. The scene is set against a weathered urban wall with layers of peeling posters and paint.",
+  "sections": [
+    {
+      "heading": "“C端是副产品”的另一种解读",
+      "content": "DeepSeek的创始人说，C端只是副产品。媒体和行业观察者给出了各种解读：战略定力、技术自信、不赚快钱。这些解读都默认了一个前提——做C端是一件需要克制欲望的事。但这个前提可能错了。对于很多互联网产品来说，C端运营本身是一种负优化。弹窗、推送、功能膨胀，每一样都在为某个团队的KPI服务。没有一样是用户真正需要的。如果你减少对产品的重视，再把这些KPI驱动的骚扰行为关掉，产品反而更好用。\n\nDeepSeek不押注C端，可能不是主动选择了克制。它恰好没有踩进那套让产品越做越烂的激励系统。这个区别很重要。克制意味着你本来想做，但忍住了。DeepSeek的情况是，它的商业模式决定了它根本不需要做那些事。它的模型能力通过API交付，C端没有独立收入线，没有增长压力。没有增长压力，就没有DAU KPI。没有DAU KPI，就没有弹窗和推送的动机。它不需要克制，它根本不在那个游戏里。\n\n要理解这一点，我们先要看清一个事实：很多我们每天使用的产品，被它们自己的运营团队毁掉。"
+    },
+    {
+      "heading": "你手机里的骚扰流水线",
+      "content": "打开任何一个主流App，你会经历一套标准化的骚扰流程。开屏广告先占三秒，然后弹窗提醒你领红包，接着推送一条‘你关注的XXX刚刚更新了’，底部图标上挂着红点，消息中心显示99+。如果你不幸是付费会员，弹窗并不会减少，内容换成了‘您的专属权益已升级’。这些流程和产品的核心功能毫无关系。一个支付App弹窗让你看短视频，一个文档工具推送当日热搜新闻，一个笔记App提醒你今日天气。荒诞，但普遍。\n\n这些功能存在的原因高度统一：每一项都对应一个团队的KPI。弹窗团队背‘日打开率’，推送团队背‘DAU’，增值团队背‘会员转化’。每个团队都在自己的赛道上做到了最优。弹窗的文案经过A/B测试，推送的时间经过算法优化，红点的样式经过眼动实验。但合在一起，就是一个用户想逃离的App。局部最优的叠加，得到了全局最差的体验。\n\n还有一个反向证据：很多知名产品都有用户自发维护的‘经典版’。旧版本安装包在论坛流传，闲鱼上甚至有人卖‘去升级包’。用户不是在怀念旧UI，是在怀念那个还没有被KPI绑架的产品。那个版本里，没有信息流，没有社区，没有商城，只有一个工具该有的样子。这反向证明了负优化的存在：产品本身是好的，是运营让它变差了。"
+    },
+    {
+      "heading": "为什么减法比加法难十倍",
+      "content": "负优化的根源不是产品经理没品位，是组织度量体系的系统性失效。第一个原因是‘做加法’天然比‘做减法’更容易证明价值。你很难在周报上写‘本周移除了三个弹窗，用户少骂了15%’。这种汇报没有产出感，听上去像你什么都没干。但你很容易写‘上线了会员专属勋章功能，点击率12%’。数字清晰，产出可见，周报好看。KPI体系天然奖励加东西，哪怕加的东西在整体上让产品变差。\n\n第二个原因是OKR拆分到团队级别后，每个团队的目标和用户体验产生了正交关系。弹窗团队的OKR是提高打开率，不是提高用户满意度。推送团队背的是DAU，不是用户完成任务的效率。当每个团队在自己的局部目标上做到极致时，全局体验就变成了纳什均衡里的那个最差解。没有人有动机停下来，因为停下来意味着自己那条KPI线往下掉。你停下来，别人不停，你的绩效就比别人差。这是一个典型的囚徒困境。\n\n第三个原因是SaaS订阅模式放大了这个激励。一次性买断的时代，你做了一个烂版本，用户不升级就是了。订阅时代，用户每月付钱，产品团队每月必须证明‘这个月也值得付’。最快的证明方式不是让产品变得更好——那个周期太长，效果太慢。最快的证明方式是让产品变得更有存在感。弹窗、推送、红点，都是存在感的廉价替代品。它们让用户感觉到‘这个产品还在更新’，尽管更新的内容和他们毫无关系。"
+    },
+    {
+      "heading": "当度量从“完成”漂移到“停留”",
+      "content": "这些问题的本质是度量对象的漂移。早期产品的度量方式是‘用户用这个工具完成了什么’。你帮用户写了一篇文档，记了一条笔记，省了十分钟。这是工具价值的度量。随着增长压力上来，度量方式变成了‘用户在这个App里待了多久’。前者衡量效率，后者衡量注意力占有。一旦度量对象从效率漂移到时长，负优化就成了系统想要的结果。\n\n弹窗增加停留时长，推送增加回访率，加功能增加探索时间。从时长度量的角度看，这些行为都在优化时长，没有优化用户体验。产品团队没有做错什么，他们只是在完成公司交给他们的度量任务。错的是那把尺子本身。当公司需要用户时长来卖广告、讲增长故事时，产品就必然从工具变成注意力黑洞。这个结果由商业逻辑决定，产品经理的个人审美改变不了什么。\n\nDeepSeek的特殊之处在于，它的尺子不一样。它的模型能力通过API交付，to B为主。C端没有独立的收入线和增长压力。没有增长压力，就没有DAU KPI。没有DAU KPI，弹窗和推送就没有存在的理由。它恰好站在了那套激励系统的射程之外。它让我们看清一个事实：很多产品的负优化，根源在激励系统。团队被困在一个必须做烂的局里，换一批人，只要KPI不变，结果不会有什么不同。"
+    },
+    {
+      "heading": "一个值得问的问题",
+      "content": "你的产品团队里，有多少人的工作，只要停下来，用户就会更满意？这些人自己知道吗？他们可能知道。但他们也知道，周报上不能写‘本周什么都没加，用户体验提升了’。这是一个组织度量体系的盲区。我们擅长衡量‘做了什么’，不擅长衡量‘没做什么带来的好处’。做减法的价值，在现有的管理语言里是无法被表达的。\n\nKPI本身没有罪。问题是我们把它当成了目的，忘了产品存在的理由。产品存在的理由，是帮用户完成一件事。不是占有用户的时间。如果有一天，我们能把度量对象从‘用户待了多久’拉回到‘用户完成了什么’，很多负优化会自然消失。但这对很多公司来说，意味着放弃一部分广告收入。这个选择，比任何产品决策都更难。"
+    }
+  ],
+  "tips": "有一种产品永远不会负优化：你付费买断的工具。开发者没有动机骚扰你，因为你的钱已经付了。他们唯一的动机是让你下次还愿意买。订阅制改变了这个关系。它让开发者每个月都要向你证明自己的价值。但‘证明价值’和‘骚扰用户’之间的界限，比我们想象的要模糊得多。下次你被弹窗打断的时候，可以想一下：这个弹窗，是在帮你完成一件事，还是在帮某个团队完成一个KPI？答案通常很明显。",
+  "image_prompts": [
+    "Inside a minimalist laboratory, a neural network model glows on a screen, while through a window, a chaotic street scene shows billboards plastered with aggressive pop-up ads and push notification icons.",
+    "A smartphone screen split into multiple sections, each showing a different type of intrusive element: splash ads, pop-ups, red badges, push messages, all connected by conveyor belts like a factory production line.",
+    "A product manager holding a giant eraser trying to remove pop-up windows from a smartphone screen, but blocked by a towering stack of KPI reports and charts, with colleagues cheering for more features.",
+    "A close-up of a smartphone wrapped in a measuring tape that shifts from centimeter marks to second marks, with notification tentacles extending from the screen, pulling the user's attention.",
+    "A meeting room where each team member sits inside a transparent box filled with rising charts and graphs, while outside the window, a lone user enjoys a clean, minimal app interface on their phone."
+  ]
+}
