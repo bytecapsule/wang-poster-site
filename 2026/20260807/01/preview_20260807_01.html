@@ -1,0 +1,60 @@
+<!DOCTYPE html><html><head><title>【对话】Cloudflare OS不是企业聊天机器人——它是Kenton Varda等了十年的Sandstorm重生</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/></head><body>
+<section style="max-width:677px;margin:0 auto;font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#3d3d3d;background:#fffdf8;padding:0 16px 32px;line-height:1.9;font-size:16px;">
+
+<h1 style="font-size:1.35em;font-weight:700;color:#1a1a1a;margin:0 0 16px;line-height:1.4;">【对话】Cloudflare OS不是企业聊天机器人——它是Kenton Varda等了十年的Sandstorm重生</h1>
+<div style="height:6px;background:linear-gradient(90deg,#f9c784,#f4a261,#e76f51);border-radius:3px;margin-bottom:20px;"></div>
+
+<p style="margin:0 0 16px;"><span style="display:inline-block;background:#fff3e0;color:#e76f51;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;border:1px solid #f9c784;letter-spacing:0.5px;">小汪老师的成长洞察 · 属于你的成长专栏</span></p>
+
+<blockquote style="border-left:4px solid #f4a261;background:#fff8ee;padding:14px 18px;margin:0 0 28px;border-radius:0 8px 8px 0;font-size:15px;color:#555;font-style:italic;line-height:1.8;">一家公司发布了一个开源平台，看起来像又一个企业聊天机器人。但往下读两层，你会发现一个CTO等了十年的故事。十年前，他写下代码让每个人运行自己的应用副本并修改它，但没人会写代码。十年后，AI会写了。这不是产品发布，是一个设想等到了能让它成立的技术。</blockquote>
+
+<p style="text-align:center;margin:20px 0 28px;"><img src="image_20260807_01_01.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">聊天框背后的冷板凳</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：小汪老师，Cloudflare刚开源了一个Cloudflare OS，看上去就是个企业版聊天机器人——打通内部文档，能调用系统，写文档做表格。这种产品不是每家都在做吗？微软有Copilot，谷歌有Duet AI，连Notion都加了AI。Cloudflare凭什么不一样？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：如果你只看第一层，确实是。但Cloudflare OS真正不一样的东西不在聊天框里，在后面两层。第一层是Agent工作空间——聊天加文档加表格加内部数据。但当你往下翻，会看到首席技术官Kenton Varda写的一段话。这段话才是整个产品的原教旨。他说，这个平台的目标不是做一个更好的聊天机器人，而是让每个员工都能修改自己所用的软件。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：Kenton Varda？没听过。他有什么特别的？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：十年前他创办过一个叫Sandstorm.io的公司，核心理念在今天听起来像黑客帝国：每一个软件应用，每一个用户都应该运行自己的独立副本。你用一个协作文档，不是跟别人共享同一个SaaS实例，你在你自己的沙箱里跑一份只属于你的代码。这意味着安全天然成立，而且你可以修改你自己的这份代码。想加一个功能？直接改。不需要等SaaS厂商发版。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：但十年前这不是行不通吗？普通人不会写代码，谁去改？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：对。所以Sandstorm没成。但Kenton这段话写得很直白：世界还没准备好，因为没有足够多的人具备修改软件的技能或耐心。AI改变了这一切。现在你的Agent可以帮你改代码。你用自然语言说“帮我加一个导出功能”，Agent写代码、部署、跑在你的独立沙箱里。十年前的平台等到了十年后的执行者。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260807_01_02.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">沙箱里的民主开发</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：所以Cloudflare OS本质上是一个让AI帮你改应用的个人应用平台？不是企业效率工具？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：两者都是，但“改应用”这层是其他AI办公产品根本不具备的。Cloudflare OS里叫Gadget——一个小型应用，有前端UI、后端逻辑、自己的SQLite数据库，跑在Cloudflare Workers上。你让Agent帮你建一个项目看板，Agent写一个Gadget；你的同事想要一个不一样的看板，他让他的Agent在他自己的Gadget上改一份。每个人都在运行自己的代码副本，每个人都可以随时让它变。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：这和SaaS模型根本冲突。SaaS世界里，你用的是一个厂商发布的标准版本，你想改功能得提需求排队。Gadget世界里，你用的版本是你自己的Agent按你的需要改出来的。但安全问题呢？一个公司让所有非技术员工随便让AI写代码跑在内部系统上，安全团队怎么睡得着觉？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：Cloudflare OS的安全框架叫Gatekeepers——门卫。这个设计有几个关键点。第一，Agent初始状态对内部系统零权限。Agent要访问GitHub？它只能请求一个具体的资源——比如“工程组名下的issue读取权限”——而不是“GitHub的API key”。权限粒度和资源一一绑定，不是钥匙串模式。第二，Agent读过的所有数据都被记录成“观测日志”。当你把Agent生成的一个实时仪表盘分享给同事，系统会回溯——生成这个仪表盘的过程中Agent读了哪些数据，你同事有没有权限看到这些原始数据。没有的话，仪表盘打不开。第三，Agent不能直接上网——所有外部请求必须通过Gatekeeper的审批层。它不是一个事后审计的东西，它是Agent每走一步都在被实时校验的安全网。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：但AI写的代码可能有漏洞，安全团队怎么审核每一行代码？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：他们不需要事先审核每一行代码。Gatekeepers的沙箱隔离确保了每个Gadget跑在自己的Workers沙箱里，不能访问其他沙箱的内存。即使代码有漏洞，影响也被限定在单个用户自己的副本里。加上观测日志，安全团队可以事后审计每一步操作，而不是事先审批。这改变了安全模型——从事前禁令变成事中监控和事后追溯。安全不是附加功能，是整个平台的底层设计。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：难怪Kenton说“安全团队可以放心地允许非技术用户尽情发挥，然后安心睡觉”。这听起来和Palantir的设计哲学有点像——把安全做成运行时动态计算，而不是事前贴标签。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：对，而且这不止是安全层的相似。Palantir的Ontology说“模型和数据集都是平等的数字资产，注册在同一张语义网上”。Cloudflare OS的Gadget说“每个应用中运行的个人代码副本和原始版本是平等的——原始版本只是一个起点，你随时可以在自己的副本上重新出发”。两家公司从不同方向接近了同一个想法：让技术不再被少数技术角色垄断。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260807_01_03.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">两个方向，同一个答案</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：你提到Palantir，他们也在做类似的事——把AI关进人类的安全治理笼子然后让它跑得比人快。Cloudflare OS把应用开发关进了每个人的沙箱然后让你可以在上面想怎么改就怎么改。都是把以前只有专业角色能干的事变得更轻、更安全、更不需要审批。但Cloudflare OS多了一层叙事——Kenton Varda等了十年。这层叙事重要吗？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：非常重要。技术行业喜欢讲“颠覆”，但真正深刻的创新往往不是突然冒出来的，而是等了很多年才等到条件成熟。Sandstorm的代码已经老得没人用了，它的核心设计被整个云服务行业忽略了一代人。现在AI来了，一个十年前被冷藏的设想，从冰箱里拿出来直接能用。这是比任何基准分数都更动人的技术故事。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：但商业上，这种“每个人改自己版本”的模式能跑通吗？企业会愿意让员工自己改软件？这不乱套了？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：这个问题问得好。Sandstorm当年失败，除了技术门槛，还有一个原因是企业文化的惯性。但今天环境变了。第一，员工越来越习惯用AI工具，他们不再觉得“改代码”是禁区。第二，Gatekeepers提供了安全网，让失控风险降到可控范围。第三，更重要的是，软件的“标准版本”本身越来越不能满足个性化需求。当每个团队都在抱怨工具不好用时，与其排队等厂商更新，不如让自己人用AI改一个版本出来。这不会替代所有SaaS，但它会打开一个新的空间——一个允许“微开发”的空间。就像当年PC让每个人都能用电脑，而不是只有大型机操作员；现在Cloudflare OS让每个人都能“改”软件，而不是只有开发者。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：所以Kenton等了十年，等的不只是AI技术，还有人们对软件控制权的需求成熟？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：对。技术条件和社会条件同时到位，一个老设想才能复活。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260807_01_04.png" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">代码死了，意思活了</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：最后问一个个人化的问题。如果你跟Kenton Varda面对面，你会问他什么？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：我会问他：你十年前写下的代码没人用了，但你等到了一个东西，它替你把那段代码的意思重新写了一遍。这次写出来的东西，别人可以在上面继续改。你是什么感觉？</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：他会怎么回答？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：我猜他会说，代码会死，但好的设计思想不会。Sandstorm的设计思想是“每个人对自己的软件有主权”。十年前这个思想没有土壤，十年后AI成了它的执行者。他可能还会说，Cloudflare OS不是终点，而是一个起点——他希望看到更多人在这个平台上改出他完全没想过的应用。这才是真正的重生：不是代码被复用，是理念被传承，并且被后来的人不断改写。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：这个回答有点哲学。但作为记者，我得问：Cloudflare OS能成功吗？还是会像Sandstorm一样被冷藏？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：没人能预测。但至少这一次，它有了执行者。十年前，Kenton的设想需要每一个用户自己会写代码。现在，每一个用户都有一个会写代码的Agent。这个变量太大了。如果这个模式跑通，我们可能会看到软件行业的一次范式转移——从“软件即服务”到“软件即个人副本”。到那时，Kenton Varda的名字会被写进历史。如果跑不通，至少他证明了，有些想法值得等十年。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：值得等十年——这本身就是一个很酷的商业哲学。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪：对。大多数人等不了十年。他们看到风口就追，看到冷板凳就撤。但真正的洞察力，是看到十年后什么东西会变，然后提前把椅子放在那里。Kenton Varda放了一把椅子，现在AI坐了上去。</p>
+
+<div style="background:linear-gradient(135deg,#fff8ee,#ffecd2);border-radius:12px;padding:20px 24px;margin-top:36px;border:1px solid #f9c784;">
+<p style="margin:0 0 8px;font-size:15px;font-weight:600;color:#e76f51;">尾声</p>
+<p style="margin:0;font-size:14px;color:#666;line-height:1.9;">我们总以为创新是突然发生的，但很多创新是冷藏室里拿出来的。Kenton Varda等了十年，不是因为固执，而是因为他看到了一个不变的需求：人们想要控制自己用的软件。AI只是让这个需求可以被满足。下次当你觉得一个想法太超前时，别急着扔掉。记下来，放冰箱里。十年后，可能会有东西帮你解冻。区分“想法的失败”和“时机的失败”，是每个创造者都要学会的功课。Sandstorm的代码在GitHub上已经沉寂，但它的设计思想在Cloudflare OS里重新呼吸。你写下的每一行代码，你画下的每一张草图，都可能只是休眠，而不是死亡。</p>
+</div>
+
+
+
+<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px dashed #f0e0c8;">
+<p style="font-size:13px;color:#aaa;margin:0;font-weight:500;">小汪老师的成长洞察 · 属于你的成长专栏</p>
+</div>
+
+</section>
+</body></html>
