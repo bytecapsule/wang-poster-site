@@ -1,0 +1,58 @@
+<!DOCTYPE html><html><head><title>【对话】Prompt工程：重演1968危机</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/></head><body>
+<section style="max-width:677px;margin:0 auto;font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#3d3d3d;background:#fffdf8;padding:0 16px 32px;line-height:1.9;font-size:16px;">
+
+<h1 style="font-size:1.35em;font-weight:700;color:#1a1a1a;margin:0 0 16px;line-height:1.4;">【对话】Prompt工程：重演1968危机</h1>
+<div style="height:6px;background:linear-gradient(90deg,#f9c784,#f4a261,#e76f51);border-radius:3px;margin-bottom:20px;"></div>
+
+<p style="margin:0 0 16px;"><span style="display:inline-block;background:#fff3e0;color:#e76f51;font-size:12px;font-weight:600;padding:3px 10px;border-radius:20px;border:1px solid #f9c784;letter-spacing:0.5px;">小汪老师的成长洞察 · 属于你的成长专栏</span></p>
+
+<blockquote style="border-left:4px solid #f4a261;background:#fff8ee;padding:14px 18px;margin:0 0 28px;border-radius:0 8px 8px 0;font-size:15px;color:#555;font-style:italic;line-height:1.8;">第一个AI版本总是最轻盈的。按自己的需求写prompt，一切尽在掌控。但接到第一个修改需求那一刻，系统开始变重——加一条约束可能弄坏三条已有功能，你无法定位bug，无法预测副作用，无法做回归测试。这不是你的prompt写得不好，是你手里没有任何管理复杂度的工具。Prompt工程正在重演1968年的软件危机：写得出来，管不住增长。</blockquote>
+
+<p style="text-align:center;margin:20px 0 28px;"><img src="image_20260819_01_01.jpg" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">从掌控到失控只需一次修改</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：小汪老师，最近做AI开发有一个很深的感受。第一个版本按自己的需求写prompt，很快就跑出来了，感觉一切尽在掌控。但从接第一个修改需求开始，系统越来越重——加一条约束就可能弄坏三条已有的功能，但因为黑盒，又不可能定位问题出在哪。这中间的根本障碍是什么？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：你描述的这件事有一个名字——Prompt工程复杂度的不可管理性。它不是工具成熟度问题，是结构性的。传统软件能管住复杂度，靠的是软件工程过去五十年发展出来的四样东西：抽象和封装、测试、调试工具、重构。你在prompt工程里检查一下，这四样东西，你有几样？</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：一样都没有。一个prompt就是一段长文本，所有instruction平铺在一起，改一个字就可能影响全局，没有任何模块化手段，更没有测试工具。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：这就是核心。1968年之前，程序员用goto写代码——功能能跑，但代码一旦变长，任何修改都可能在意想不到的地方引发崩溃。整个软件工程学科诞生的起因，就是行业意识到：我们写得出能跑的程序，但管不住程序的增长。现在prompt工程站在完全相同的历史位置——写得出来，管不住。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：但现在的AI模型不是比当年的计算机强大得多吗？为什么还会重演？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：计算能力和复杂度管理是两回事。更强的模型只是让goto跑得更快，但没有解决goto本身的问题。1968年的程序跑在大型机上，今天的prompt跑在千亿参数模型上，但管理复杂度的工具缺失，结果一样——系统一旦长大，任何修改都变成了一场赌博。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：所以，我们其实是在重演历史？但这次是用自然语言。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：对，而且更隐蔽。因为自然语言看起来简单，你一开始会觉得“我只要把话说清楚就行”。但“说清楚”这件事，在系统变复杂之后，就变成了“说清楚的同时不破坏其他东西”——而你没有工具做到这一点。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260819_01_02.jpg" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">所有组件全局耦合的数学根源</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：你说传统软件靠interface保护边界。但在prompt里，为什么自然语言就天然没有interface？这不就是加一段文字说明吗？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：软件里的interface是硬的。你改一个函数的内部实现，只要它的interface不变，调用者不受影响。这种“约定不变”的保护边界，是软件可以规模化增长的根本前提。prompt没有interface。所有的instruction互相作用在一个连续的语义空间里。你加一句“请用礼貌的语气回复”，这句话可能渗透到模型的每个输出路径里，改变了它对“礼貌”的理解，进而改变了它判断“什么信息值得被说出”的阈值。你加了礼貌，它可能变得更保守。你加了安全，它变得更爱说“抱歉我无法回答这些问题”。这些连锁反应不是bug，是“无interface系统的固有属性”。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：那能不能说，我们其实是在用自然语言写一个“全局变量”程序？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：比全局变量更糟。全局变量至少你知道它的作用域是整个程序，你可以追踪。但在语义空间里，一个词的影响是弥漫性的、非线性的，你无法追踪它的边界。这就是为什么你改了一个礼貌措辞，模型突然拒绝回答所有数字问题——它可能在语义空间里把“礼貌”和“避免冒犯”关联到了“不提供可能有风险的信息”，而数字问题被它判定为有风险。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：所以“黑盒越来越重”的根源，不是盒子太黑，而是盒子里面的组件之间缺少任何形式的隔离？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：正是。一个没有墙的空间，你每放一把椅子，整个空间的气流模式都变了。你用自然语言构建的系统，本质上是一个所有组件都全局耦合的系统。这是数学根源：没有隔离，就没有局部修改。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260819_01_03.jpg" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">四个方向：给黑盒装上工具箱</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：业界现在有试图往prompt工程里引入“interface”的尝试吗？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：有几个方向正在收敛。第一，prompt分解——不是写一个巨型prompt，而是把任务拆成多个独立的、边界清晰的小prompt，用代码逻辑在它们之间做路由。这是手动在自然语言组件之间造interface。第二，evals当作回归测试——你想知道改了一个prompt有没有破坏已有行为？建一组用例，每次改prompt之前跑一遍，统计通过率。这是手工模拟regression test。第三，确定性地壳包非确定性核——不是让LLM控制业务流程，而是让LLM只做它擅长的事，所有流程控制、数据校验、边界条件全部用代码写。代码那层是可管理、可测试、可refactor的。第四，可观测性——所有prompt的输入输出全部log，监控行为漂移。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：这些听起来都是权宜之计，不是根本解决方案。就像当年goto危机，最后是靠结构化编程解决的。prompt工程的结构化编程在哪里？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：好问题。这四个方向确实没有一个是完美的，但它们共享一个核心思路：把prompt工程的核心问题从“怎么写出更好的prompt”重新定义为“怎么给prompt工程装上传统软件工程的管理工具”。前者是内容问题，后者是结构问题。至于根本的结构化编程，可能还没有出现——但方向一定不是让prompt变得更“强大”，而是让prompt变得更“可组合”、“可隔离”、“可测试”。就像当年Dijkstra说“goto是有害的”，今天也许我们需要说“巨型prompt是有害的”。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：所以，这些手工造的工具，其实是在等待一个真正的“prompt结构化”范式出现？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：对，但在那个范式出现之前，你至少可以先停止用goto编程。拆开prompt，建立eval，用代码包住LLM——这些都是你现在就能做的事。它们不是完美的，但能让你从“完全不可管理”变成“部分可管理”。</p>
+<p style="text-align:center;margin:20px 0;"><img src="image_20260819_01_04.jpg" style="max-width:100%;border-radius:8px;"/></p>
+<h2 style="font-size:18px;font-weight:700;color:#2d2d2d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">重新学一遍软件工程</h2>
+<p style="margin:0 0 18px;line-height:1.9;">记者：你其实在说，AI工程没有解决软件工程的问题，它只是把同一个问题重新发明了一遍，并以自然语言的形式重新摆在我们面前。</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：没错。你发现你的系统一到修改就崩溃——不是在告诉你你写的prompt不好，是在告诉你你正在用goto编程。软件工程花了半个世纪才学会的那件事，现在要重新学一遍——只不过教材换成了自然语言。而且，这次的挑战更大：因为自然语言的模糊性，我们的“结构化”不能照搬代码的结构化。我们需要发明新的抽象方式。但核心原则是一样的：没有隔离就没有规模。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：那对于现在正在做AI开发的团队，最应该先做的一件事是什么？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：停止相信你能写出一个“完美的大prompt”。从一开始就假设你的系统会长大，会需要修改，会需要多人协作。然后，把prompt拆开，哪怕只是简单地把不同功能写到不同prompt里，用代码串联。这就像从一个大函数拆成多个小函数——虽然简单，但这是走向可管理性的第一步。然后，立即建立eval set，哪怕只有十条用例。没有测试的保护网，你每一次修改都是在赌博。</p>
+<p style="margin:0 0 18px;line-height:1.9;">记者：最后一个问题：如果让你用一句话总结Prompt工程的现状，你会说什么？</p>
+<p style="margin:0 0 18px;line-height:1.9;">小汪老师：我们在用自然语言写goto程序，而整个行业还没意识到，需要的不是更好的goto，是结构化编程。</p>
+
+<div style="background:linear-gradient(135deg,#fff8ee,#ffecd2);border-radius:12px;padding:20px 24px;margin-top:36px;border:1px solid #f9c784;">
+<p style="margin:0 0 8px;font-size:15px;font-weight:600;color:#e76f51;">尾声</p>
+<p style="margin:0;font-size:14px;color:#666;line-height:1.9;">如果你现在还在琢磨怎么把prompt写得更长、更精细，你可能正走在1968年程序员的老路上。那时候他们也相信，只要代码逻辑再清晰一点，goto就能管住。但真正解决问题的，不是更好的goto，而是结构化编程。今天，更好的prompt不是解药——给prompt工程装上软件工程的工具箱才是。而且，工具箱里的工具，没有一件是AI公司卖给你的。它们是你自己动手造的：分解、测试、代码壳、日志。这很讽刺：最前沿的AI开发，最可靠的工程实践，居然来自五十年前那场危机教会我们的东西。</p>
+</div>
+
+
+
+<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px dashed #f0e0c8;">
+<p style="font-size:13px;color:#aaa;margin:0;font-weight:500;">小汪老师的成长洞察 · 属于你的成长专栏</p>
+</div>
+
+</section>
+</body></html>
