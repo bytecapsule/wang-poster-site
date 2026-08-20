@@ -1,0 +1,30 @@
+{
+  "title": "两条AI新闻，同一种病——市场共识过拟合与全员养虾，都是跑错了训练集",
+  "lead": "美银8月调查：全球基金经理股票配置升至近五年最高，空头几乎绝迹。美团王莆中公开复盘：全员AI运动每日烧上千万，结果叫'全员养虾'。两条新闻，一个病灶——资源烧了，判断错了。金融市场过拟合于乐观叙事，企业AI欠拟合于核心业务。都是跑错了训练集。",
+  "cover_image_prompt": "A surreal factory where money and computer code enter a machine, but the output conveyor belt is filled with shrimp. Workers in suits and lab coats look confused. Bright, conceptual illustration with high-tech environment and absurd output.",
+  "sections": [
+    {
+      "heading": "共识就是过拟合信号",
+      "content": "记者：美银调查显示，净56%的基金经理超配股票，现金降到3.5%，空头几乎绝迹。这种一致性意味着什么？\n\n小汪老师：当所有人都同意一件事，这件事发生的概率并没有变高。市场的冗余被烧穿了。空头是市场的Dropout层——在机器学习里，Dropout随机丢弃神经元，防止过拟合。空头归零，等于模型在训练集上准确率100%，但泛化能力归零。一旦黑天鹅落下，没有人在另一边接刀。\n\n数字高是一个结果。让人不安的是“共识”二字。共识就是过拟合的诊断信号。\n\n记者：但他们的乐观有依据：经济数据不错，AI资本开支没有削减，美联储不会加息。这不算非理性。\n\n小汪老师：有依据不代表没问题。当所有人用同一套依据跑出同一个结论，你就得警惕。过拟合的本质：模型在训练集上对了，对得太离谱。当所有人的输入都是同样的宏观数据、财报、分析师报告，输出都是“一切都会好”，你得问：这个模型是在拟合现实，还是在拟合其他模型的输出？\n\n共识越强，尾部风险越被低估。因为尾部风险的定义就是“不在训练集里的事件”。2008年没有房价下跌，2020年没有大流行，现在没有AI资本开支转向。一个准确率100%的模型，要么是作弊，要么是灾难的前夜。\n\n记者：所以过拟合的危险，是预测太对了——对到把意外删掉了。\n\n小汪老师：对。预测准确率越高，你越要怀疑自己是不是在过拟合。真实世界的分布永远在变，而你的模型用的是过去的数据。"
+    },
+    {
+      "heading": "全员养虾的本质",
+      "content": "记者：美团王莆中总结他们的全员AI运动为“全员养虾”，花了上千万，忙了五个月，生产力数字没变。他提到四重错配：认知、效率、场景、考核。这听起来是另一个极端——忙了半天没摸到对的训练集。\n\n小汪老师：对。金融市场是过拟合于乐观叙事，企业AI是欠拟合于核心业务。王莆中的四重错配，就是四层噪声训练集。认知上，从最高层到执行层，没有人对AI的能力边界有一致判断。大模型被用来写周报、做会议纪要、生成PPT，但没碰核心业务。场景上，AI在边缘游走，没有融入经营核心。考核上，追求立竿见影，忽视了组织适配。\n\n这四条叠在一起，就是在错误的数据分布上跑了一万轮训练。全员都在玩AI，但没有人搞清楚过一件事——AI到底要解决哪个业务的什么问题。\n\n记者：但写周报、做PPT，这些也是工作。为什么说这是“养虾”？\n\n小汪老师：因为产出没有向上游到任何一项核心经营指标。你花了一千万，员工用AI写了更好的周报，然后呢？业务增长了？成本降低了？用户体验提升了？没有。你给PPT增加了一个新的生成按钮。你在一个噪声数据集上拼命优化，但从来没用真正的测试集去验证过它。\n\n王莆中说他们7月才跑通第一个产生价值的产品流程。那五个月就是虾。\n\n记者：他愿意公开承认，这本身是一种组织能力。但承认不能掩盖一个事实：大多数企业现在都在经历同一个阶段。\n\n小汪老师：没错。大模型买回来了，API接好了，全员培训做完了，但没人在问“这东西到底要帮我们多赚多少钱”。而那个问题在被问出来的那天，所有人前面的那几个月，都是虾。养虾烧掉了预算，更烧掉了组织面对真问题的勇气。那些忙碌的动作，推迟了那个必须回答的问题。"
+    },
+    {
+      "heading": "当过拟合撞上欠拟合",
+      "content": "记者：金融市场过拟合于乐观，企业AI欠拟合于核心价值。两者方向相反，但最后撞上的结果是同一个？\n\n小汪老师：同一个。资源烧了，判断错了。金融市场烧的是仓位——所有人挤在同一条船上，船翻了没有救生艇。企业AI烧的是预算和几个月的时间。两者都在一个关键维度上集体性地看错了。基金经理看错了尾部风险，企业高管看错了AI的落地路径。\n\n记者：但基金经理的过拟合是“太相信”，企业高管的欠拟合是“没想清楚”。一个太集中，一个太分散。为什么说它们是同一种病？\n\n小汪老师：因为它们的底层机制一样——都是没有用正确的测试集去验证自己的动作。基金经理的测试集应该是“如果我的模型错了，我会亏多少钱”，但他们用的测试集是“别人怎么想”。企业高管的测试集应该是“AI有没有让我的核心业务指标变化”，但他们用的测试集是“员工有没有在用AI”。\n\n当你的测试集是噪声，你的模型就一定会过拟合或欠拟合。过拟合和欠拟合方向相反，但病因相同：你都在拟合一个错误的分布。基金经理拟合了“共识分布”，企业高管拟合了“边缘场景分布”。两个分布都不是真实的价值分布。\n\n记者：所以方向比力度重要。力气用错了地方，越用力越危险。\n\n小汪老师：对。不管是管5250亿美元资产的基金经理，还是管一个几百人技术团队的大厂高管，你都在面对同一道选择题：你是跟着共识跑，还是在共识的边缘偷偷加一点Dropout。"
+    },
+    {
+      "heading": "给自己加一点Dropout",
+      "content": "记者：那最后的启示是什么？怎么避免成为下一个“养虾”的人？\n\n小汪老师：你需要在你自己的模型里，主动加一点Dropout。别人把现金降到3.5%的时候，你留10%。别人全员养虾的时候，你先花一个月问“我们到底要AI帮我们多赚哪一笔钱”。这两个选择在数据没有翻之前表面一模一样。数据翻的那天，差别就是一个数字——你是站在翻的那一边，还是被翻的那一边。\n\n记者：但Dropout是有成本的。留现金意味着踏空，停下来问问题意味着落后。在所有人都往前冲的时候，你怎么说服自己停下来？\n\n小汪老师：你不需要说服自己，你只需要问自己一个问题：如果你的模型错了，你还能不能活下来？基金经理如果错了，那些把现金降到3.5%的人，可能连补仓的子弹都没有。企业高管如果错了，那些全员养虾的人，可能已经耗尽了组织对AI的耐心和预算。\n\n过拟合的危险，是让你在错的时候没有退路。它不让你知道自己错了，直到无路可退。Dropout不阻止你行动，它让你在行动的同时，保留一种“我可能全错了”的结构性冗余。这种冗余在平时是成本，在罕见事件发生时是生存权。\n\n记者：所以“停一秒问自己”，等于给自己买了一张尾部风险的保险。\n\n小汪老师：对。而那个差别，是你在所有人都在同一个方向跑步的时候，你有没有停过一秒，问过自己：我们是不是都在过拟合同一个答案？"
+    }
+  ],
+  "tips": "这篇文章写完后，一个朋友问我：“你说的Dropout，不就是给自己留点怀疑吗？”我说不是。怀疑是一种态度，Dropout是一种结构。态度会变，结构不会。在你的投资组合里留10%的现金，这是结构。在你的AI战略里，先找一个核心业务指标做验证，再决定要不要全员铺开，这也是结构。结构的好处是，它不依赖你的意志力。当所有人都在跑步的时候，你不需要靠意志力让自己停下来——你只需要遵守结构。那么，在你的工作、投资、甚至育儿中，哪里可以加一点结构性的Dropout？这个问题值得你花一个下午想一想。",
+  "image_prompts": [
+    "A bustling trading floor with multiple monitors all displaying identical bullish stock charts. Traders in suits have identical confident expressions. Outside the large window, a dark storm cloud is forming, unseen by anyone. Bright, high-contrast illustration.",
+    "An open-plan office where employees are happily using AI to create slides and write reports. On each desk, small shrimp are piling up unnoticed. A large screen on the wall shows business metrics flatlined. Bright, slightly absurdist scene with vivid colors.",
+    "A diptych composition: on the left, a crowded ship with stock chart symbols sinking; on the right, a factory with AI icons on fire. Both are releasing shrimp into the air. Bright colors, dramatic contrast between the two scenes.",
+    "A marathon race where all runners are moving in the same direction, but one runner has stopped and is looking the opposite way, holding an open umbrella. Sunlight highlights the stopped runner. Bright, inspirational illustration with dynamic composition."
+  ]
+}
