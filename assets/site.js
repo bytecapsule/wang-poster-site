@@ -56,9 +56,13 @@
   }
 
   function card(a) {
-    const thumb = a.images?.length
-      ? `<img class="article-thumb" src="${a.images[0]}" alt="" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=\\'article-thumb-placeholder\\'></div>'">`
-      : `<div class="article-thumb-placeholder"></div>`;
+    let thumb = `<div class="article-thumb-placeholder"></div>`;
+    if (a.images?.length) {
+      const raw = a.images[0];
+      const t = raw.replace('/image_', '/thumb_');
+      // 优先加载 thumb_184px，失败回退原图（本地未生成时）
+      thumb = `<img class="article-thumb" src="${t}" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='${raw}'">`;
+    }
     const htmlBtn = a.html
       ? `<a class="btn btn-primary" href="${a.html}" target="_blank" rel="noopener">查看文章</a>`
       : '';

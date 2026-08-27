@@ -281,12 +281,6 @@ a { -webkit-tap-highlight-color: transparent; }
 }
 .copy-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-@media print {
-  .site-header, #sidebar, .article-actions, .viewer-toolbar { display: none !important; }
-  #main { max-width: none; padding: 0; }
-  .article-card { break-inside: avoid; }
-}
-
 /* ── Mobile ──────────────────────────────── */
 @media (max-width: 600px) {
   /* header 保持 sticky，让用户随时知道在哪 */
