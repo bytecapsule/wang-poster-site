@@ -1,10 +1,17 @@
 (async () => {
   const sidebar = document.getElementById('sidebar');
   const main = document.getElementById('main');
+  const searchEl = document.getElementById('search');
+
+  // 骨架屏
+  main.innerHTML = Array.from({length:4},()=>`
+    <div class="skeleton-card"><div class="skeleton-thumb"></div>
+    <div style="flex:1"><div class="skeleton-line" style="width:60%"></div>
+    <div class="skeleton-line" style="width:90%"></div><div class="skeleton-line" style="width:40%"></div></div></div>`).join('');
 
   let articles;
   try {
-    const res = await fetch('index.json');
+    const res = await fetch('index.json', {cache:'no-store'});
     if (!res.ok) throw new Error(res.status);
     ({ articles } = await res.json());
   } catch {
@@ -23,22 +30,22 @@
   }
   const monthKeys = [...monthMap.keys()].sort().reverse();
 
-  // ── Sidebar ──────────────────────────────────────────────────
+  // ── Sidebar (button 语义化 + a11y) ──────────────────────────
   {
     let html = '';
     let lastYear = '';
     for (const mk of monthKeys) {
       const [year, month] = mk.split('-');
       if (year !== lastYear) {
-        html += `<div class="nav-year">${year}</div>`;
+        html += `<div class="nav-year" aria-hidden="true">${year}</div>`;
         lastYear = year;
       }
       let count = 0;
       monthMap.get(mk).forEach(arr => (count += arr.length));
-      html += `<div class="nav-month" data-key="${mk}">
+      html += `<button class="nav-month" data-key="${mk}" aria-label="${year}年${month}月 ${count}篇">
         <span>${month}月</span>
         <span class="nav-count">${count}</span>
-      </div>`;
+      </button>`;
     }
     sidebar.innerHTML = html;
   }
@@ -50,7 +57,7 @@
 
   function card(a) {
     const thumb = a.images?.length
-      ? `<img class="article-thumb" src="${a.images[0]}" alt="" loading="lazy" onerror="this.className='article-thumb-placeholder'">`
+      ? `<img class="article-thumb" src="${a.images[0]}" alt="" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=\\'article-thumb-placeholder\\'></div>'">`
       : `<div class="article-thumb-placeholder"></div>`;
     const htmlBtn = a.html
       ? `<a class="btn btn-primary" href="${a.html}" target="_blank" rel="noopener">查看文章</a>`
@@ -69,11 +76,27 @@
     </div>`;
   }
 
+  let currentMk = null;
+  let filterQ = '';
+
+  function getFilteredDateMap(mk) {
+    const dm = monthMap.get(mk);
+    if (!filterQ) return dm;
+    const q = filterQ.toLowerCase();
+    const out = new Map();
+    for (const [date, arr] of dm.entries()) {
+      const filtered = arr.filter(a => `${a.title} ${a.lead}`.toLowerCase().includes(q));
+      if (filtered.length) out.set(date, filtered);
+    }
+    return out;
+  }
+
   function renderMonth(mk) {
-    const dateMap = monthMap.get(mk);
-    if (!dateMap) { main.innerHTML = '<p class="loading">暂无内容</p>'; return; }
+    currentMk = mk;
+    const dateMap = getFilteredDateMap(mk);
+    if (!dateMap || dateMap.size===0) { main.innerHTML = '<p class="loading">无匹配结果</p>'; return; }
     const [year, month] = mk.split('-');
-    let out = `<div class="month-heading">${year}年${month}月</div>`;
+    let out = `<div class="month-heading">${year}年${month}月${filterQ ? ` · 搜索“${filterQ}”` : ''}</div>`;
     for (const [date, arts] of [...dateMap.entries()].sort().reverse()) {
       out += `<div class="day-group">
         <div class="day-label">${fmtDate(date)}</div>
@@ -83,8 +106,15 @@
     main.innerHTML = out;
   }
 
+  // 搜索
+  if (searchEl) {
+    searchEl.addEventListener('input', () => {
+      filterQ = searchEl.value.trim();
+      if (currentMk) renderMonth(currentMk);
+    });
+  }
+
   // 点"纯文本"时在后台 prefetch，存入 sessionStorage
-  // viewer.html 优先读缓存，页面加载完内容已就绪
   main.addEventListener('click', e => {
     const a = e.target.closest('[data-prefetch]');
     if (!a) return;
@@ -103,9 +133,11 @@
 
   function activate(mk) {
     if (!mk) mk = monthKeys[0];
-    sidebar.querySelectorAll('.nav-month').forEach(el =>
-      el.classList.toggle('active', el.dataset.key === mk)
-    );
+    sidebar.querySelectorAll('.nav-month').forEach(el => {
+      const on = el.dataset.key === mk;
+      el.classList.toggle('active', on);
+      el.setAttribute('aria-selected', on ? 'true' : 'false');
+    });
     renderMonth(mk);
     const encoded = encodeURIComponent(mk);
     if (location.hash.slice(1) !== encoded) history.replaceState(null, '', '#' + encoded);

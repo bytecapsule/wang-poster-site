@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>纯文本 · 小汪老师的成长洞察</title>
-  <link rel="stylesheet" href="assets/site.css">
+  <link rel="stylesheet" href="assets/site.css?v=33051476820">
 </head>
 <body>
   <header class="site-header">
@@ -15,6 +15,8 @@
     <div class="viewer-toolbar">
       <a class="btn" href="index.html">← 返回</a>
       <span id="viewer-title" class="viewer-title"></span>
+      <button class="btn" id="share-btn" title="分享">分享</button>
+      <button class="btn" onclick="window.print()" title="打印">打印</button>
       <button class="btn btn-primary" id="copy-btn">复制全文</button>
     </div>
     <pre id="txt-content" class="txt-block">加载中…</pre>
@@ -67,6 +69,7 @@
         const text = contentEl.textContent;
         const done = () => {
           const toast = document.getElementById('toast');
+          toast.textContent = '已复制到剪贴板 ✓';
           toast.classList.add('show');
           setTimeout(() => toast.classList.remove('show'), 2200);
         };
@@ -74,6 +77,17 @@
           navigator.clipboard.writeText(text).then(done).catch(() => { execCommandCopy(text); done(); });
         } else {
           execCommandCopy(text); done();
+        }
+      });
+
+      // 分享
+      document.getElementById('share-btn').addEventListener('click', async () => {
+        const url = location.href;
+        if (navigator.share) {
+          try { await navigator.share({title: document.title, url}); } catch {}
+        } else if (navigator.clipboard) {
+          await navigator.clipboard.writeText(url);
+          const t=document.getElementById('toast'); t.textContent='链接已复制 ✓'; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2000);
         }
       });
     })();
