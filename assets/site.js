@@ -48,6 +48,22 @@
       </button>`;
     }
     sidebar.innerHTML = html;
+
+    // ── 移动端月份下拉（替代横向滚动条，便于切换）────────────
+    const monthSelect = document.getElementById('month-select');
+    if (monthSelect) {
+      monthSelect.innerHTML = '';
+      for (const mk of monthKeys) {
+        const [year, month] = mk.split('-');
+        let count = 0;
+        monthMap.get(mk).forEach(arr => (count += arr.length));
+        const opt = document.createElement('option');
+        opt.value = mk;
+        opt.textContent = `${year}年${month}月 (${count})`;
+        monthSelect.appendChild(opt);
+      }
+      monthSelect.addEventListener('change', () => activate(monthSelect.value));
+    }
   }
 
   // ── Rendering ────────────────────────────────────────────────
@@ -59,7 +75,9 @@
     let thumb = `<div class="article-thumb-placeholder"></div>`;
     if (a.images?.length) {
       const raw = a.images[0];
-      const t = raw.replace('/image_', '/thumb_');
+      // 缩略图始终为 thumb_*.jpg（generate_thumbs.py 统一输出 jpg），
+      // 源可能是 png，这里把扩展名也一并改成 .jpg
+      const t = raw.replace('/image_', '/thumb_').replace(/\.(png|jpe?g)$/i, '.jpg');
       // 优先加载 thumb_184px，失败回退原图（本地未生成时）
       thumb = `<img class="article-thumb" src="${t}" alt="" loading="lazy" decoding="async" onerror="this.onerror=null;this.src='${raw}'">`;
     }
@@ -137,6 +155,8 @@
 
   function activate(mk) {
     if (!mk) mk = monthKeys[0];
+    const monthSelect = document.getElementById('month-select');
+    if (monthSelect) monthSelect.value = mk;
     sidebar.querySelectorAll('.nav-month').forEach(el => {
       const on = el.dataset.key === mk;
       el.classList.toggle('active', on);

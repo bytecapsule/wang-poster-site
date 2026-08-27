@@ -220,6 +220,24 @@ a { -webkit-tap-highlight-color: transparent; }
 
 /* ── Search ───────────────────────────────── */
 .search-wrap { padding: 0 26px 10px; max-width: 820px; }
+
+/* ── 移动端月份下拉（桌面端隐藏，移动端替代横向月份条）──── */
+.month-select-wrap { display: none; }
+.month-select {
+  width: 100%;
+  padding: 9px 12px;
+  font-size: .9em;
+  font-family: inherit;
+  color: var(--text);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  appearance: none;
+  -webkit-appearance: none;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'><path d='M2 4l4 4 4-4' fill='none' stroke='%23999' stroke-width='1.6'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+}
 .search-input {
   width: 100%; padding: 8px 12px; border: 1px solid var(--border); border-radius: 20px;
   font-size: .85em; font-family: inherit; background: var(--surface); color: var(--text);
@@ -281,83 +299,44 @@ a { -webkit-tap-highlight-color: transparent; }
 }
 .copy-toast.show { opacity: 1; transform: translateX(-50%) translateY(0); }
 
-/* ── Mobile ──────────────────────────────── */
-@media (max-width: 600px) {
-  /* header 保持 sticky，让用户随时知道在哪 */
-  .site-header { padding: 0 14px; }
+  /* ── Mobile ──────────────────────────────── */
+  @media (max-width: 600px) {
+    /* header 保持 sticky，让用户随时知道在哪 */
+    .site-header { padding: 0 14px; }
 
-  .layout { flex-direction: column; }
+    .layout { flex-direction: column; }
 
-  /* 月份导航：横向滚动单行，不换行不占高度 */
-  #sidebar {
-    width: 100%;
-    height: auto;
-    position: sticky;
-    top: var(--header-h);
-    z-index: 10;
-    border-right: none;
-    border-bottom: 1px solid var(--border);
-    padding: 8px 12px;
-    display: flex;
-    flex-wrap: nowrap;
-    gap: 6px;
-    overflow-x: auto;
-    overflow-y: visible;
-    -webkit-overflow-scrolling: touch;
-    scrollbar-width: none;
+    /* 移动端用下拉选择月份，避免横向长条难切换；隐藏桌面侧边月份条 */
+    .month-select-wrap {
+      display: block;
+      padding: 0 14px 8px;
+      max-width: 820px;
+    }
+
+    #sidebar {
+      display: none;
+    }
+
+    /* 文章列表 */
+    #main { padding: 12px 14px; }
+    .article-thumb, .article-thumb-placeholder { width: 72px; height: 58px; }
+    .article-title { font-size: .95em; }
+
+    /* 按钮触摸区放大 */
+    .btn { padding: 7px 14px; font-size: .82em; }
+
+    /* Viewer */
+    .viewer-wrap { padding: 14px 14px 80px; }
+
+    /* txt 字体换成正文字体，手机上更易读 */
+    .txt-block {
+      font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
+      font-size: .9em;
+      padding: 16px 18px;
+      max-height: none;           /* 手机上不截断，让页面自然滚动 */
+      overflow-y: visible;
+      user-select: text;
+      -webkit-user-select: text;  /* iOS 允许长按选中 */
+    }
+
   }
-  #sidebar::-webkit-scrollbar { display: none; }
-
-  .nav-year {
-    display: block;
-    flex-shrink: 0;
-    padding: 6px 4px 6px 8px;
-    font-size: .68em;
-    align-self: center;
-    border-right: 1px solid var(--border);
-    margin-right: 2px;
-  }
-  .nav-month {
-    padding: 6px 12px;
-    border-left: none;
-    border: 1px solid var(--border);
-    border-radius: 20px;
-    font-size: .82em;
-    white-space: nowrap;
-    flex-shrink: 0;
-    /* 更大的触摸热区 */
-    min-height: 32px;
-    display: flex;
-    align-items: center;
-    gap: 5px;
-  }
-  .nav-month.active {
-    background: var(--accent);
-    color: #fff;
-    border-color: var(--accent);
-  }
-  .nav-month.active .nav-count { color: rgba(255,255,255,.7); background: transparent; }
-
-  /* 文章列表 */
-  #main { padding: 12px 14px; }
-  .article-thumb, .article-thumb-placeholder { width: 72px; height: 58px; }
-  .article-title { font-size: .95em; }
-
-  /* 按钮触摸区放大 */
-  .btn { padding: 7px 14px; font-size: .82em; }
-
-  /* Viewer */
-  .viewer-wrap { padding: 14px 14px 80px; }
-
-  /* txt 字体换成正文字体，手机上更易读 */
-  .txt-block {
-    font-family: -apple-system, "PingFang SC", "Hiragino Sans GB", sans-serif;
-    font-size: .9em;
-    padding: 16px 18px;
-    max-height: none;           /* 手机上不截断，让页面自然滚动 */
-    overflow-y: visible;
-    user-select: text;
-    -webkit-user-select: text;  /* iOS 允许长按选中 */
-  }
-
-}
