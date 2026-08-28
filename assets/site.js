@@ -1,7 +1,5 @@
 (async () => {
-  const sidebar = document.getElementById('sidebar');
   const main = document.getElementById('main');
-  const searchEl = document.getElementById('search');
 
   // 骨架屏
   main.innerHTML = Array.from({length:4},()=>`
@@ -30,40 +28,34 @@
   }
   const monthKeys = [...monthMap.keys()].sort().reverse();
 
-  // ── Sidebar (button 语义化 + a11y) ──────────────────────────
-  {
-    let html = '';
-    let lastYear = '';
-    for (const mk of monthKeys) {
-      const [year, month] = mk.split('-');
-      if (year !== lastYear) {
-        html += `<div class="nav-year" aria-hidden="true">${year}</div>`;
-        lastYear = year;
-      }
-      let count = 0;
-      monthMap.get(mk).forEach(arr => (count += arr.length));
-      html += `<button class="nav-month" data-key="${mk}" aria-label="${year}年${month}月 ${count}篇">
-        <span>${month}月</span>
-        <span class="nav-count">${count}</span>
-      </button>`;
+  // ── 年 / 月 拆分下拉（桌面与移动端共用，年多时不堆成长列表）──
+  const yearSelect = document.getElementById('year-select');
+  const monthSel = document.getElementById('month-select');
+  const monthsOf = (year) => monthKeys.filter(mk => mk.startsWith(year + '-')).sort().reverse();
+  const monthCount = (mk) => { let c = 0; monthMap.get(mk).forEach(a => (c += a.length)); return c; };
+  function fillMonths(year) {
+    if (!monthSel) return;
+    monthSel.innerHTML = '';
+    for (const mk of monthsOf(year)) {
+      const [, mm] = mk.split('-');
+      const opt = document.createElement('option');
+      opt.value = mk;
+      opt.textContent = `${parseInt(mm, 10)}月 (${monthCount(mk)})`;
+      monthSel.appendChild(opt);
     }
-    sidebar.innerHTML = html;
-
-    // ── 移动端月份下拉（替代横向滚动条，便于切换）────────────
-    const monthSelect = document.getElementById('month-select');
-    if (monthSelect) {
-      monthSelect.innerHTML = '';
-      for (const mk of monthKeys) {
-        const [year, month] = mk.split('-');
-        let count = 0;
-        monthMap.get(mk).forEach(arr => (count += arr.length));
-        const opt = document.createElement('option');
-        opt.value = mk;
-        opt.textContent = `${year}年${month}月 (${count})`;
-        monthSelect.appendChild(opt);
-      }
-      monthSelect.addEventListener('change', () => activate(monthSelect.value));
+  }
+  if (yearSelect && monthSel) {
+    const years = [...new Set(monthKeys.map(mk => mk.split('-')[0]))].sort().reverse();
+    yearSelect.innerHTML = '';
+    for (const y of years) {
+      const opt = document.createElement('option');
+      opt.value = y;
+      opt.textContent = `${y}年`;
+      yearSelect.appendChild(opt);
     }
+    fillMonths(yearSelect.value);
+    yearSelect.addEventListener('change', () => { fillMonths(yearSelect.value); activate(monthSel.value); });
+    monthSel.addEventListener('change', () => activate(monthSel.value));
   }
 
   // ── Rendering ────────────────────────────────────────────────
@@ -99,26 +91,13 @@
   }
 
   let currentMk = null;
-  let filterQ = '';
-
-  function getFilteredDateMap(mk) {
-    const dm = monthMap.get(mk);
-    if (!filterQ) return dm;
-    const q = filterQ.toLowerCase();
-    const out = new Map();
-    for (const [date, arr] of dm.entries()) {
-      const filtered = arr.filter(a => `${a.title} ${a.lead}`.toLowerCase().includes(q));
-      if (filtered.length) out.set(date, filtered);
-    }
-    return out;
-  }
 
   function renderMonth(mk) {
     currentMk = mk;
-    const dateMap = getFilteredDateMap(mk);
+    const dateMap = monthMap.get(mk);
     if (!dateMap || dateMap.size===0) { main.innerHTML = '<p class="loading">无匹配结果</p>'; return; }
     const [year, month] = mk.split('-');
-    let out = `<div class="month-heading">${year}年${month}月${filterQ ? ` · 搜索“${filterQ}”` : ''}</div>`;
+    let out = `<div class="month-heading">${year}年${month}月</div>`;
     for (const [date, arts] of [...dateMap.entries()].sort().reverse()) {
       out += `<div class="day-group">
         <div class="day-label">${fmtDate(date)}</div>
@@ -126,14 +105,6 @@
       </div>`;
     }
     main.innerHTML = out;
-  }
-
-  // 搜索
-  if (searchEl) {
-    searchEl.addEventListener('input', () => {
-      filterQ = searchEl.value.trim();
-      if (currentMk) renderMonth(currentMk);
-    });
   }
 
   // 点"纯文本"时在后台 prefetch，存入 sessionStorage
@@ -155,22 +126,15 @@
 
   function activate(mk) {
     if (!mk) mk = monthKeys[0];
-    const monthSelect = document.getElementById('month-select');
-    if (monthSelect) monthSelect.value = mk;
-    sidebar.querySelectorAll('.nav-month').forEach(el => {
-      const on = el.dataset.key === mk;
-      el.classList.toggle('active', on);
-      el.setAttribute('aria-selected', on ? 'true' : 'false');
-    });
+    if (yearSelect && monthSel && mk) {
+      const [yy] = mk.split('-');
+      if (yearSelect.value !== yy) { yearSelect.value = yy; fillMonths(yy); }
+      monthSel.value = mk;
+    }
     renderMonth(mk);
     const encoded = encodeURIComponent(mk);
     if (location.hash.slice(1) !== encoded) history.replaceState(null, '', '#' + encoded);
   }
-
-  sidebar.addEventListener('click', e => {
-    const el = e.target.closest('.nav-month');
-    if (el) activate(el.dataset.key);
-  });
 
   window.addEventListener('hashchange', () => activate(hashKey()));
 
