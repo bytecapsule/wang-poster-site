@@ -4,7 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>纯文本 · 小汪三言两语</title>
-  <link rel="stylesheet" href="assets/site.css?v=33346433256">
+  <!-- SVG favicon：暖橙圆形 + 汪字 -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Ccircle cx='16' cy='16' r='16' fill='%23e76f51'/%3E%3Ctext x='16' y='22' text-anchor='middle' font-family='PingFang SC,sans-serif' font-size='18' font-weight='700' fill='%23fff'%3E汪%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/site.css?v=33384460381">
 </head>
 <body>
   <header class="site-header">
@@ -20,76 +22,7 @@
     </div>
     <pre id="txt-content" class="txt-block">加载中…</pre>
   </div>
-  <div class="copy-toast" id="toast">已复制到剪贴板 ✓</div>
-  <script>
-    (async () => {
-      const params = new URLSearchParams(location.search);
-      const path = params.get('p');
-      const titleEl = document.getElementById('viewer-title');
-      const contentEl = document.getElementById('txt-content');
-
-      if (!path) { contentEl.textContent = '未指定文件'; return; }
-
-      const m = path.match(/(\d{8})_(\d+)/);
-      if (m) {
-        const [, date, slot] = m;
-        const label = `${date.slice(0,4)}年${date.slice(4,6)}月${date.slice(6,8)}日`;
-        titleEl.textContent = label;
-        document.title = label + ' · 小汪三言两语';
-      }
-
-      // 优先读上一页预取的缓存，没有再 fetch
-      const cacheKey = 'txt:' + path;
-      const cached = sessionStorage.getItem(cacheKey);
-      if (cached) {
-        contentEl.textContent = cached;
-        sessionStorage.removeItem(cacheKey);
-      } else {
-        try {
-          const res = await fetch(path);
-          if (!res.ok) throw new Error('HTTP ' + res.status);
-          contentEl.textContent = await res.text();
-        } catch (e) {
-          contentEl.textContent = '加载失败：' + e.message;
-        }
-      }
-
-      function execCommandCopy(text) {
-        const ta = document.createElement('textarea');
-        ta.value = text;
-        ta.style.cssText = 'position:fixed;top:0;left:0;opacity:0;font-size:16px;';
-        document.body.appendChild(ta);
-        ta.focus();
-        ta.select();
-        try { document.execCommand('copy'); } finally { document.body.removeChild(ta); }
-      }
-
-      document.getElementById('copy-btn').addEventListener('click', () => {
-        const text = contentEl.textContent;
-        const done = () => {
-          const toast = document.getElementById('toast');
-          toast.textContent = '已复制到剪贴板 ✓';
-          toast.classList.add('show');
-          setTimeout(() => toast.classList.remove('show'), 2200);
-        };
-        if (navigator.clipboard && window.isSecureContext) {
-          navigator.clipboard.writeText(text).then(done).catch(() => { execCommandCopy(text); done(); });
-        } else {
-          execCommandCopy(text); done();
-        }
-      });
-
-      // 分享
-      document.getElementById('share-btn').addEventListener('click', async () => {
-        const url = location.href;
-        if (navigator.share) {
-          try { await navigator.share({title: document.title, url}); } catch {}
-        } else if (navigator.clipboard) {
-          await navigator.clipboard.writeText(url);
-          const t=document.getElementById('toast'); t.textContent='链接已复制 ✓'; t.classList.add('show'); setTimeout(()=>t.classList.remove('show'),2000);
-        }
-      });
-    })();
-  </script>
+  <div class="copy-toast" id="toast"></div>
+  <script src="assets/viewer.js"></script>
 </body>
 </html>
