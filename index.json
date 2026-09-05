@@ -1,6 +1,34 @@
 {
   "articles": [
     {
+      "id": "20260905_01",
+      "date": "20260905",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "同样的热量，夏天吃不胖，秋冬全囤下",
+      "lead": "每年九月，体重秤上的数字开始不讲道理地爬升。饭量没变，运动没少，夏天好不容易稳住的体重，一到秋天就稳不住了。节食的人更委屈——热量精确到克，秤上的数字纹丝不动，稍一松懈就报复性反弹。与此同时，身边总有些人精力像用不完，中午不趴桌也照样清醒。这三件事看似无关，其实握着同一个开关：胰岛素敏感性。",
+      "metadata": {
+        "hint_id": "insulin-seasonal-storage-switch",
+        "writing_style": "narrative",
+        "style_code": "M2",
+        "style_name": "超现实油画",
+        "slot_id": "01",
+        "generated_at": "2026-09-05T01:31:13.173460+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47yDhYwPw04aA11w3pWK1QBR9HR9YSZ7NEu4ep9TVNROp",
+        "published_at": "2026-09-05T01:35:15.121910+08:00"
+      },
+      "html": "2026/20260905/01/preview_20260905_01.html",
+      "txt": "2026/20260905/01/article_20260905_01.txt",
+      "images": [
+        "2026/20260905/01/image_20260905_01_01.jpg",
+        "2026/20260905/01/image_20260905_01_02.jpg",
+        "2026/20260905/01/image_20260905_01_03.jpg",
+        "2026/20260905/01/image_20260905_01_04.jpg"
+      ]
+    },
+    {
       "id": "20260904_01",
       "date": "20260904",
       "slot": "01",
