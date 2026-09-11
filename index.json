@@ -1,6 +1,34 @@
 {
   "articles": [
     {
+      "id": "20260911_01",
+      "date": "20260911",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "越怕闹事，越容易办错事",
+      "lead": "一段视频里，一个4岁男孩在奔跑中失衡碰到人，随即被一个成年人揪住衣领、掐住脖子。谁对谁错，普通人一眼就能判断。可调解到最后，赔钱的却是孩子家。为什么连“一眼就能看出的对错”，都能被调解成这样？当平息事态成为首要目标，是非就变成了可以交易的筹码。这背后，是什么样的机制在起作用？",
+      "metadata": {
+        "hint_id": "mediation-fear-and-public-scrutiny",
+        "writing_style": "dialogue",
+        "style_code": "P1",
+        "style_name": "吉卜力角色",
+        "slot_id": "01",
+        "generated_at": "2026-09-11T01:37:04.631340+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp4796qwHCTybHnILXj_WeRkQD6M750bskc8sYwryKsVGfs",
+        "published_at": "2026-09-11T01:43:24.583855+08:00"
+      },
+      "html": "2026/20260911/01/preview_20260911_01.html",
+      "txt": "2026/20260911/01/article_20260911_01.txt",
+      "images": [
+        "2026/20260911/01/image_20260911_01_01.jpg",
+        "2026/20260911/01/image_20260911_01_02.jpg",
+        "2026/20260911/01/image_20260911_01_03.jpg",
+        "2026/20260911/01/image_20260911_01_04.jpg"
+      ]
+    },
+    {
       "id": "20260910_01",
       "date": "20260910",
       "slot": "01",
