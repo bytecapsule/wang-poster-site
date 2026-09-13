@@ -1,6 +1,34 @@
 {
   "articles": [
     {
+      "id": "20260913_01",
+      "date": "20260913",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "管住嘴、迈开腿，不如有个好街坊",
+      "lead": "一个吃猪油、抽烟、不运动的美国小镇，心脏病死亡率只有全国平均水平的一半。饮食、运动、基因、医疗——每一个传统健康因素都解释不了这个数字。几英里外的邻镇，同样的气候、同样的医院，心血管死亡率却是它的三倍。答案不在餐盘里，也不在运动鞋里，而在邻居家的厨房里。",
+      "metadata": {
+        "hint_id": "roseto-community-health-paradox",
+        "writing_style": "narrative",
+        "style_code": "T0",
+        "style_name": "科技机械",
+        "slot_id": "01",
+        "generated_at": "2026-09-13T00:53:29.994998+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47_MV0bnBg03pWcPrLf6KP6nWkUEqNKw1mRkdvi-jOKE8",
+        "published_at": "2026-09-13T00:57:39.087868+08:00"
+      },
+      "html": "2026/20260913/01/preview_20260913_01.html",
+      "txt": "2026/20260913/01/article_20260913_01.txt",
+      "images": [
+        "2026/20260913/01/image_20260913_01_01.jpg",
+        "2026/20260913/01/image_20260913_01_02.jpg",
+        "2026/20260913/01/image_20260913_01_03.jpg",
+        "2026/20260913/01/image_20260913_01_04.jpg"
+      ]
+    },
+    {
       "id": "20260912_01",
       "date": "20260912",
       "slot": "01",
