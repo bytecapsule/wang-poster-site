@@ -1,6 +1,34 @@
 {
   "articles": [
     {
+      "id": "20260914_01",
+      "date": "20260914",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "当年逼你少生的人，现在求你多生",
+      "lead": "韩国只用二十年把总和生育率从6.0压到1.6，又花了三四十年补贴却连1.0都没捞回来。日本国立社会保障·人口问题研究所的预测提前十五年失效：原以为2040年出生人口才跌破67万，2025年就到了。同一个指标，压下去是一道命令，拉回来却要一场逆向的社会文化重塑。这不是政策力度不够，而是压低生育的那一代人，恰好把生育的社会土壤刨掉了。",
+      "metadata": {
+        "hint_id": "japan-korea-birthrate-policy-paradox",
+        "writing_style": "narrative",
+        "style_code": "T1",
+        "style_name": "服务器机房",
+        "slot_id": "01",
+        "generated_at": "2026-09-14T01:22:07.111285+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47ymk1M0bTGWXH3JS4uEfiNNBBg-DDZyStuIagAAgw5Jr",
+        "published_at": "2026-09-14T01:27:29.547935+08:00"
+      },
+      "html": "2026/20260914/01/preview_20260914_01.html",
+      "txt": "2026/20260914/01/article_20260914_01.txt",
+      "images": [
+        "2026/20260914/01/image_20260914_01_01.jpg",
+        "2026/20260914/01/image_20260914_01_02.jpg",
+        "2026/20260914/01/image_20260914_01_03.jpg",
+        "2026/20260914/01/image_20260914_01_04.jpg"
+      ]
+    },
+    {
       "id": "20260913_01",
       "date": "20260913",
       "slot": "01",
