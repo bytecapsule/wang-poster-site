@@ -1,6 +1,35 @@
 {
   "articles": [
     {
+      "id": "20260917_01",
+      "date": "20260917",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "你体内每天发生数亿亿次突变。AI现在能帮你把这些突变变成一剂专属疫苗",
+      "lead": "前阵子一条“AI治愈癌症”的热搜让很多人兴奋，底下新闻说的是Moderna和默沙东的mRNA个性化癌症疫苗Ⅲ期临床试验成功。治愈是夸张了，但这件事确实推开了癌症治疗的一扇新门：从“一种药治所有人”变成“为每个人的每一种癌症单独设计一种药”。这套新范式的底层，是AI在帮你读基因、算抗原、设计疫苗。这到底意味着什么？我们离每人一剂定制疫苗还有多远？",
+      "metadata": {
+        "hint_id": "mrna-personalized-cancer-vaccine-ai",
+        "writing_style": "dialogue",
+        "style_code": "D5",
+        "style_name": "手绘草稿",
+        "slot_id": "01",
+        "generated_at": "2026-09-17T02:05:52.335733+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47zRFp4Z4PXSJaaCR7MrFCzOTJEaX5iqVDuKfaFKMvgwP",
+        "published_at": "2026-09-17T02:10:01.856910+08:00"
+      },
+      "html": "2026/20260917/01/preview_20260917_01.html",
+      "txt": "2026/20260917/01/article_20260917_01.txt",
+      "images": [
+        "2026/20260917/01/image_20260917_01_01.jpg",
+        "2026/20260917/01/image_20260917_01_02.jpg",
+        "2026/20260917/01/image_20260917_01_03.jpg",
+        "2026/20260917/01/image_20260917_01_04.jpg",
+        "2026/20260917/01/image_20260917_01_05.jpg"
+      ]
+    },
+    {
       "id": "20260916_01",
       "date": "20260916",
       "slot": "01",
