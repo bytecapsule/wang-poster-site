@@ -1,6 +1,34 @@
 {
   "articles": [
     {
+      "id": "20260920_01",
+      "date": "20260920",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "AI 的电脑，是从 Chromebook 借来的",
+      "lead": "2023年初，两个累到崩溃的开发者关掉做了几年的产品，给自己放了两周假。他们开始玩刚出来的GPT-3.5。玩着玩着，他们给AI接上了一个旧沙箱，让它自己跑代码。demo发出去，OpenAI的总裁Greg Brockman转发了它。几天之内，他们砍掉了原来的产品，把整家公司押在底下的沙箱上。那两个开发者来自捷克，从六年级就一起写代码。而他们脚下踩的地基，是十年前Google为Chromebook写的一个虚拟机监控器。",
+      "metadata": {
+        "hint_id": "e2b-firecracker-sandbox-story",
+        "writing_style": "story",
+        "style_code": "D1",
+        "style_name": "复古文物",
+        "slot_id": "01",
+        "generated_at": "2026-09-20T01:06:39.117165+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47478yfRWRNPrWUlQ42jNy5NTqcTbVWAIJRO7eDFduNnc",
+        "published_at": "2026-09-20T01:11:23.726266+08:00"
+      },
+      "html": "2026/20260920/01/preview_20260920_01.html",
+      "txt": "2026/20260920/01/article_20260920_01.txt",
+      "images": [
+        "2026/20260920/01/image_20260920_01_01.jpg",
+        "2026/20260920/01/image_20260920_01_02.jpg",
+        "2026/20260920/01/image_20260920_01_03.jpg",
+        "2026/20260920/01/image_20260920_01_04.jpg"
+      ]
+    },
+    {
       "id": "20260919_01",
       "date": "20260919",
       "slot": "01",

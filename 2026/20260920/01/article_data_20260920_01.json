@@ -1,0 +1,41 @@
+{
+  "title": "AI 的电脑，是从 Chromebook 借来的",
+  "lead": "2023年初，两个累到崩溃的开发者关掉做了几年的产品，给自己放了两周假。他们开始玩刚出来的GPT-3.5。玩着玩着，他们给AI接上了一个旧沙箱，让它自己跑代码。demo发出去，OpenAI的总裁Greg Brockman转发了它。几天之内，他们砍掉了原来的产品，把整家公司押在底下的沙箱上。那两个开发者来自捷克，从六年级就一起写代码。而他们脚下踩的地基，是十年前Google为Chromebook写的一个虚拟机监控器。",
+  "cover_image_prompt": "A vintage Chromebook laptop from 2013, its screen displaying a glowing virtual machine diagram, surrounded by old computer manuals and retro hardware components, nostalgic tech artifact style.",
+  "sections": [
+    {
+      "heading": "从Chromebook借来的东西",
+      "content": "2014年11月，AWS发布了Lambda。这是世界上第一个广泛商用的无服务器计算服务——开发者只需要上传代码，不用管服务器。但AWS内部知道，这个“不用管”的背后，是一个昂贵的妥协。\n\nLambda的隔离方案很简单：每个客户分配一个专用的EC2实例。安全是安全了，但一台物理机上能塞的客户数量被死死限制住，启动一个函数要等上好几秒。对于“事件驱动”的无服务器来说，这个延迟是致命的。\n\nAWS的工程师们开始寻找一种新的隔离方式。容器太不安全——共享内核意味着一个租户的漏洞可能波及整台机器。传统的虚拟机又太重——QEMU有140万行C代码，支持数百种虚拟设备，启动一台虚拟机需要数秒，内存占用数百MB。根本不适合为每个函数调用临时创建一台虚拟机。\n\n他们需要一种“微虚拟机”：有虚拟机的强隔离，但启动速度和内存开销接近容器。\n\n2015年前后，AWS内部一个小团队开始翻看开源世界里的虚拟机监控器。他们发现了Google的一个项目：crosvm。\n\ncrosvm是Google为ChromeOS写的虚拟机监控器，用Rust语言写成，代码量只有几万行。它的原始用途很单纯——让Chromebook能运行安卓应用。Chromebook是廉价的上网本，硬件资源有限，所以crosvm必须极其轻量、极其干净。Google的工程师把它写得像一把手术刀，而不是瑞士军刀。\n\nAWS团队决定从这里开始。据AWS后来在NSDI'20发表的论文，他们fork了crosvm的代码库，然后开始做一件反直觉的事：删代码。\n\n他们把crosvm里所有不需要的驱动、设备模拟、传统BIOS支持，统统删掉。只保留了一个极简的virtio设备模型：网络、块存储、随机数生成器、socket通信和串口控制台。总共五种虚拟设备。攻击面被压缩到了极限。\n\n最终，Firecracker的代码量定格在约5万行Rust——对比QEMU的140万行C，删掉了一半以上。每台微虚拟机内存开销小于5MB，从启动到应用就绪小于125毫秒，单台物理机每秒可以拉起150台。\n\n2018年11月的re:Invent大会上，AWS公开了Firecracker，并以Apache 2.0协议开源。Lambda和Fargate无缝迁移上去，支撑每月数万亿次请求。\n\n当时，所有人都以为这只是无服务器的故事。没有人料到，五年后，它会成为AI agent的地基。"
+    },
+    {
+      "heading": "一个被转发的demo",
+      "content": "Vasek Mlejnsky和Tomas Valenta从六年级就一起写代码。两人在捷克的一座小城长大，后来一起做iPhone游戏，再后来做开发者工具。据E2B官方介绍，他们的第一家公司做的是手机游戏，在捷克小有名气，但不足以支撑更大的野心。\n\n2020年，他们搬到旧金山，创立了DevBook——一个给开发者看的交互式文档工具。开发者可以在文档里直接运行代码、修改参数，看到实时结果。这个想法很好，但市场没有买单。\n\nDevBook做了三年，始终不温不火。到了2023年初，两个人都累透了。他们关掉产品，给自己放了两周假。\n\n那时候，OpenAI刚放出GPT-3.5不久。Vasek和Tomas开始玩这个新玩具——不是以开发者的身份，而是像两个好奇的少年。他们让GPT写诗、写邮件、解释量子力学。然后，他们做了一件更出格的事：给GPT接上了一个旧沙箱。\n\n那个沙箱是之前项目里留下的，原本用来让用户安全地运行示例代码。现在，他们把它连到了GPT的API上。AI可以自己写代码，在沙箱里执行，看到输出，再根据输出决定下一步。\n\n他们录了一段屏幕。据E2B官方大事记，那个demo只有几分钟：AI读了一个数据文件，写了一段Python代码分析它，运行，看到报错，自己修改，再运行，最后输出一张图表。全程没有人类插手。\n\n他们把视频发到了推特上。\n\n几个小时后，OpenAI的总裁Greg Brockman转发了它。\n\n转发量开始疯涨。Vasek和Tomas坐在公寓里，看着通知栏的数字不断跳动。他们原本的产品DevBook还在那里，无人问津。而这个无心插柳的demo，却像野火一样烧开了。\n\n据E2B官方大事记，几天之内，他们做了一个决定：砍掉agent本体，把整家公司押在底下的沙箱上。不造会干活的机器人，改造机器人干活的地方。\n\n公司改名为E2B——Earth to Brain？还是Execution to Brain？他们没解释过。但意思很清楚：给AI一台能干活的地球机器。\n\n他们需要选一个底层虚拟机。容器不够安全——AI agent会执行任意代码，一个失控的脚本可能穿透容器，波及整个集群。传统的虚拟机又太慢——agent需要秒级响应，等不了几秒的启动时间。\n\n他们找到了Firecracker。"
+    },
+    {
+      "heading": "10亿次启动",
+      "content": "Firecracker正好踩在那个点上：强隔离，毫秒级启动，极低的内存开销。更关键的是，它有一个快照恢复功能——可以把一台微虚拟机的内存状态保存下来，下次直接从快照唤醒，时间缩短到5到30毫秒。\n\nE2B在Firecracker之上加了自己的层：自定义快照层、OverlayFS共享只读根文件系统、专用的内核。他们把一台沙箱的冷启动时间压到了“毫秒级”——据技术社区实测，E2B的managed沙箱从快照恢复只需5到30毫秒。这意味着，一个AI agent可以像打开一个应用一样，瞬间获得一台全新的、干净的Linux电脑。\n\n2023年，E2B正式上线。起初，月沙箱数只有2万。\n\n2024年2月，出了一件意外。据E2B官方自述，那天GitHub突然封禁了E2B的整个开源组织——所有仓库瞬间消失。Vasek后来在官方大事记里写，那是“一个真·小型心脏病发作”。他们没有公开封禁的具体原因，只是硬扛、申诉、继续开源。几个小时后，仓库恢复了。但这个插曲提醒了他们：给AI造电脑这件事，踩在一条没有先例的线上。\n\n增长没有停下来。到2024年9月，月沙箱数从2万涨到了200万。SDK每月被下载超过1000万次。94家财富100强企业注册了E2B，包括一些大型银行和科技公司，它们用E2B来隔离AI agent的代码执行环境——从自动化数据分析到网络安全测试，从生成代码的即时运行到科学计算的按需隔离。\n\n累计沙箱启动次数，在2026年突破了10亿。\n\n2024年，E2B拿到了1150万美元的种子轮，由Decibel领投。2025年7月，又拿到了2100万美元的A轮，由Insight Partners领投。据科技媒体报道，投资人看中的不是AI模型本身——那是OpenAI和Google的战场——而是AI agent的基础设施。\n\nVasek在一次访谈里说得很直白：“全世界的云都是为人设计的。人会等待、会点击、会手动修环境。AI agent不会。谁先给agent一台‘自己的机器’，谁就掌握了下一个云的地基。”\n\n他们卖的不是AI，是给AI的电脑。"
+    },
+    {
+      "heading": "下一个员工的工位",
+      "content": "2025年9月，Firecracker的原始作者之一、AWS工程师Marc Brooker写了一篇博客，标题叫《Firecracker的七年》。他在里面提到，Firecracker最初为无服务器而生，但现在，它的快照和微虚拟机模型正在被用于一个全新的场景：AI agent的会话隔离。\n\n一个AI agent执行任务时，可能会生成多个子agent，每个子agent都需要一台独立的、安全的、用完即弃的电脑。Firecracker的“每秒150台”启动能力，恰好能支撑这种爆炸式的机器需求。\n\n回头看，这条技术链的起点，是2015年Google为Chromebook写的那个虚拟机监控器。Chromebook是给小学生用的廉价上网本，Google为了让它在硬件极度受限的情况下跑安卓应用，不得不用Rust写了一个极其干净的VMM。这个VMM被AWS借走，删掉一半代码，变成了Firecracker。Firecracker又被两个捷克开发者借走，加了一层快照，变成了AI agent的沙箱。\n\n每一步，都不是为了最终那个目的而造的。\n\ncrosvm是为了Chromebook，Firecracker是为了Lambda，E2B是为了AI agent。但当AI真正需要一台电脑的时候，这些“借来的东西”恰好都在那里。\n\n2026年，E2B的沙箱已经被拉起了超过10亿次。这个数字还在增长。人们还在争论AI会不会取代人类员工，但有一件事已经发生了：你的下一个“员工”，可能真的是台机器。而它的工位，是一个十年前的虚拟机。"
+    }
+  ],
+  "tips": "Firecracker是AWS的开源项目，与E2B没有投资或合作关系。E2B的沙箱基于Firecracker构建，但加上了自己的快照层和文件系统。crosvm至今仍在维护，是ChromeOS的一部分。这个故事里没有魔法，只有一层层借来的地基。",
+  "image_prompts": [
+    "A close-up of an old Chromebook with its screen showing lines of Rust code, the laptop placed on a wooden desk with vintage floppy disks and a glowing microchip, nostalgic tech artifact style.",
+    "A dimly lit apartment room in San Francisco, two developers staring at a laptop screen displaying a viral tweet and a code execution demo, surrounded by empty coffee cups and a whiteboard with erased plans, retro digital age aesthetic.",
+    "A vintage server rack from the 2010s with a glowing holographic display showing '10,000,000,000 sandbox launches', the machines have a worn, industrial look with exposed wires and old AWS logos, retro-futuristic artifact style.",
+    "A conceptual still life of a modern AI robot arm resting on an old Chromebook, the Chromebook's screen shows a virtual machine diagram, with dusty computer manuals and a faded Google logo in the background, nostalgic tech fusion."
+  ],
+  "metadata": {
+    "hint_id": "e2b-firecracker-sandbox-story",
+    "writing_style": "story",
+    "style_code": "D1",
+    "style_name": "复古文物",
+    "slot_id": "01",
+    "generated_at": "2026-09-20T01:06:39.117165+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47478yfRWRNPrWUlQ42jNy5NTqcTbVWAIJRO7eDFduNnc",
+    "published_at": "2026-09-20T01:11:23.726266+08:00"
+  }
+}
