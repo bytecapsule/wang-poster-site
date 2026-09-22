@@ -1,6 +1,34 @@
 {
   "articles": [
     {
+      "id": "20260921_02",
+      "date": "20260921",
+      "slot": "02",
+      "year": "2026",
+      "month": "09",
+      "title": "智能脱下语言的外壳",
+      "lead": "1900年，最早的汽车几乎照搬马车结构——高耸车厢、马车座椅、悬挂软垫，只是前面那匹马换成了内燃机。2026年，一个AI Agent重构代码时卡住几十秒，只为等千亿参数模型回答一句“这条命令是否危险”。两个画面相隔一个世纪，犯的是同一个错误：把新技术塞进旧结构的壳里。当TypeSafe发布一个不说话的模型Jev，我们才看清，智能不需要长得像人，它需要的是能写进if语句。",
+      "metadata": {
+        "hint_id": "type-safe-jev-machine-native",
+        "writing_style": "narrative",
+        "style_code": "Q4",
+        "style_name": "极简线稿",
+        "slot_id": "02",
+        "generated_at": "2026-09-21T20:08:50.373863+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp470FiKbRnTghhD4dPlW2_xIq7g0mA5LhwqUGK9EKsWc6M",
+        "published_at": "2026-09-21T20:11:35.122345+08:00"
+      },
+      "html": "2026/20260921/02/preview_20260921_02.html",
+      "txt": "2026/20260921/02/article_20260921_02.txt",
+      "images": [
+        "2026/20260921/02/image_20260921_02_01.jpg",
+        "2026/20260921/02/image_20260921_02_02.jpg",
+        "2026/20260921/02/image_20260921_02_03.jpg",
+        "2026/20260921/02/image_20260921_02_04.jpg"
+      ]
+    },
+    {
       "id": "20260921_01",
       "date": "20260921",
       "slot": "01",
