@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20260925_01",
+      "date": "20260925",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "拒绝 AI 的软件，成了 AI 的试验田",
+      "lead": "2026 年秋天，LibreOffice 的每周下载量稳定在一百万次以上。推动这个数字的，是文档基金会一句明确的承诺：在无法保证用户完全控制、绝对排除遥测、不依赖特定供应商之前，拒绝内置任何生成式 AI。对受够了被强制植入 Copilot 的用户来说，数据永不出本地就是最大的卖点。企业用户担心文档泄露，个人用户厌烦关不掉的 AI 按钮，他们用脚投票，涌向这个承诺不内置 AI 的办公套件。但同一时间，社区正把它变成 AI Agent 最热闹的试验田：160 多个文档工具、可撤销的 AI 修改、单元格里直接调大模型。一个拒绝 AI 的软件，反而成了 AI 的游乐场。",
+      "metadata": {
+        "hint_id": "libreoffice-no-ai-agent-sandbox",
+        "writing_style": "narrative",
+        "style_code": "P4",
+        "style_name": "复古精密仪器",
+        "slot_id": "01",
+        "generated_at": "2026-09-25T02:26:23.689432+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47xOFtEtI9OyA7tYN7qpCA7Ot1u8d7ttHcEesltvMXa4y",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47xOFtEtI9OyA7tYN7qpCA7Ot1u8d7ttHcEesltvMXa4y",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 6,
+        "published_at": "2026-09-25T02:34:16.757842+08:00"
+      },
+      "html": "2026/20260925/01/preview_20260925_01.html",
+      "txt": "2026/20260925/01/article_20260925_01.txt",
+      "images": [
+        "2026/20260925/01/image_20260925_01_01.jpg",
+        "2026/20260925/01/image_20260925_01_02.jpg",
+        "2026/20260925/01/image_20260925_01_03.jpg",
+        "2026/20260925/01/image_20260925_01_04.jpg"
+      ]
+    },
+    {
       "id": "20260924_01",
       "date": "20260924",
       "slot": "01",
