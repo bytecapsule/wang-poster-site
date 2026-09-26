@@ -1,6 +1,43 @@
 {
   "articles": [
     {
+      "id": "20260926_01",
+      "date": "20260926",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "一根钢针，戳出了铁锂的六年翻盘",
+      "lead": "2020年3月，王传福在发布会上拿起一根钢针，依次刺穿三元锂、普通磷酸铁锂和刀片电池。三元锂瞬间爆燃，温度超过500摄氏度；普通铁锂冒烟，200到400度；刀片电池无明火无烟，表面温度仅30到60度。当时不少人认为这只是一场营销表演。六年后，同一套磷酸铁锂体系在快充和能量密度上追平了三元锂，针刺却从话题变成了产业胜负的标尺。",
+      "metadata": {
+        "hint_id": "byd-blade-battery-nail-rivalry",
+        "writing_style": "narrative",
+        "style_code": "G1",
+        "style_name": "赛博朋克城市",
+        "slot_id": "01",
+        "generated_at": "2026-09-26T02:24:04.128256+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp475cNOOH9SGagYkN5tmkHErQDX5T_NUrh5PqDj0ePT-1H",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp475cNOOH9SGagYkN5tmkHErQDX5T_NUrh5PqDj0ePT-1H",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 6,
+        "published_at": "2026-09-26T02:29:26.712772+08:00"
+      },
+      "html": "2026/20260926/01/preview_20260926_01.html",
+      "txt": "2026/20260926/01/article_20260926_01.txt",
+      "images": [
+        "2026/20260926/01/image_20260926_01_01.jpg",
+        "2026/20260926/01/image_20260926_01_02.jpg",
+        "2026/20260926/01/image_20260926_01_03.jpg",
+        "2026/20260926/01/image_20260926_01_04.jpg",
+        "2026/20260926/01/image_20260926_01_05.jpg"
+      ]
+    },
+    {
       "id": "20260925_01",
       "date": "20260925",
       "slot": "01",
