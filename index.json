@@ -1,6 +1,43 @@
 {
   "articles": [
     {
+      "id": "20260927_01",
+      "date": "20260927",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "一个机构名，被美军喊成了口号",
+      "lead": "2026年9月24日，白宫南草坪。美国总统特朗普在欢迎中国国家主席习近平的致辞中途，忽然停了一下，念出一个中文词：「Gung Ho，工合。」\n\n他解释说，这个词是美国海军陆战队沿用至今的精神标语，表达极大的热情，起源于一位陆战队员与中国人民的交流。在场的中方人员或许一时没反应过来：工合？那不是抗战时期的一个机构名字吗？一个由失业工人和难民组成的生产合作社的简称，怎么会跑到美军嘴里，变成了「冲劲十足」？",
+      "metadata": {
+        "hint_id": "gung-ho-word-journey",
+        "writing_style": "story",
+        "style_code": "S4",
+        "style_name": "复古旅行海报",
+        "slot_id": "01",
+        "generated_at": "2026-09-27T01:41:30.595216+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47_9JIiWv0p2e0i5bXz2isI5KCZ0DQYB--zDvzqPPRkAv",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47_9JIiWv0p2e0i5bXz2isI5KCZ0DQYB--zDvzqPPRkAv",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 6,
+        "published_at": "2026-09-27T01:50:43.137183+08:00"
+      },
+      "html": "2026/20260927/01/preview_20260927_01.html",
+      "txt": "2026/20260927/01/article_20260927_01.txt",
+      "images": [
+        "2026/20260927/01/image_20260927_01_01.jpg",
+        "2026/20260927/01/image_20260927_01_02.jpg",
+        "2026/20260927/01/image_20260927_01_03.jpg",
+        "2026/20260927/01/image_20260927_01_04.jpg",
+        "2026/20260927/01/image_20260927_01_05.jpg"
+      ]
+    },
+    {
       "id": "20260926_01",
       "date": "20260926",
       "slot": "01",
