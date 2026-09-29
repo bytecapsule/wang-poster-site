@@ -1,6 +1,43 @@
 {
   "articles": [
     {
+      "id": "20260929_01",
+      "date": "20260929",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "一份杀手的星盘，九成人说准极了",
+      "lead": "1979年冬天，法国一家知名报纸登出一则广告，承诺寄出完全免费、长达十页的个人专属星盘分析。读者只需寄回姓名、出生日期和出生地。一百五十多人应征。几周后，他们陆续收到回信，许多人写信致谢：这星盘准极了，简直像有人钻进了我的生活。他们不知道，自己收到的星盘全部出自同一个人的出生信息。那个人叫马塞尔·佩蒂奥，二战期间以帮犹太人逃出纳粹抓捕为名，诱杀六十余人并劫走财物。星盘上写着：性格温和，富有同情心，极具道德责任感。",
+      "metadata": {
+        "hint_id": "barnum-effect-psychology-of-deception",
+        "writing_style": "story",
+        "style_code": "Q3",
+        "style_name": "暖色水彩人文",
+        "slot_id": "01",
+        "generated_at": "2026-09-29T04:28:01.443528+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47-RRp2mUsa-MWE1ibtahRjvtbC3y-yWh7XvfInSCoHyu",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47-RRp2mUsa-MWE1ibtahRjvtbC3y-yWh7XvfInSCoHyu",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 6,
+        "published_at": "2026-09-29T04:31:18.499660+08:00"
+      },
+      "html": "2026/20260929/01/preview_20260929_01.html",
+      "txt": "2026/20260929/01/article_20260929_01.txt",
+      "images": [
+        "2026/20260929/01/image_20260929_01_01.jpg",
+        "2026/20260929/01/image_20260929_01_02.jpg",
+        "2026/20260929/01/image_20260929_01_03.jpg",
+        "2026/20260929/01/image_20260929_01_04.jpg",
+        "2026/20260929/01/image_20260929_01_05.jpg"
+      ]
+    },
+    {
       "id": "20260928_01",
       "date": "20260928",
       "slot": "01",
