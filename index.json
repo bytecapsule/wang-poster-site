@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20260930_01",
+      "date": "20260930",
+      "slot": "01",
+      "year": "2026",
+      "month": "09",
+      "title": "连「我是谁」都能被时代改写",
+      "lead": "孩子从学校回来，嘴里多了一个新词。那不是一个普通的词，是一个标签，一种身份。父母愣了一下，试着纠正，说“你不是那样的”。孩子没争辩，只是往后退了一步。此后几周，这个词在家里反复出现，每一次都像一堵墙，把父母挡在外面。这种拧不过的感觉，很多家庭都经历过。我们习惯把它归为青春期叛逆，但事实可能更彻底：家庭在定义我是谁这件事上，力量远比我们以为的小。",
+      "metadata": {
+        "hint_id": "social-over-family-influence",
+        "writing_style": "narrative",
+        "style_code": "D1",
+        "style_name": "复古文物",
+        "slot_id": "01",
+        "generated_at": "2026-09-30T03:17:44.139246+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47_d0MxgVBiSp6GiGDv0Gfcp8PuX-uQ5gp6_NUq939HOR",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47_d0MxgVBiSp6GiGDv0Gfcp8PuX-uQ5gp6_NUq939HOR",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 6,
+        "published_at": "2026-09-30T03:24:04.604866+08:00"
+      },
+      "html": "2026/20260930/01/preview_20260930_01.html",
+      "txt": "2026/20260930/01/article_20260930_01.txt",
+      "images": [
+        "2026/20260930/01/image_20260930_01_01.jpg",
+        "2026/20260930/01/image_20260930_01_02.jpg",
+        "2026/20260930/01/image_20260930_01_03.jpg",
+        "2026/20260930/01/image_20260930_01_04.jpg"
+      ]
+    },
+    {
       "id": "20260929_01",
       "date": "20260929",
       "slot": "01",
