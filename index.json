@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261001_01",
+      "date": "20261001",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "当软件开始替人干活",
+      "lead": "Intercom的AI客服Fin不收坐席费。它每成功解决一张工单收0.99美元，解决不了不收钱。这套定价让它的年经常性收入冲到近一亿美元，把母公司整体ARR推过四亿美元，最终被Salesforce以约三十六亿美元收购。当软件开始按结果收费，它就不再是记录信息的工具，而是直接替代人力的执行系统。大多数企业以为给旧系统加个AI助手就是转型，但真正的分水岭在于：软件能不能独立把活干完，并为结果承担成本。",
+      "metadata": {
+        "hint_id": "ai-native-software-paradigm",
+        "writing_style": "narrative",
+        "style_code": "D2",
+        "style_name": "微观世界",
+        "slot_id": "01",
+        "generated_at": "2026-10-01T03:00:43.629890+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47wPlOt9MKetEC5QaCuxRVfSjnG3mzfr03aETFTfZZJ5n",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47wPlOt9MKetEC5QaCuxRVfSjnG3mzfr03aETFTfZZJ5n",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 6,
+        "published_at": "2026-10-01T03:03:35.164312+08:00"
+      },
+      "html": "2026/20261001/01/preview_20261001_01.html",
+      "txt": "2026/20261001/01/article_20261001_01.txt",
+      "images": [
+        "2026/20261001/01/image_20261001_01_01.jpg",
+        "2026/20261001/01/image_20261001_01_02.jpg",
+        "2026/20261001/01/image_20261001_01_03.jpg",
+        "2026/20261001/01/image_20261001_01_04.jpg"
+      ]
+    },
+    {
       "id": "20260930_01",
       "date": "20260930",
       "slot": "01",
