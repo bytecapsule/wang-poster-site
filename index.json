@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261004_01",
+      "date": "20261004",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "他帮美国独立，又率军镇压了另一场独立",
+      "lead": "1804年1月，古巴附近的海面，一艘法国军舰燃起大火。一位48岁的法国将军腹部中弹，躺在甲板上。他叫路易-玛丽·德·诺阿耶。二十三年前，他在约克镇目睹英军投降，是美国独立战争的英雄。十五年前，他在凡尔赛宫提议废除贵族特权，被欢呼为法国革命的先锋。此刻，他刚刚从海地逃出。在那里，他指挥法军试图重新奴役数十万黑人。一个曾为自由而战的人，最终死在了镇压自由的路上。",
+      "metadata": {
+        "hint_id": null,
+        "writing_style": "story",
+        "style_code": "D3",
+        "style_name": "城市切片",
+        "slot_id": "01",
+        "generated_at": "2026-10-04T01:51:22.179668+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp476Nx--DLqxjC6WPMN0O2w7i6mCcvbsMpPg6v6keB5Er4",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp476Nx--DLqxjC6WPMN0O2w7i6mCcvbsMpPg6v6keB5Er4",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 6,
+        "published_at": "2026-10-04T01:54:55.949813+08:00"
+      },
+      "html": "2026/20261004/01/preview_20261004_01.html",
+      "txt": "2026/20261004/01/article_20261004_01.txt",
+      "images": [
+        "2026/20261004/01/image_20261004_01_01.jpg",
+        "2026/20261004/01/image_20261004_01_02.jpg",
+        "2026/20261004/01/image_20261004_01_03.jpg",
+        "2026/20261004/01/image_20261004_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261003_01",
       "date": "20261003",
       "slot": "01",
