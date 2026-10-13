@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261013_01",
+      "date": "20261013",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "吃肉的匈奴人，为什么比种地的汉人矮？",
+      "lead": "汉代中原男性平均身高167厘米。同时代蒙古高原的匈奴贵族，平均身高162至165厘米。南匈奴归附部落在东汉时期的男性平均身高164.9厘米，依然低于中原汉人。吃肉的，输给了种地的。这个反差直接打穿了那条流传最广的臆想：游牧民族多吃肉，所以更高大强壮。骨骼数据给出的答案正好相反。",
+      "metadata": {
+        "hint_id": "nomad-height-nutrition",
+        "writing_style": "narrative",
+        "style_code": "S2",
+        "style_name": "都市职场",
+        "slot_id": "01",
+        "generated_at": "2026-10-13T06:01:51.698262+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47_U2bPbq1t4HIufltdSOEDjhDy759ocIRCDziMdtxcfM",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47_U2bPbq1t4HIufltdSOEDjhDy759ocIRCDziMdtxcfM",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 4,
+        "published_at": "2026-10-13T06:05:51.970112+08:00"
+      },
+      "html": "2026/20261013/01/preview_20261013_01.html",
+      "txt": "2026/20261013/01/article_20261013_01.txt",
+      "images": [
+        "2026/20261013/01/image_20261013_01_01.jpg",
+        "2026/20261013/01/image_20261013_01_02.jpg",
+        "2026/20261013/01/image_20261013_01_03.jpg",
+        "2026/20261013/01/image_20261013_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261012_01",
       "date": "20261012",
       "slot": "01",
