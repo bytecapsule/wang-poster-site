@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261017_01",
+      "date": "20261017",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "一个失控气球曾让两万户断电，如今美军花4.47亿美元再买它反无人机",
+      "lead": "俄乌战场上，一架几百美元的FPV无人机可以炸毁一辆价值百万美元的坦克。防守方的困境远不止拦截成本：一枚防空导弹的价格往往是无人机的几十上百倍，拦不起。更让人绝望的是，很多时候根本看不见它。贴地飞行的无人机在地面雷达的盲区里来去自如。防不住的根源常常是没看见，火力不足倒在其次。就在这个节骨眼上，一个被打入冷宫七十年的老技术正在被重新请回来：飞艇。",
+      "metadata": {
+        "hint_id": "airship-counter-drone-return",
+        "writing_style": "narrative",
+        "style_code": "T1",
+        "style_name": "服务器机房",
+        "slot_id": "01",
+        "generated_at": "2026-10-17T01:55:00.859467+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47wBGMzjBTCMwXSrvftuwHqWa1yA-UXqmxFR86rDZn3DR",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47wBGMzjBTCMwXSrvftuwHqWa1yA-UXqmxFR86rDZn3DR",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 4,
+        "published_at": "2026-10-17T02:00:20.692076+08:00"
+      },
+      "html": "2026/20261017/01/preview_20261017_01.html",
+      "txt": "2026/20261017/01/article_20261017_01.txt",
+      "images": [
+        "2026/20261017/01/image_20261017_01_01.jpg",
+        "2026/20261017/01/image_20261017_01_02.jpg",
+        "2026/20261017/01/image_20261017_01_03.jpg",
+        "2026/20261017/01/image_20261017_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261016_01",
       "date": "20261016",
       "slot": "01",
