@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261018_01",
+      "date": "20261018",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "快得没有影子的编辑器，为什么反而觉得卡",
+      "lead": "第一次打开Zed，按下Cmd+P，搜索面板凭空弹出来。没有淡入，没有滑动，连一帧的过渡都没有。它确实快，但你的眼睛被闪了一下。一个响应最快的编辑器，给了你最不舒服的第一印象。",
+      "metadata": {
+        "hint_id": "zed-fast-without-transition",
+        "writing_style": "narrative",
+        "style_code": "T2",
+        "style_name": "电路微距",
+        "slot_id": "01",
+        "generated_at": "2026-10-18T00:56:22.699533+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47_f4neF2rJqbgWziHHoI1dEPUKa9rblUZEcujzPuwArU",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47_f4neF2rJqbgWziHHoI1dEPUKa9rblUZEcujzPuwArU",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 4,
+        "published_at": "2026-10-18T01:03:18.115433+08:00"
+      },
+      "html": "2026/20261018/01/preview_20261018_01.html",
+      "txt": "2026/20261018/01/article_20261018_01.txt",
+      "images": [
+        "2026/20261018/01/image_20261018_01_01.jpg",
+        "2026/20261018/01/image_20261018_01_02.jpg",
+        "2026/20261018/01/image_20261018_01_03.jpg",
+        "2026/20261018/01/image_20261018_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261017_01",
       "date": "20261017",
       "slot": "01",
