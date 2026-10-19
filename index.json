@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261019_01",
+      "date": "20261019",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "汽车屏幕正在抛弃手机App的逻辑",
+      "lead": "2024年10月，特斯拉发布无人驾驶出租车Cybercab，车内没有方向盘和踏板，只剩一块横贯仪表台的大屏。在官方的致谢名单里，出现了游戏引擎厂商Epic Games的名字。一家汽车公司，为一套车机界面专门感谢一家游戏引擎公司，这件事本身就不寻常。过去十年，汽车屏幕的逻辑是放大的手机：导航、电台、空调按钮，就是一套触屏App。但Cybercab的屏幕里跑着Unreal Engine 5，实时渲染3D地图、雷达视界、车辆模型和交互面板。一块车机屏幕，开始用游戏引擎来驱动。这已经超出了美化升级的范畴。它是一种渲染架构的替换。",
+      "metadata": {
+        "hint_id": "unreal-engine-remaking-ui",
+        "writing_style": "narrative",
+        "style_code": "T3",
+        "style_name": "工厂车间",
+        "slot_id": "01",
+        "generated_at": "2026-10-19T01:11:33.358229+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47ysK2VQlMkS9ga8wmxu24fnI56XuPLJ-GI32tgsSI4Q_",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47ysK2VQlMkS9ga8wmxu24fnI56XuPLJ-GI32tgsSI4Q_",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 4,
+        "published_at": "2026-10-19T01:17:12.124812+08:00"
+      },
+      "html": "2026/20261019/01/preview_20261019_01.html",
+      "txt": "2026/20261019/01/article_20261019_01.txt",
+      "images": [
+        "2026/20261019/01/image_20261019_01_01.jpg",
+        "2026/20261019/01/image_20261019_01_02.jpg",
+        "2026/20261019/01/image_20261019_01_03.jpg",
+        "2026/20261019/01/image_20261019_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261018_01",
       "date": "20261018",
       "slot": "01",
