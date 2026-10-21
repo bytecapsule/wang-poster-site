@@ -1,6 +1,43 @@
 {
   "articles": [
     {
+      "id": "20261021_01",
+      "date": "20261021",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "父亲管得最严的那个，成了乔丹",
+      "lead": "迈克尔·乔丹小时候在家后院打球，几乎赢不了二哥拉里。拉里个子更矮，但跳得更高、手更快。每次输球，迈克尔都气急败坏，有时摔球，有时找借口。父亲詹姆斯·乔丹站在门口，不看比分，只盯着小儿子的反应。在这个家里，大哥稳重，二哥是公认的运动天才，只有最小的迈克尔，调皮捣蛋，被父亲盯得最紧。多年以后，这个被管得最严的孩子成了迈克尔·乔丹。他自己说，如果没有那份严厉，以他的性子，很可能早就烂在街头了。",
+      "metadata": {
+        "hint_id": "jordan-father-parenting",
+        "writing_style": "story",
+        "style_code": "T3",
+        "style_name": "工厂车间",
+        "slot_id": "01",
+        "generated_at": "2026-10-21T02:24:40.813300+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp477aCtD0H6PefCUF3t0lIxeq_6ZbErGRXwpAydcJhoGEO",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp477aCtD0H6PefCUF3t0lIxeq_6ZbErGRXwpAydcJhoGEO",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 5,
+        "published_at": "2026-10-21T02:30:17.523342+08:00"
+      },
+      "html": "2026/20261021/01/preview_20261021_01.html",
+      "txt": "2026/20261021/01/article_20261021_01.txt",
+      "images": [
+        "2026/20261021/01/image_20261021_01_01.jpg",
+        "2026/20261021/01/image_20261021_01_02.jpg",
+        "2026/20261021/01/image_20261021_01_03.jpg",
+        "2026/20261021/01/image_20261021_01_04.jpg",
+        "2026/20261021/01/image_20261021_01_05.jpg"
+      ]
+    },
+    {
       "id": "20261020_01",
       "date": "20261020",
       "slot": "01",
