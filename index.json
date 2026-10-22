@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261022_01",
+      "date": "20261022",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "你问AI营收，它为什么不反问？",
+      "lead": "你问AI：“上个月营收多少？”它回你一个数字。你等着它追问哪个季度、哪个产品线，它没有。那一刻你意识到，问题不在它聪不聪明，在它根本没有手去打开数据那扇门。",
+      "metadata": {
+        "hint_id": "ai-understands-business-ontology",
+        "writing_style": "story",
+        "style_code": "T4",
+        "style_name": "火箭发射",
+        "slot_id": "01",
+        "generated_at": "2026-10-22T02:30:29.280145+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47-0aAK7AMrQbZkPH8JvveJa94rBBMnS-sD4qW04GOc76",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47-0aAK7AMrQbZkPH8JvveJa94rBBMnS-sD4qW04GOc76",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 4,
+        "published_at": "2026-10-22T02:37:06.725291+08:00"
+      },
+      "html": "2026/20261022/01/preview_20261022_01.html",
+      "txt": "2026/20261022/01/article_20261022_01.txt",
+      "images": [
+        "2026/20261022/01/image_20261022_01_01.jpg",
+        "2026/20261022/01/image_20261022_01_02.jpg",
+        "2026/20261022/01/image_20261022_01_03.jpg",
+        "2026/20261022/01/image_20261022_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261021_01",
       "date": "20261021",
       "slot": "01",
