@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261023_01",
+      "date": "20261023",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "一个差评杀死一个人，凶手不是那个顾客",
+      "lead": "2026年10月13日，四川宜宾高县，33岁的胡女士跳河轻生。她摆摊卖炸串四年多，死前九天，一位顾客嫌菜量少，在多平台发了条差评：“避雷，老板娘玩不起。”评论区随即涌入大量陌生人，指责服务差、味道不好。胡女士在遗言里写，自己经历了“心中的网暴”。一条差评，一条命。人们本能地去找那个按下发送键的人算账，但杀人的，是发送键之后的事情。",
+      "metadata": {
+        "hint_id": "one-review-can-kill-traffic-platform",
+        "writing_style": "narrative",
+        "style_code": "Q2",
+        "style_name": "水墨国风",
+        "slot_id": "01",
+        "generated_at": "2026-10-23T02:25:47.084734+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47x6ummQE_F_ZIDkLDL3ZxCxOiF2SnP-GJ-cXS_1mkFO1",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47x6ummQE_F_ZIDkLDL3ZxCxOiF2SnP-GJ-cXS_1mkFO1",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 4,
+        "published_at": "2026-10-23T02:31:17.550484+08:00"
+      },
+      "html": "2026/20261023/01/preview_20261023_01.html",
+      "txt": "2026/20261023/01/article_20261023_01.txt",
+      "images": [
+        "2026/20261023/01/image_20261023_01_01.jpg",
+        "2026/20261023/01/image_20261023_01_02.jpg",
+        "2026/20261023/01/image_20261023_01_03.jpg",
+        "2026/20261023/01/image_20261023_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261022_01",
       "date": "20261022",
       "slot": "01",
