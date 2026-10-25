@@ -1,0 +1,49 @@
+{
+  "title": "最会干活的AI，碰不到钥匙",
+  "lead": "一个能自动处理邮件、调用API、管理数据库的AI助手，你不得不给它密钥。但给了它，就相当于把保险柜密码告诉了它。一旦被劫持，几十秒内数据就可能被打包外传。英伟达的OpenShell项目给出了一个反直觉的方案：让AI干所有活，但AI从头到尾不知道密码是什么。它连钥匙长什么样都没见过。",
+  "cover_image_prompt": "A minimalist line drawing of a key suspended above an AI robot, separated by a transparent barrier. The robot reaches out but cannot touch the key. The key has a subtle glow.",
+  "sections": [
+    {
+      "heading": "能干的下属，要不要把钥匙交给它？",
+      "content": "2026年2月，英伟达开源了OpenShell，一个面向自主AI智能体的安全运行时。同年10月的GTC Berlin上，它升级为覆盖数据中心、云和边缘的全栈参考架构。项目的自我定位很简单：安全、私密的自主智能体运行时。但它的做法和市面上大多数AI安全产品不同。大多数产品在做的事是：看着AI干活，发现不对就拦。OpenShell在做的事是：默认什么都不让AI碰，它想碰什么，得先申请，申请通过才有权限，而且它永远碰不到真正的钥匙。\n\n这是一个根本的翻转。传统安全思路是给智能体一把钥匙，然后派一个守卫盯着它。OpenShell的思路是：钥匙根本不放在智能体身上，守卫坐在智能体和外部世界之间，每次智能体要开门，守卫掏出钥匙开一下，开完立刻收回。智能体从头到尾不知道钥匙在哪，甚至不知道有钥匙这回事。"
+    },
+    {
+      "heading": "为什么让AI自觉这条路走不通？",
+      "content": "很多人对AI安全的想象，是让模型更听话、更有道德感，或者用另一层AI去监控它。这条路走不通，不是道德问题，是结构问题。\n\n第一，模型可以被骗。提示注入是公开的弱点。2024年就有研究展示，一封看似无害的邮件，内嵌一段白色文字指令，就能让Gmail插件自动转发收件箱里的敏感邮件。模型没有意图，它只是按照输入生成输出。当输入被人为污染，模型的自我约束就成了沙堡。靠模型的自觉做安全，等于把保险柜的锁装在保险柜内部。锁的设计再精巧，只要知道怎么拨弄内部的齿轮，就能打开。\n\n第二，检测天然滞后。发现异常再拦截的前提是你知道异常长什么样。一个拿着真实凭据的智能体，可以在几十秒内完成打包、外传、清理痕迹。传统安全产品依赖模式匹配和异常检测，但自主智能体的行为多变，合法的操作序列和恶意的操作序列在形式上可能一模一样。事后审计只能回答发生了什么，回答不了为什么没拦住。\n\n第三，权限是放大器。智能体越有用，被授予的权限越大。一个能自动分析销售数据并生成报告的智能体，需要读取数据库、调用分析API、发送邮件。权限越大，被劫持后的破坏半径越大。给一个能干的下属一把万能钥匙，赌的是他永远理智。这是概率题，不是安全方案。\n\n所以英伟达把安全从模型层挪到了环境层。防线不再依赖智能体的配合或理智，而是由环境强制执行。AI骗不过环境，因为环境根本不听它解释，只看它想去哪，再决定放不放行。"
+    },
+    {
+      "heading": "钥匙不交，活照干",
+      "content": "OpenShell如何做到钥匙不交、活照干？核心机制有两个：凭据代理和变更前验算。\n\n凭据代理是整套方案的心脏。每个智能体运行在一个独立的沙箱里，沙箱外部有一个监督器进程。智能体发出的每一个对外请求，无论是HTTP调用还是gRPC指令，都必须先经过监督器。监督器加载了一份策略文件，里面定义了智能体可以访问哪些服务端点。当请求到达，监督器检查目标URL是否匹配允许列表。匹配，则从自己的安全存储中取出对应的API密钥或数据库密码，附加到请求上，再发出去。不匹配，直接拒绝。智能体从头到尾看不到真实的凭据，它只知道服务名，比如salesforce-api。它甚至不知道凭据存在。就像你授权一个助理帮你寄信，助理知道收件人地址，但不知道你的信箱密码。\n\n变更前验算则负责守住权限的边界。每次有人想给智能体开新权限，比如允许访问一个新主机或调用一个新API方法，Policy Prover会在权限生效前介入。它使用形式化验证技术，基于SMT求解器，检查新权限会不会导致信息流泄露或越界访问。如果新权限可能让智能体把原本只能读的数据写到可外传的端点，验证就会失败，权限变更不能自动通过，必须等人工审核。这不是事后审计，是变更前的验算。它把风险拦截在权限生效之前。\n\n这两个机制之外，还有内核级隔离和全链路审计。每个智能体以非root身份运行，不持有任何Linux内核能力。文件系统访问被Landlock限制，网络操作被seccomp拦截。AI不是被警告别乱来，而是物理上没有乱来的能力。每一次允许、每一次拒绝都有记录，导出为标准化日志。它不在乎你信不信AI，它在乎的是每一步都有据可查。\n\n这些机制合在一起，实现了同一个效果：智能体可以完成复杂的任务，调用各种服务，但它的活动范围被预先画好，它碰不到任何能造成不可逆伤害的东西。能力给了，钥匙没交。"
+    },
+    {
+      "heading": "从印章、复核到基础设施",
+      "content": "有人会问：这样严格的控制，会不会让智能体变得没用？很多任务需要灵活访问不同的资源。OpenShell的策略并不是禁止访问，而是通过策略精细授权。你可以预先定义哪些服务、哪些端点、哪些操作是允许的。智能体在授权范围内完全自主，超出范围则寸步难行。能力并没有被削弱，只是权限被精确控制了。\n\n形式化验证确实会带来配置复杂度。定义策略、编写允许列表、验证权限变更，这些都需要安全工程师的参与。英伟达提供了一些预置策略模板和自动化工具，但中小团队可能仍觉得门槛不低。这是安全必须付出的成本。比起数据泄露后的法律诉讼和品牌损失，事前验算的代价要小得多。而且这套机制最适合的场景是数据中心、云服务和关键基础设施，这些地方本来就有专业的安全团队。\n\n这个设计里藏着人类组织治理史上最古老的一条经验：不要赌执行者的自觉，把要害钥匙从执行者手里拿开。古代官府的库房，管账的和拿钥匙的分开。银行的付款，经办和复核是两个人。公司的财务章和root权限，永远不会交给同一个人。人类用几百年才学会：权力的授予不等于钥匙的移交。你可以允许一个人做成千上万件事，但那些能造成不可逆伤害的东西，不放在他身上。\n\nOpenShell只是把这套钥匙分离搬到了数字执行者身上，而且做得更彻底：AI甚至不知道钥匙存在。它不是一个需要被信任或防范的员工，它是一个活动范围被预先画好的工作负载。\n\n真正值得注意的是时代背景。人类社会第一次批量出现有自主性的执行者，不是工具，是能自己读文件、自己调接口、自己决定下一步做什么的执行体。当这样的执行者上岗，我们其实是在用几个月的时间，重演人类花了几百年才摸索出来的治理演进。区别在于：人类治理靠制度演进、靠事故倒逼、靠事后补丁，而数字世界可以直接把最成熟的治理结构预装进基础设施。\n\n当自主执行者成为新的劳动力，治理的重心正在从约束执行者转向设计环境。这套从印章、复核、钥匙分离里生长出来的历史经验，正在被写进AI的基础设施。OpenShell可能只是开始。"
+    }
+  ],
+  "tips": "安全不再是对AI的教育，而是对环境的编程。当执行者不再是工具，信任的锚点就从人转移到了系统设计本身。",
+  "image_prompts": [
+    "A minimalist line drawing of a robot standing in front of a locked door, its hand empty, no key. The door has a large lock. The robot looks puzzled.",
+    "A minimalist line drawing of an AI model icon with red malicious code being injected into its interior, represented as sharp, jagged lines. The AI icon has a simple expressionless face.",
+    "A minimalist line drawing showing a proxy server between an AI agent and an API. The AI sends a request arrow to the proxy, the proxy attaches a key icon and forwards to the API. The AI cannot see the key, shown by a dashed line barrier.",
+    "A minimalist line drawing of an ancient Chinese treasury office with two officials: one holding an account book, the other holding a key, separated by a simple line. The background is a simple room with a safe."
+  ],
+  "metadata": {
+    "hint_id": "openshell-agent-credential-separation",
+    "writing_style": "narrative",
+    "style_code": "Q4",
+    "style_name": "极简线稿",
+    "slot_id": "01",
+    "generated_at": "2026-10-25T01:17:34.390891+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47162nvSDjqgMwczP6Gbq_lGFJylx1lYRaXyyQCZ-jIs3",
+    "wechat_response": {
+      "media_id": "xzyzB2R_5xd4dG_UIxp47162nvSDjqgMwczP6Gbq_lGFJylx1lYRaXyyQCZ-jIs3",
+      "item": []
+    },
+    "draft_verified": true,
+    "push_attempts": 1,
+    "cover_permanent": true,
+    "draft_list_total": 4,
+    "published_at": "2026-10-25T01:21:17.313552+08:00"
+  }
+}
