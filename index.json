@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261026_01",
+      "date": "20261026",
+      "slot": "01",
+      "year": "2026",
+      "month": "10",
+      "title": "删掉循环和卷积，AI才开始通用",
+      "lead": "八位谷歌研究员在做一件深度学习圈没人做的事：不断做减法。他们从翻译模型里剥掉卷积层，性能没降。再剥掉循环层，还是没降。当模型只剩自注意力时，训练速度量级提升，翻译质量反超所有对手。论文标题由此诞生，一句披头士歌词的变体：Attention Is All You Need。",
+      "metadata": {
+        "hint_id": "attention-is-all-you-need-transformers",
+        "writing_style": "narrative",
+        "style_code": "P2",
+        "style_name": "美漫记者",
+        "slot_id": "01",
+        "generated_at": "2026-10-26T01:31:59.656503+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47wt2asY8AQUcRCcTOazLOvsbaL0HYpxX_9Z-gIANLyE2",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47wt2asY8AQUcRCcTOazLOvsbaL0HYpxX_9Z-gIANLyE2",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 4,
+        "published_at": "2026-10-26T01:46:00.662815+08:00"
+      },
+      "html": "2026/20261026/01/preview_20261026_01.html",
+      "txt": "2026/20261026/01/article_20261026_01.txt",
+      "images": [
+        "2026/20261026/01/image_20261026_01_01.jpg",
+        "2026/20261026/01/image_20261026_01_02.jpg",
+        "2026/20261026/01/image_20261026_01_03.jpg",
+        "2026/20261026/01/image_20261026_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261025_01",
       "date": "20261025",
       "slot": "01",
