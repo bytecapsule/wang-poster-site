@@ -1,0 +1,53 @@
+{
+  "title": "公积金：一笔睡三十年的钱",
+  "lead": "每个月工资单扣一笔公积金，单位交一份，个人交一份，看着体面。但账户里的钱计息长期低于通胀，取出来又有条件：买房、翻建、大病。算一笔账：月缴一千，三十年本金三十六万。这笔钱睡在账户里三十年，跑不赢通胀的利息差本身就是一笔不小的损失。不买房的人，连动用它的权利都没有。",
+  "cover_image_prompt": "A person holding a pay slip with a highlighted housing fund deduction line, standing by a window overlooking a sprawling city at twilight; the reflection in the window shows a clock with hands frozen, suggesting money asleep for decades.",
+  "sections": [
+    {
+      "heading": "一笔看得见、动不了的资产",
+      "content": "每个月工资单上，公积金一栏总是两笔数：个人缴存和单位缴存。看着像是公司额外给的一笔福利。但账户里的钱，计息规则决定了它跑不赢通胀。过去十年，公积金存款利率多数时候在1.5%附近，而同期物价涨幅年均超过2%。一年两年不觉得，十年二十年就是一笔不小的损失。\n\n想取出来？只有买房、翻建、大病等少数情形。对不买房的人，这笔钱从三十岁缴到六十岁，退休才能动。月缴一千，三十年本金三十六万，锁在账户里睡大觉。这笔钱看得见却动不了，更像一笔定期存款，但利率更低，锁定期更长。",
+      "image_prompt": "A close-up of a digital salary statement on a phone screen, the housing fund row illuminated, while in the blurred background a person sits on a bed in a small rented room, surrounded by bills."
+    },
+    {
+      "heading": "为过桥时代设计的资金池",
+      "content": "公积金制度诞生于1990年代的住房转轨期。单位分房退出，商品房登场，中间缺一笔购房资金。公积金的办法是强制积累：个人存一点，单位补一点，封闭运行，专用于买房。封闭账户、低息贷款、提取限制，一切都围绕一个前提：人这辈子总要买房。\n\n那个年代，这个前提基本成立。现在呢？高房价把大量年轻人挡在门外，保障房分流了刚需，租房从过渡变成长期选择。当不买房成为多数人的常态，人人买房的前提就塌了。制度却还在按老逻辑运转：管钱的依据是用途，人的真实处境不在考虑之列。为过桥时代设计的资金池，桥已经不需要了，池子还在收水。",
+      "image_prompt": "A split-view of a city: on one side, old factory dormitories from the 1990s; on the other, modern high-rise apartments with unaffordable price tags; a bridge between them is crumbling, symbolizing the outdated provident fund system."
+    },
+    {
+      "heading": "开了窗，没拆墙",
+      "content": "政策已经在调整。租房提取逐步放开，灵活就业者可以自愿缴存。但落到每个人头上，松绑的力度参差不齐。一线城市租房提取一年能拿出来的，往往只是月租金的一小部分，账户里的大头还是动不了。申请要合同、发票、房东配合，材料少一样就卡住。灵活就业者缴存也一样：交得进去，取不出来。制度开了窗，但墙还在。\n\n有人会说，强制储蓄帮你存钱，总比花掉好。问题是，这笔钱的收益太低，锁定期太长。自己打理，哪怕存定期或买国债，收益更高，且随时可用。公积金的强制，是以牺牲流动性和收益为代价的。如果强制的结果只是让钱缩水，那强制就只剩强制。",
+      "image_prompt": "A government service center window labeled 'Rental Withdrawal', with a long queue of people holding stacks of documents; the window is slightly open but blocked by a heavy glass wall, reflecting the city skyline."
+    },
+    {
+      "heading": "同一笔钱，两种命运",
+      "content": "同一个制度下，买房的人用公积金做首付、享低息贷款，是上车的踏板。不买房的人，账户里的钱是沉睡的定期，是跑不赢通胀的存折。缴存二十年，前者靠它上了车，后者看着它缩水。制度把所有人都预设为购房者。同一笔钱在制度里被当成两种东西。\n\n官方已推进的调整方向是增加弹性，让用途更贴近人的真实处境。但根本问题还在：一笔强制积累的钱，如果用途假设已经失效，强制还成立吗？",
+      "image_prompt": "A diverging path in a city park: one path leads to a new home with a 'Sold' sign and a family moving in; the other path leads to a locked safe sitting on a bench, with a person staring at it helplessly."
+    }
+  ],
+  "tips": "公积金的改革方向是从单纯为买房积累转向支持居住需求。但每松一步，都涉及存量利益的重调。被锁住的人是分散的、沉默的，制度的运转方是集中的、有话语权的，这场围绕公积金的讨论从一开始就不对称。",
+  "image_prompts": [
+    "A close-up of a digital salary statement on a phone screen, the housing fund row illuminated, while in the blurred background a person sits on a bed in a small rented room, surrounded by bills.",
+    "A split-view of a city: on one side, old factory dormitories from the 1990s; on the other, modern high-rise apartments with unaffordable price tags; a bridge between them is crumbling, symbolizing the outdated provident fund system.",
+    "A government service center window labeled 'Rental Withdrawal', with a long queue of people holding stacks of documents; the window is slightly open but blocked by a heavy glass wall, reflecting the city skyline.",
+    "A diverging path in a city park: one path leads to a new home with a 'Sold' sign and a family moving in; the other path leads to a locked safe sitting on a bench, with a person staring at it helplessly."
+  ],
+  "metadata": {
+    "hint_id": "zhidu-zhangben-02-housing-fund",
+    "writing_style": "narrative",
+    "style_code": "D3",
+    "style_name": "城市切片",
+    "slot_id": "01",
+    "generated_at": "2026-11-04T04:32:10.141656+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp4745YHcL8P-ojDKq3WL_-XNVX-oI8d5qjeG871dAlDCku",
+    "wechat_response": {
+      "media_id": "xzyzB2R_5xd4dG_UIxp4745YHcL8P-ojDKq3WL_-XNVX-oI8d5qjeG871dAlDCku",
+      "item": []
+    },
+    "draft_verified": true,
+    "push_attempts": 1,
+    "cover_permanent": true,
+    "draft_list_total": 2,
+    "published_at": "2026-11-04T04:36:11.897096+08:00"
+  }
+}
