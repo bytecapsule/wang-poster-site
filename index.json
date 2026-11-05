@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261105_01",
+      "date": "20261105",
+      "slot": "01",
+      "year": "2026",
+      "month": "11",
+      "title": "你交的失业保险，保的不是失业，是被辞退",
+      "lead": "离职单上四个字，决定一份缴了十几年的保单是生效还是作废。公司写的“辞退”，能领失业金；自己写的“个人原因”，当场归零。同一天离开的两个人，一个能缓冲几个月，一个只能自己扛过一个没有收入的冬天。",
+      "metadata": {
+        "hint_id": "zhidu-zhangben-03-unemployment",
+        "writing_style": "narrative",
+        "style_code": "D4",
+        "style_name": "光影氛围",
+        "slot_id": "01",
+        "generated_at": "2026-11-05T04:42:40.362234+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47_nq2QSl9HbX9-ZjzL9lxG942NJm_5KIpLMi2bvR0dRE",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47_nq2QSl9HbX9-ZjzL9lxG942NJm_5KIpLMi2bvR0dRE",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 1,
+        "published_at": "2026-11-05T04:45:32.372427+08:00"
+      },
+      "html": "2026/20261105/01/preview_20261105_01.html",
+      "txt": "2026/20261105/01/article_20261105_01.txt",
+      "images": [
+        "2026/20261105/01/image_20261105_01_01.jpg",
+        "2026/20261105/01/image_20261105_01_02.jpg",
+        "2026/20261105/01/image_20261105_01_03.jpg",
+        "2026/20261105/01/image_20261105_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261104_01",
       "date": "20261104",
       "slot": "01",

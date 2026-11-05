@@ -1,0 +1,53 @@
+{
+  "title": "你交的失业保险，保的不是失业，是被辞退",
+  "lead": "离职单上四个字，决定一份缴了十几年的保单是生效还是作废。公司写的“辞退”，能领失业金；自己写的“个人原因”，当场归零。同一天离开的两个人，一个能缓冲几个月，一个只能自己扛过一个没有收入的冬天。",
+  "cover_image_prompt": "A dimly lit office desk at dusk, a resignation letter with the words 'personal reasons' clearly visible, harsh shadows cast by a single desk lamp, the rest of the room in deep shadow, dust particles floating in the light beam.",
+  "sections": [
+    {
+      "heading": "三个条件，一道闸门",
+      "content": "领失业保险金要同时满足三个条件：非因本人意愿中断就业、累计缴费满一年、已办理失业登记并有求职要求。三条里，第一条是真正的闸门。只要你的离职证明上写着“个人原因”，哪怕你交了十五年，也一分钱领不到。金额按当地最低工资的一定比例计发，领取期限随缴费年限延长，最长不超过二十四个月。这些数字各地不同，但闸门是统一的：主动辞职的人一律不符合。\n\n《失业保险条例》第十四条写得很清楚，“非因本人意愿中断就业”是硬杠杠。各地人社部门在执行中，把它转化为一纸离职证明：被辞退、合同到期不续签，算；自己提离职，不算。一个字的差别，锁死了整份保险的生效条件。",
+      "image_prompt": "A person sitting alone in a dark room at night, face illuminated only by the glow of a computer screen showing a social insurance inquiry page, deep shadows around, a sense of quiet desperation."
+    },
+    {
+      "heading": "制度防的是骗保，漏的是被逼走的人",
+      "content": "失业保险的制度模板来自二十世纪初的欧洲失业津贴。设计初衷是给被裁员者过渡保障，同时设一道道德风险闸门，防止有人故意辞职骗保。这个逻辑预设了一个稳定的雇佣关系：辞职是个人决策，失业是被动遭遇，两者界限分明。在工业化早期的工厂里，这个预设大致成立。\n\n但中国就业市场的现实已经完全不同。大规模平台化、灵活化就业让人员流动极其频繁，大量离职是结构性压力下的个人选择：工资低到无法覆盖生活成本，工时长达身体极限，工作环境恶劣到撑不下去。不辞职是撑不住，辞职是继续干还不如不干。这些人填“个人原因”的时候，不是出于自由意愿，而是被环境推到了那张离职单跟前。\n\n用“个人意愿”一刀切，漏掉了最常见也最需要支持的失业形态。制度防范的是一个次要风险，代价是漏掉一个主要人群。防骗保的初衷是真的，漏掉主力人群的结果也是真的。",
+      "image_prompt": "A vast open-plan office or factory floor at early morning, workers moving in repetitive patterns, harsh fluorescent light creating deep shadows, a sense of structural pressure and exhaustion."
+    },
+    {
+      "heading": "同一天离开，差的不只是两个字",
+      "content": "被辞退的人，拿着辞退证明，领失业保险金，还能拿到一笔经济补偿金，可以比较从容地找下一份工作。主动走的人，辞职报告上写着“个人原因”，保单当场归零，补偿金也没有。而主动走的人往往是最需要缓冲的：他们常常连下家都没找好，只是实在撑不下去了。被辞退的人领到的保障，恰恰是辞职的人最需要的。\n\n制度把保障给了被选择的离开，把空白留给了自己选择的离开。“自己选择”里，装满了被环境推着走的人。离职单上那四个字的差别，不只是两张纸的不同，而是一个有收入缓冲的冬天和一个完全靠自己扛过去的冬天之间的差距。",
+      "image_prompt": "Two silhouetted figures walking away from the same office building at sunset, one moving toward a warm lit street, the other into a cold shadowed alley, the contrast of light and dark emphasizing their diverging fates."
+    },
+    {
+      "heading": "谁来判断“自愿”还是“被逼”",
+      "content": "有人会问，如果放开主动辞职也能领，会不会有人故意辞职骗保？这个风险确实存在。失业保险基金有限，如果大量人随意辞职后都来申领，基金压力会骤增，甚至挤占真正被裁员的份额。这种担忧并非没有道理。\n\n但目前的制度用一刀切的方式防范一个小概率事件，代价是让大量真正需要的人落空。一些地方已经开始探索扩大失业认定范围，将长期欠薪、严重超时加班、未按约定提供劳动条件等情形纳入非自愿失业的范畴。问题在于，如何区分“自愿离职”和“被逼离职”，谁来判断，判断错了谁负责，仍然没有明确答案。制度弹性的增加，意味着审查责任和成本的重新分配，这不是一个简单的开关。\n\n防骗保的闸门需要保留，但它不应该成为一道把所有被逼走的人都拦在外面的墙。",
+      "image_prompt": "A balanced scale on a desk in a dimly lit government office, one side holding a document labeled 'voluntary', the other 'involuntary', the light from a window casting ambiguous shadows, making the boundary between the two sides unclear."
+    }
+  ],
+  "tips": "失业保险不是没用，只是它的用处被一个定义卡住了。当“自愿”里混着大量被迫，自愿就成了一道以个人名义执行的结构性筛子，筛掉的是失业里最普遍也最无助的那种形态。",
+  "image_prompts": [
+    "A person sitting alone in a dark room at night, face illuminated only by the glow of a computer screen showing a social insurance inquiry page, deep shadows around, a sense of quiet desperation.",
+    "A vast open-plan office or factory floor at early morning, workers moving in repetitive patterns, harsh fluorescent light creating deep shadows, a sense of structural pressure and exhaustion.",
+    "Two silhouetted figures walking away from the same office building at sunset, one moving toward a warm lit street, the other into a cold shadowed alley, the contrast of light and dark emphasizing their diverging fates.",
+    "A balanced scale on a desk in a dimly lit government office, one side holding a document labeled 'voluntary', the other 'involuntary', the light from a window casting ambiguous shadows, making the boundary between the two sides unclear."
+  ],
+  "metadata": {
+    "hint_id": "zhidu-zhangben-03-unemployment",
+    "writing_style": "narrative",
+    "style_code": "D4",
+    "style_name": "光影氛围",
+    "slot_id": "01",
+    "generated_at": "2026-11-05T04:42:40.362234+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47_nq2QSl9HbX9-ZjzL9lxG942NJm_5KIpLMi2bvR0dRE",
+    "wechat_response": {
+      "media_id": "xzyzB2R_5xd4dG_UIxp47_nq2QSl9HbX9-ZjzL9lxG942NJm_5KIpLMi2bvR0dRE",
+      "item": []
+    },
+    "draft_verified": true,
+    "push_attempts": 1,
+    "cover_permanent": true,
+    "draft_list_total": 1,
+    "published_at": "2026-11-05T04:45:32.372427+08:00"
+  }
+}
