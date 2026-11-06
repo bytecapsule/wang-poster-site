@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261106_01",
+      "date": "20261106",
+      "slot": "01",
+      "year": "2026",
+      "month": "11",
+      "title": "父母那代文凭换编制，这代换简历海选",
+      "lead": "2023年春天，一句“学历是我下不来的高台，是孔乙己脱不掉的长衫”在社交媒体上刷屏。那一年，1158万大学毕业生离开校园。他们中的许多人很快发现，手里这张文凭能换来的，是一轮又一轮的简历海选、客服岗位或灵活就业。而在二十多年前，同样一张大学文凭，换来的可能是体制内的编制、城市户口和一套福利分房。长衫成了这代人的集体自嘲。但长衫背后的落差，不是任何一件衣服能解释的。",
+      "metadata": {
+        "hint_id": "degree-inflation-betrayal",
+        "writing_style": "narrative",
+        "style_code": "D5",
+        "style_name": "手绘草稿",
+        "slot_id": "01",
+        "generated_at": "2026-11-06T04:58:22.679995+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp4722gqcCUZowujH178CwcGI6XXGAZuq7EBzptk9p97hx6",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp4722gqcCUZowujH178CwcGI6XXGAZuq7EBzptk9p97hx6",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 2,
+        "published_at": "2026-11-06T05:04:19.644966+08:00"
+      },
+      "html": "2026/20261106/01/preview_20261106_01.html",
+      "txt": "2026/20261106/01/article_20261106_01.txt",
+      "images": [
+        "2026/20261106/01/image_20261106_01_01.jpg",
+        "2026/20261106/01/image_20261106_01_02.jpg",
+        "2026/20261106/01/image_20261106_01_03.jpg",
+        "2026/20261106/01/image_20261106_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261105_01",
       "date": "20261105",
       "slot": "01",
