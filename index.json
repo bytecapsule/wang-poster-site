@@ -1,6 +1,42 @@
 {
   "articles": [
     {
+      "id": "20261110_01",
+      "date": "20261110",
+      "slot": "01",
+      "year": "2026",
+      "month": "11",
+      "title": "当年说国家管养老的人，现在让你自己存钱",
+      "lead": "2022年11月，个人养老金制度启动。银行员工背着开户指标，App弹窗写着“为未来的自己存一笔钱”。同一批金融机构，三十年前在储蓄所柜台张贴的标语是“积极参加养老保险，晚年生活有保障”。从“国家保障”到“自己存钱”，两句话之间隔了一代人的整个职业生涯。截至2023年底，开户数突破5000万，实际往账户里存钱的人不到四分之一。多数人开了户，不动了。这不是懒，是一种用脚投票的不信任。",
+      "metadata": {
+        "hint_id": "pension-promise-gearshift",
+        "writing_style": "narrative",
+        "style_code": "M2",
+        "style_name": "超现实油画",
+        "slot_id": "01",
+        "generated_at": "2026-11-10T07:20:06.370887+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp476NMdfI8JX82VvKWvlpTdFOEapcrxCnLbFDaTxyhJIDm",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp476NMdfI8JX82VvKWvlpTdFOEapcrxCnLbFDaTxyhJIDm",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 2,
+        "published_at": "2026-11-10T07:23:24.870748+08:00"
+      },
+      "html": "2026/20261110/01/preview_20261110_01.html",
+      "txt": "2026/20261110/01/article_20261110_01.txt",
+      "images": [
+        "2026/20261110/01/image_20261110_01_01.jpg",
+        "2026/20261110/01/image_20261110_01_02.jpg",
+        "2026/20261110/01/image_20261110_01_03.jpg",
+        "2026/20261110/01/image_20261110_01_04.jpg"
+      ]
+    },
+    {
       "id": "20261109_01",
       "date": "20261109",
       "slot": "01",
