@@ -1,0 +1,54 @@
+{
+  "title": "每次异地看病，你的医保都在打折",
+  "lead": "同样一场大病，在老家医院治，医保能报销八九成；换到常住的外省城市，自己掏的钱要多出一大截。差别不在病，不在医院，在一件事：你是不是本地人。",
+  "cover_image_prompt": "A person standing at a hospital billing counter in a modern city, looking at a medical bill with a confused expression, the background shows urban buildings through the window.",
+  "sections": [
+    {
+      "heading": "结算便利了，报销仍在打折",
+      "content": "这几年，跨省异地就医直接结算覆盖的医院越来越多，备案手续也简化了不少。很多人以为异地看病终于方便了，问题已经解决。\n\n但结算便利只是让报销流程顺畅了，没有改变报销比例打折的现实。同样一场病，在参保地治疗和在外省治疗，医保实际报销的金额仍然不同。异地就医的报销比例通常低于参保地本地就医，转诊需要更严格的审批，药品和诊疗项目的报销范围也按就医地的目录执行。在哪治，决定了报多少。结算解决的是能不能用，解决不了打不打折。"
+    },
+    {
+      "heading": "属地统筹的账本",
+      "content": "医保基金是按行政区划分割的。每个市、每个省都是一个独立的统筹区，自己收钱，自己管账，自己负责池子里的水够不够用。一个湖南人在深圳看病，结算时钱从湖南的医保池子里划走。深圳的医院只是借了个地方，深圳的池子并不出钱。\n\n这套属地统筹的账本，好处是权责对等：本地人花本地钱，本地政府管本地池子，财政考核算得清，基金安全有抓手。代价是流动者被搁在了池子边缘。他们向家乡的池子缴费，却在全国各地消费医疗服务。每一个统筹区都没有动力对非本地人慷慨。花别人池子里的钱，别人没义务给你同样的报销比例。\n\n异地报销打折的根源不在技术，也不在结算系统。技术可以把流程磨平，利益会把差距焊牢。只要池子还是按行政区划分割，打折就是属地利益的必然反应。"
+    },
+    {
+      "heading": "钉在户籍地上的保障",
+      "content": "属地统筹不是今天才发明的。它是计划经济时代单位加户籍体系留下的制度基因。当年，一个人的生老病死都挂靠在一个单位、一个地方，医保跟着地方走，天经地义。制度设计的前提是：大多数人一辈子不会离开自己的参保地。\n\n这个前提早就塌了。今天，跨省务工、随迁老人、异地灵活就业者，构成了几亿人的流动大军。他们人在外地，医保关系却还钉在老家。制度假设人不动，现实是人一直在动。\n\n打折报销，是这套旧假设对流动现实最温和的惩罚。它用打折提醒你：你不是本地人。看得见，回不去，每次看病都向你收一笔过界税。"
+    },
+    {
+      "heading": "弹性与边界",
+      "content": "当然，制度并非毫无弹性。这几年，备案手续不断简化，门诊慢特病跨省直接结算的范围在扩大，跨省共济试点也开始推进。这些调整确实让异地就医的门槛降低了一些。\n\n但它们改变不了属地分割的根本格局。只要医保基金还是按行政区划各自封闭运行，每个统筹区就仍然有动力控制外流支出。打折的动机，不会因为手续简化而消失。真正要让保障跟着人走，需要提高统筹层次，或者建立更大力度的跨区域调剂机制。那涉及中央和地方财政关系的重新划分，不是医保部门一家能推动的。\n\n属地统筹也有它的合理性。它调动了地方征缴和监管的积极性，避免了全国统一池子可能带来的大锅饭低效。打折是制度设计的代价。只是这个代价，主要由流动人口承担了。"
+    },
+    {
+      "heading": "流动的代价",
+      "content": "回到开头那个算术题。同样一场病，本地人报八九成，流动者报得少一截。差别只在于缴费地和就医地是不是同一个地方。谁缴的钱都不少。\n\n流动人口不是不缴费。跨省务工的人每年在老家缴医保，随迁老人在老家缴医保，异地灵活就业者也在某个城市缴医保。他们缴的钱进了池子，但看病时却要跨过池子的边界。每一次跨过边界，报销就打一次折。这是属地假设对流动现实收的过界税。\n\n当一个人一辈子可以在三个省份生活，保障为什么还要钉在一个户籍地上？这个问题，医保部门无法单独回答。它指向的是整个财政体制如何重新想象地方和人的关系。在答案到来之前，流动人口只能继续支付这笔隐形税。"
+    }
+  ],
+  "tips": "门诊慢特病跨省直接结算仍在扩面，但住院报销的折扣依然显著。最需要保障的低收入流动人口，承担了这笔隐形税的主要部分。",
+  "image_prompts": [
+    "A person using a mobile phone to handle medical insurance procedures in a modern office, with a hospital bill on the desk showing reduced reimbursement.",
+    "A desk with a ledger, a calculator, and a map of China divided into colored regions, symbolizing the segmented insurance funds, in a corporate office setting.",
+    "An old household registration booklet next to a modern social security card on a table, with a blurred background of people walking in a city street.",
+    "A government service hall with people queuing at a cross-province medical insurance window, staff in uniform, modern office environment.",
+    "A person walking through a bustling city street, with a faint dotted line connecting him to a distant location on a map overlay, symbolizing the anchored insurance."
+  ],
+  "metadata": {
+    "hint_id": "zhidu-zhangben-09-portable-medicare",
+    "writing_style": "narrative",
+    "style_code": "S2",
+    "style_name": "都市职场",
+    "slot_id": "01",
+    "generated_at": "2026-11-15T02:59:20.605664+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47x-wK6MpAce4ZXBSlKO26W1B1cxb_b9_8BdqXDHxMq3c",
+    "wechat_response": {
+      "media_id": "xzyzB2R_5xd4dG_UIxp47x-wK6MpAce4ZXBSlKO26W1B1cxb_b9_8BdqXDHxMq3c",
+      "item": []
+    },
+    "draft_verified": true,
+    "push_attempts": 1,
+    "cover_permanent": true,
+    "draft_list_total": 3,
+    "published_at": "2026-11-15T03:04:05.219159+08:00"
+  }
+}
