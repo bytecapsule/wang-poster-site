@@ -1,6 +1,41 @@
 {
   "articles": [
     {
+      "id": "20261116_01",
+      "date": "20261116",
+      "slot": "01",
+      "year": "2026",
+      "month": "11",
+      "title": "月薪上万，社保却按最低基数扣款：完全合法，但二十年后的差距没人告诉你",
+      "lead": "月薪一万元，社保个人缴费比例8%。按实际工资缴，每月个人账户入账800元；按最低基数四千元缴，入账320元。两个人同一年入职，十年后，一个账户里躺着近十万元，另一个不到四万。两本账都完全合规，没有谁违规。差的只是基数。",
+      "metadata": {
+        "hint_id": "zhidu-zhangben-10-min-base-insurance",
+        "writing_style": "narrative",
+        "style_code": "S3",
+        "style_name": "水墨山河",
+        "slot_id": "01",
+        "generated_at": "2026-11-16T03:39:19.292674+08:00",
+        "pipeline_version": 1,
+        "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47zTlDAj7J56YpnxBaqR62jPK6pnS3o5tBBvhyVl0836L",
+        "wechat_response": {
+          "media_id": "xzyzB2R_5xd4dG_UIxp47zTlDAj7J56YpnxBaqR62jPK6pnS3o5tBBvhyVl0836L",
+          "item": []
+        },
+        "draft_verified": true,
+        "push_attempts": 1,
+        "cover_permanent": true,
+        "draft_list_total": 3,
+        "published_at": "2026-11-16T03:42:38.548052+08:00"
+      },
+      "html": "2026/20261116/01/preview_20261116_01.html",
+      "txt": "2026/20261116/01/article_20261116_01.txt",
+      "images": [
+        "2026/20261116/01/image_20261116_01_01.jpg",
+        "2026/20261116/01/image_20261116_01_02.jpg",
+        "2026/20261116/01/image_20261116_01_03.jpg"
+      ]
+    },
+    {
       "id": "20261115_01",
       "date": "20261115",
       "slot": "01",
