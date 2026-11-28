@@ -1,0 +1,49 @@
+{
+  "title": "教 AI 说话的人，造了个不说话的 AI",
+  "lead": "Diogo Almeida 的办公室墙上印着一行反常的口号：Death before strings。宁死不用字符串。他曾经是让 AI 学会说话的关键人物，2022 年他作为共同作者参与了 InstructGPT 论文，那项研究直接奠定了 ChatGPT 的对话能力。但两年后，他创立 TypeSafe AI，发布了一个完全放弃文本生成的模型 Jev。这个模型不聊天、不解释，只输出一个数字、一个选择、一个分数。一个教 AI 说话的人，为什么成了让 AI 闭嘴的最大推手？",
+  "cover_image_prompt": "A factory-floor styled tech office with exposed pipes and metal walkways. On a concrete wall, the slogan 'Death before strings' is painted in bold industrial lettering. A figure stands before it, looking at a monitor displaying streams of discrete numbers. Conveyor belts of server racks line the background, bathed in cool blue light.",
+  "sections": [
+    {
+      "heading": "对话的顶峰与看不见的墙",
+      "content": "2022 年，Diogo Almeida 的名字出现在一篇重要论文的作者栏里。论文题为《InstructGPT》，它提出了一种方法：用人类反馈强化学习训练语言模型，让 AI 学会遵循指令、礼貌回答。这篇论文后来被视为 ChatGPT 的奠基之作。Almeida 当时在 OpenAI 担任核心研究员，他的工作是教 AI 说话。\n\n效果立竿见影。ChatGPT 发布后，全世界为之一振。AI 能写诗、能编程、能安慰人。对话式 AI 走向巅峰。\n\n但在随后的两年里，一个尴尬的事实逐渐浮出水面：AI 越来越会聊天，却始终干不了活。\n\n软件公司尝试将对话模型接入自动化流程，结果令人沮丧。让 AI 处理客服工单，它可能回复一段措辞优美的道歉，却忘了执行退款。让它审查代码提交，它可能写出一篇详细的代码分析，却漏掉了明显的安全漏洞。对话模型习惯用语言覆盖一切，但软件之间不需要语言。一个 API 调用只期望返回一个状态码，不需要一段散文。\n\nAlmeida 后来在 TypeSafe 的博客中写道，那段时间他们反复撞上一堵墙：对话模型在设计上瞄准的是人类用户，软件的需求被忽略了。它擅长生成文本，却不擅长做出可靠的判断。\n\n一个更深的困境藏在技术细节里。人类反馈强化学习训练出的模型，校准误差会随着时间恶化。GPT-4 的预期校准误差从早期的 0.007 飙升到后来的 0.074。模型对自己的预测越来越不诚实，它开始胡说八道，却依然说得头头是道。\n\nAlmeida 意识到，他们可能造了一辆“无马马车”。19 世纪末，第一批汽车被设计成马车的形状，因为人们只知道马车。同样，第一批 AI 被塞进人类对话的壳子里，因为人们只知道用语言交互。但机器的原生智能，应该有它自己的形状。"
+    },
+    {
+      "heading": "宁死不用字符串",
+      "content": "2024 年前后，Almeida 和一群工程师在旧金山创立了 TypeSafe AI。团队成员来自 OpenAI、Google Brain、Meta FAIR，还有 Stripe、Airbnb 等公司的资深架构师。他们拿到 DCVC 领投的 4000 万美元种子轮，估值 2 亿美元。\n\n公司的文化墙上印着几行字。最显眼的是“Build Prod, Not God”，造产品，不造神。旁边还有一句“Death before strings”，宁死不用字符串。\n\n这些口号指向一个反常的决定：他们不再让 AI 说话。\n\nTypeSafe 团队提出一个概念，叫“机器原生知能”。其核心很简单：软件之间不需要语言。当一个程序调用另一个程序，它只需要一个数字、一个选择、一个分数。任何多余的文本都是噪声。\n\n他们开始从头设计一个完全不同的模型。这个模型不生成文本，只输出概率化的离散决策。它有三种输出原语：Choice（选择）、Score（评分）、Noul（无）。Noul 代表“不知道”——模型可以拒绝回答不确定的问题，而不是像对话模型那样强行生成一段看似合理的废话。\n\n这个设计直接挑战了行业主流。2024 年，整个 AI 界都在追求更会聊天的模型。OpenAI、Anthropic、Google 竞相发布能写更长的文章、能进行更复杂推理的对话系统。TypeSafe 却反其道而行，造一个“哑巴”AI。\n\n他们的逻辑很简单：对话模型试图模仿人类的系统二：慢速、深思、用语言推理。但软件自动化需要的是系统一：快速、直觉、不假思索。心理学家丹尼尔·卡尼曼的双系统理论在这里获得了工程意义。一个自动巡检代码的 AI 不需要写一篇分析报告，它只需要在毫秒间输出一个“通过”或“拒绝”的信号。\n\nDCVC 的合伙人显然被这个逻辑说服了。4000 万美元的种子轮，在 2024 年的 AI 投资热潮中不算最高，但押注在一个“不说话的 AI”上，仍然需要魄力。"
+    },
+    {
+      "heading": "判断脱离语言",
+      "content": "2026 年 9 月 15 日，TypeSafe 发布了他们的第一个模型：Jev。名字取自 19 世纪英国经济学家杰文斯，他提出过一个悖论：蒸汽机效率越高，煤炭消耗反而越多。TypeSafe 用这个名字，暗示他们要把智能决策的成本打到几乎为零。\n\nJev 完全放弃了文本生成。它只输出 Choice、Score、Noul 三种原语。为了让这些离散输出可靠，团队设计了一套新的校准方法 RLCD（强化学习校准决策），并搭配并行采样器，确保每一次输出都附带精确的概率分数。\n\nTypeSafe 公布了一组对比数据。在决策精度上，Jev 达到 67.8%，GPT-5.6 Terra 是 67.9%，几乎持平。但延迟只有后者的 1/25，成本是 1/76，格式错误率 0.00%。结果是：Jev 不会像对话模型那样偶尔输出格式错误，因为它根本不生成自由文本。\n\n社区很快给出了更直观的演示。有人让 Jev 以 10Hz 的频率控制经典游戏 DOOM 的角色。屏幕上的像素在闪动，Jev 每 100 毫秒输出一个动作编号：前进、射击、左转。没有任何解释，没有一句废话。角色在枪林弹雨中灵活移动，像被一个沉默的幽灵操控。\n\n另一个演示更贴近实际工作：跨网页机票检索。Jev 在 7 秒内自主浏览多个航空公司网站，比较价格，最后输出一个选择。整个过程的计算成本是 0.0039 美元，不到四厘。\n\n最让开发者兴奋的是 PR 巡检。一个开源项目接入 Jev，让它审查 1000 个代码合并请求。Jev 逐行扫描，对每个 PR 输出一个风险评分。总成本 0.07 美元，七美分。\n\nAlmeida 在发布博客中写道：“我们不造神，我们造零件。”这句话呼应了办公室墙上那句“Build Prod, Not God”。\n\n一个教 AI 说话的人，终于造出了一个拒绝说话的 AI。而它干活的效率，比任何会聊天的模型都高。"
+    },
+    {
+      "heading": "微美分决策的洪流",
+      "content": "Jev 发布后，社区迅速将它接入各类基础设施。Vercel AI Gateway、MCP 协议、OpenRouter 先后支持。开发者可以在自己的应用中直接调用 Jev，就像调用一个普通的 API。\n\n成本曲线开始陡峭下降。TypeSafe 公布，一次典型的决策调用只需几微美分。巡检 1000 个 PR 的成本从七美分继续下探。智能决策的价格，正在逼近电费和带宽的成本。\n\n杰文斯悖论开始显现。19 世纪，杰文斯发现，瓦特改良蒸汽机后，煤炭效率大幅提高，结果英国的煤炭消耗量反而激增。因为效率越高，用途越广，总用量越大。\n\n同样的逻辑正在 AI 决策领域重演。当判断的价格低到几乎为零，它就会嵌入到每一个软件流程中。代码提交、数据库查询、API 调用、用户行为。每一个环节都可以插入一个沉默的决策点。它不说话，只输出一个数字。\n\n或许某一天，一个代码仓库的自动巡检系统在毫秒间挡下了一个危险命令。屏幕上的日志只记录了一行：Risk Score: 0.97, Action: Block。背后没有思考中的大脑，没有生成任何解释文本。只有一组校准过的概率，在电光石火之间做出了判断。\n\n这就是 Diogo Almeida 两年前开始寻找的“干活”的样子。他参与建造了会说话的 AI，然后亲手拆掉了它的语言外壳。\n\n办公室墙上那句“Death before strings”，终于不再只是一句口号。"
+    }
+  ],
+  "tips": "TypeSafe 公布的 Jev 性能数据目前仍是厂商自报，缺乏独立第三方基准测试。绝对推理深度上，Jev 仍逊于 Sol、Opus 5 等大型对话模型。但它的格式错误率 0.00% 和微美分成本，已经打开了一扇新门。无论 TypeSafe 最终能否成功，让 AI 闭嘴干活的方向，可能才是软件自动化真正落地的开始。",
+  "image_prompts": [
+    "A factory-floor styled AI training facility. Conveyor belts carry streams of text data towards a glowing neural network core. Workers in industrial uniforms monitor screens showing chat dialogues. The atmosphere is busy but the output is only words, no actions. Industrial pipes and steel beams frame the scene.",
+    "Inside a converted factory floor turned startup office. A concrete wall painted with the slogan 'Death before strings' in bold stencil letters. Engineers sit at metal desks, working on circuit-like diagrams of decision trees. The environment is raw and industrial, with exposed ventilation ducts and steel columns.",
+    "A factory control room with multiple monitors showing streams of numbers and simple choices instead of text. A large screen displays a DOOM game being played by an AI, with action codes flashing rapidly. The room is lit by the glow of screens and industrial warning lights. Pipes and metal catwalks surround the space.",
+    "A vast industrial assembly line where instead of physical goods, tiny glowing decision tokens are being processed. Each token is a simple number or choice, moving at high speed along conveyor belts. Workers monitor the flow from a steel balcony. The scene is dark but illuminated by the glow of millions of decisions."
+  ],
+  "metadata": {
+    "hint_id": "type-safe-jev-machine-native-story",
+    "writing_style": "story",
+    "style_code": "T3",
+    "style_name": "工厂车间",
+    "slot_id": "01",
+    "generated_at": "2026-09-23T02:01:12.506481+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp472GwbVXMlQfMO6c9ZWLdaaJmjnpajzanjTcEundxU4sm",
+    "wechat_response": {
+      "media_id": "xzyzB2R_5xd4dG_UIxp472GwbVXMlQfMO6c9ZWLdaaJmjnpajzanjTcEundxU4sm",
+      "item": []
+    },
+    "draft_verified": true,
+    "push_attempts": 1,
+    "cover_permanent": true,
+    "draft_list_total": 6,
+    "published_at": "2026-09-23T02:07:13.214390+08:00"
+  }
+}

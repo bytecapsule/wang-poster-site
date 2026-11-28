@@ -1,0 +1,41 @@
+{
+  "title": "仅退款：平台造了一扇门，然后惊讶地发现有人走进去了",
+  "lead": "2026年6月，一个新闻让很多人倒吸一口气：女子网购1100件衣服，以“仅退款”方式退回1000件，涉案金额超过5万，商家报警立案。舆论的矛头齐刷刷指向这个女人——贪婪、钻空子、不道德。但这件事真正值得凝视的，不是她。是那扇被她走进去的门。那扇门是平台自己造的，门楣上清清楚楚写着“欢迎使用”。",
+  "sections": [
+    {
+      "heading": "那扇被设计出来的门",
+      "content": "“仅退款”不是漏洞，是设计。它的初衷干净利落：消费者买到劣质商品，退货流程繁琐，运费扯皮不休，那就别退了吧，钱直接退给你。平台用这招压缩了交易摩擦，消费者好感度瞬间拉高。\n\n但这个设计同时创造了一个结构性缺口：只要消费者愿意，可以零成本完成一次无货退款。不需要举证，不需要寄回，不需要承担任何风险。规则允许一件事发生，却没有为“被滥用”预设足够高的门槛。\n\n这叫规则的穿透力缺口。它不要求恶意，只要求条件成立。一个行为在技术上是合规的，在操作上是零成本的，在惩罚上是模糊的——这扇门对每一个人都是敞开的。"
+    },
+    {
+      "heading": "当规则把道德外包给用户",
+      "content": "平台最核心的假设朴素得令人惊讶：消费者不会滥用这个权利。这意味着“不作恶”不再是系统约束出来的结果，而是外包给了每个人的道德自律。\n\n然而制度设计史反复告诉我们一件事：把抑制贪婪的责任交给自律，等于不设防。不是因为人性本恶，而是因为任何一个规则的漏口，在足够大的用户基数下，都会有人理性地把它用到极致。\n\n这个女子只是把可能性推到了末端。她没有创造一个规则，她只是执行了一个规则所允许的极限版本。如果我们愿意冷静地看，就会发现平台预设的“好人模型”本身就是一个脆弱的工程。它没有给系统留出对抗理性滥用的缓冲层。"
+    },
+    {
+      "heading": "平台的算计：收益内部化，代价外部化",
+      "content": "仅退款对平台有明确的回报：消费者满意度指标变得好看，留存率上升，差评被扼杀在摇篮里。平台在用户和商家之间，选择了站在用户这一侧，这本身就是一种流量策略。\n\n而这项策略的成本呢？货物损失、运营压力、纠纷处理，几乎全部由商家承担。平台制定了规则，却把规则的代价转嫁了出去。商家不是决策参与者，却成了沉默的付款人。\n\n这是一种精密的利益不对称结构：收益内部化，成本外部化。平台获得了用户增长叙事，但无需为每一次“仅退款”支付仓储、物流或货值损失。制度的设计者，同时是制度成本的豁免者。这种割裂，比任何一个钻空子的用户，都更根本地决定了规则会被推到哪里。"
+    },
+    {
+      "heading": "灰色地带里的自我合理化",
+      "content": "极端案例只是冰山尖。更值得凝视的是水面以下那团巨大的阴影：日常化的轻度滥用。收到货不喜欢，懒得打包寄回，点个仅退款；商品其实没毛病，但退货运费比商品还贵，不如仅退款；买完后悔了，想着“平台反正允许”，于是仅退款。\n\n每一次这样的操作背后，都长出一条精密的自我合理化链条。“规则没禁止，就是允许。”“商家利润高，不在乎这点。”“别人都这么做，我为什么要吃亏。”\n\n规则允许的事，就等于道德允许的事吗？这才是那片真正的社会土壤。当制度给出了一个边界模糊的容器，无数普通人的选择会在不知不觉中滑向灰色的一侧。他们并不觉得自己在作恶，只是觉得“这不算什么”。而正是这些“不算什么”的累积，让一条裂缝变成了一条通道。"
+    }
+  ],
+  "tips": "我们总在谈论“那个女人”，可是她只是走过了一扇被造好的门。真正值得追问的是——为什么那扇门会出现在那里？它被设计得如此友好，如此低门槛，却从未标注明确的边界线。当规则把可能性递到每个人手中，我们该用哪一把尺子衡量那些走进去的人？这把尺子，我们每个人手里都攥着，却很少愿意用它量一量自己。",
+  "image_prompts": [
+    "A massive futuristic doorway made of glowing circuit traces and transparent digital panels, a refund icon glowing on the lintel, a woman pushing an overflowing shopping cart of clothes stepping through, cold mechanical lighting, steel and glass surfaces.",
+    "A dark mechanical chamber where a pedestal holds a single glowing orb labeled with an ethics symbol, surrounded by gear systems and pressure plates, the floor tilting toward a gap labeled 'abuse', no human figures, industrial tension.",
+    "A giant mechanical scale in a digital marketplace, one side piled with platform revenue metrics and satisfaction charts, the other side crushed under cargo containers and shipping boxes, glowing data streams flowing upward to a corporate tower, metallic environment.",
+    "A quiet room lined with infinite mirrors, each reflection showing a different person holding a smartphone with a refund screen, faint grids and calculation overlays on the walls, cool blue-gray ambiance, uncanny stillness."
+  ],
+  "references": [
+    {
+      "title": "Psychology says adults who learned to depend on no one as children don’t grow into self-sufficient adults; they grow into people who confuse asking for help with weakness, and slowly build a life no one else knows how to step into",
+      "source": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com/news/international/us/psychology-says-adults-who-learned-to-depend-on-no-one-as-children-dont-grow-into-self-sufficient-adults-they-grow-into-people-who-confuse-asking-for-help-with-weakness-and-slowly-build-a-life-no-one-else-knows-how-to-step-int/articleshow/131584751.cms"
+    },
+    {
+      "title": "Psychology says most people only pretend to care about your life and are just looking for juicy gossip: Why bad news is more interesting for them",
+      "source": "The Economic Times",
+      "url": "https://economictimes.indiatimes.com/news/international/us/psychology-says-most-people-only-pretend-to-care-about-your-life-and-are-just-looking-for-juicy-gossip-why-bad-news-is-more-interesting-for-them/articleshow/131515692.cms"
+    }
+  ]
+}

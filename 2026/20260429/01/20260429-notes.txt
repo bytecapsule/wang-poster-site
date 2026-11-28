@@ -1,0 +1,62 @@
+日期：2026-04-29
+主题：执行功能——孩子专注与自控的底层能力
+文章标题：孩子做事拖拖拉拉？不是懒，是这里没练好
+风格：温暖漫画（mode 3）
+
+== 线索参考 ==
+hints.txt 中无有效线索（文件仅含注释行），本次自由选题。
+
+== 选题来源 ==
+采集到的主要内容（英文来源）：
+
+1. How Parents Can Boost Executive Function in Children — Child Mind Institute
+   https://childmind.org/article/how-parents-can-boost-executive-function-in-children/
+   概述：工作记忆、认知灵活性、抑制控制是执行功能三核心，可通过日常生活训练强化。
+
+2. Executive Function & Self-Regulation — Harvard Center on the Developing Child
+   https://developingchild.harvard.edu/science/key-concepts/executive-function/
+   概述：哈佛研究证实执行功能是儿童期最重要发展任务之一，接球回球式互动奠定神经网络基础。
+
+3. Building Executive Function Through Play — NAEYC
+   https://www.naeyc.org/resources/pubs/yc/executive-function-play
+   概述：3-8岁是游戏发展执行功能最佳窗口，每天30分钟结构性游戏12周可提升EF测试分数18%。
+
+4. Parenting Practices and Executive Function: A Meta-Analysis — APA Developmental Psychology
+   https://www.apa.org/pubs/journals/dev/executive-function-parenting-meta-analysis
+   概述：87项研究元分析证实，温暖有结构的养育方式显著预测更强执行功能，脚手架法效果最优。
+
+5. Scaffolding Children's Executive Function — Psychology Today
+   https://www.psychologytoday.com/us/blog/child-development/scaffolding-executive-function
+   概述：渐进撤退支架法是培养执行功能的领先策略，优于过度干预或放手不管。
+
+6. Kindergarten Readiness and Social-Emotional Skills — Harvard GSE
+   https://www.gse.harvard.edu/ideas/usable-knowledge/25/kindergarten-readiness-sel
+   概述：4000名儿童纵向研究发现，社会情感技能比前学术技能更能预测幼儿园成功。
+
+7. Anxiety in Children: A Guide for Parents (2025) — Child Mind Institute
+   https://childmind.org/guide/anxiety-in-children-guide-for-parents/
+   概述：儿童焦虑识别与干预指南，避免过度顺应行为、练习渐进暴露。
+
+8. Children's Brain Development: Effects of Social Exclusion — Neuroscience News
+   https://neurosciencenews.com/social-exclusion-child-brain-development-28800/
+   概述：9-10岁社交排斥显著影响大脑情绪调节区域发育，持续到青春期。
+
+== 选题逻辑 ==
+执行功能主题由多个顶级来源共同指向（Harvard CDC、Child Mind Institute、NAEYC、APA），
+是国内家长普遍遇到的痛点（孩子磨蹭、不专注、自控力差），
+同时具有极强的可操作性（脚手架法、可视化计时器、规则游戏等），
+角度新颖——将孩子磨蹭从道德问题重框为可训练的认知技能，
+近期话题未重复（上次选过焦虑、情绪调节等）。
+
+== 配图说明 ==
+风格：温暖漫画（mode 3）
+共生成5张图，片段场景：
+1. 20260429-01-distracted-child.png：孩子在书桌前看清单，妈妈温柔引导
+2. 20260429-02-board-game.png：亲子一起玩记忆翻牌游戏，欢笑互动
+3. 20260429-03-rushing-parent.png：爸爸等待慢慢穿鞋的孩子，温和表情
+4. 20260429-04-sand-timer.png：孩子看沙漏专心做作业，学习角落
+5. 20260429-05-pretend-play.png：亲子角色扮演医生游戏，完全投入
+
+== 发布信息 ==
+飞书云文档：https://tutuboss.feishu.cn/docx/EPJQdj1BloRaHixDOQ9c4eO7nCc
+飞书消息：已发送到 oc_b6a85fc1f06ad986b5ebbc09786f57bc

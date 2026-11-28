@@ -1,0 +1,40 @@
+日期：2026-05-19
+主题：青少年抑郁早期识别与家庭干预
+风格：治愈绘本
+
+== 选题来源 ==
+采集到的主要内容：
+1. CDC (2024) Youth Risk Behavior Survey — https://www.cbsnews.com/news/teen-mental-health-crisis-high-schoolers-persistent-sadness-cdc/
+   概述：40%高中生报告持续悲伤或绝望，较2011年28%显著上升。青少年心理危机加深。
+2. The Guardian: Instagram and TikTok Algorithms Promote Self-Harm Content to Teens — https://www.theguardian.com/technology/2024/jan/17/instagram-tiktok-algorithms-self-harm-content-teens
+   概述：算法向青少年推送自伤内容，新注册13岁账户数分钟内收到相关推荐。
+3. American Psychological Association. Depressive Disorders in Adolescents — 机构来源，无具体URL
+   概述：青少年抑郁的核心症状与成人不同，易激惹往往比悲伤更突出。
+4. Gottman Institute. Emotion Coaching in Parenting — 机构来源，无具体URL
+   概述：情绪教练型家长 vs 情绪回避型家长，前者帮助孩子建立更好的情绪表达通道。
+5. Harvard Center on the Developing Child — 机构来源，无具体URL
+   概述：家庭中存在可信任成年人是青少年心理健康最强的保护因子之一。
+
+== 选题逻辑 ==
+今日选题：青少年抑郁早期识别与家庭干预。档案中已有空心病（意义感危机）、完美主义、儿童焦虑成因等相关篇目，
+本篇独立切入角度：家长如何从非典型信号（易激惹、退缩、兴趣丧失）识别青少年抑郁，以及第一句话的回应要领。
+与已有篇目不重复：20260510是高成就者意义感空洞，20260514是完美主义驱动焦虑机制，本篇聚焦识别与干预的实操。
+CDP 2024数据（40%高中生持续悲伤）提供强时效性背书，且国内同样数据趋势严峻。
+
+== 参考资料 ==
+- CDC (2024). Youth Risk Behavior Survey: https://www.cbsnews.com/news/teen-mental-health-crisis-high-schoolers-persistent-sadness-cdc/
+- The Guardian (2024/01/17): https://www.theguardian.com/technology/2024/jan/17/instagram-tiktok-algorithms-self-harm-content-teens
+- American Psychological Association. Depressive Disorders in Adolescents（机构来源）
+- Gottman, J. (1997). Raising an Emotionally Intelligent Child（书目来源）
+- Harvard Center on the Developing Child（机构来源）
+- Child Mind Institute. Understanding Teenage Depression（机构来源）
+- 中国青少年心理健康教育研究中心数据（机构来源）
+
+== 配图说明 ==
+风格：治愈绘本（水彩/蜡笔手绘，岩崎知弘风）
+共生成 5 张图，片段场景：
+1. 20260519-01-silent-teen.png — 青少年独自坐在昏暗卧室望向窗外，妈妈在半开的门口担忧地看着
+2. 20260519-02-mom-listening.png — 妈妈坐在女儿身边，轻轻搭肩，女儿低着头，温暖的下午光线
+3. 20260519-03-parent-worry.png — 家长深夜独坐厨房，手捧茶杯，静静望着墙上的全家福
+4. 20260519-04-walking-together.png — 亲子并排走在秋天落叶小路上，不说话，但默默相伴
+5. 20260519-05-gentle-door-open.png — 青少年女孩慢慢推开卧室门，不确定地往外望，走廊的暖光洒进来

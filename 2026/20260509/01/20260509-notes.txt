@@ -1,0 +1,58 @@
+日期：2026-05-09
+主题：儿童同伴玩耍与自由游戏
+风格：治愈绘本（水彩/蜡笔手绘，岩崎知弘风）
+
+== 选题来源 ==
+采集到的主要内容：
+1. The Benefits of Unstructured Play — Child Mind Institute
+   https://childmind.org/article/the-benefits-of-unstructured-play/
+   概述：非结构化游戏让孩子自主决策、发展社交能力和创造力，是儿童健康成长的核心需求。
+
+2. Free Play for Children — Child Mind Institute
+   https://childmind.org/article/free-play-for-children/
+   概述：自由游戏的定义、好处及如何在日常中支持孩子获得更多自由玩耍时间。
+
+3. Why Children Need to Play with Their Peers — Psychology Today（Peter Gray）
+   https://www.psychologytoday.com/us/blog/freedom-learn/200908/why-children-need-to-play-with-their-peers
+   概述：同伴横向关系与父母纵向关系的本质差异；同伴游戏提供无可替代的情绪和社交训练。
+
+4. The Power of Play: A Pediatric Role in Enhancing Development — AAP 2018
+   https://publications.aap.org/pediatrics/article/142/3/e20182058/38649/The-Power-of-Play-A-Pediatric-Role-in-Enhancing
+   概述：AAP权威报告，自由游戏增强脑结构功能、促进执行功能，是儿童发展不可缺的组成部分。
+
+5. 让儿童好好玩从来不只是小事 — 中国教育报
+   https://www.jyb.cn/rmtzgjyb/202212/t20221205_2110526.html
+   概述：中国城市儿童每日户外/自由玩耍时间不足1小时；课余时间被补习班填满与儿童焦虑、缺乏自主性显著相关。
+
+6. 孩子的自由游戏时间越来越少 — 知乎专栏
+   https://zhuanlan.zhihu.com/p/60254003
+   概述：进化视角分析现代城市对儿童的「结构性剥夺」；维果斯基、皮亚杰游戏理论综述。
+
+7. 孩子户外活动减少会怎样 — 搜狐健康
+   https://www.sohu.com/a/230704633_100116654
+   概述：城市儿童户外不足1小时；户外减少→肥胖近视焦虑感觉统合问题；芬兰研究：保证户外玩耍的孩子学业反优。
+
+8. hints.txt 线索（2026-05-09 06:09:55）：儿童同伴玩耍的重要性
+
+== 选题逻辑 ==
+今日 hints.txt 最新线索明确指向「儿童同伴玩耍」。与历史14篇主题比对，无直接重叠（最近似的20260504「手机依赖」仅在支线提及同伴关系）。
+国内外来源高度共鸣：AAP权威背书 + 中国教育报数据 + 心理学理论 + 芬兰对照研究，选题材料丰富、论据立体。
+切入角度：「横向同伴关系 vs 纵向亲子关系的不可替代性」+ 现代儿童玩耍时间被剥夺的现状，警示性强而不焦虑贩卖，实操建议落地。
+
+== 参考资料 ==
+- The Benefits of Unstructured Play: https://childmind.org/article/the-benefits-of-unstructured-play/
+- Free Play for Children: https://childmind.org/article/free-play-for-children/
+- Why Children Need to Play with Their Peers: https://www.psychologytoday.com/us/blog/freedom-learn/200908/why-children-need-to-play-with-their-peers
+- The Power of Play (AAP 2018): https://publications.aap.org/pediatrics/article/142/3/e20182058/38649/The-Power-of-Play-A-Pediatric-Role-in-Enhancing
+- 中国教育报: https://www.jyb.cn/rmtzgjyb/202212/t20221205_2110526.html
+- 知乎专栏: https://zhuanlan.zhihu.com/p/60254003
+- 搜狐健康: https://www.sohu.com/a/230704633_100116654
+
+== 配图说明 ==
+风格：治愈绘本（水彩/蜡笔，岩崎知弘风，岩崎知弘式温暖亲子场景）
+共生成 5 张图，片段场景：
+1. 01-children-playing-freely — 孩子在阳光庭院自由玩耍奔跑
+2. 02-peer-friendship-moment — 两个小朋友并排坐着分享零食低语
+3. 03-conflict-resolution-play — 孩子游戏中发生小争执后主动和解
+4. 04-outdoor-nature-exploration — 三个孩子在草地上好奇探索小虫子
+5. 05-parent-steps-back — 妈妈在远处长椅上欣慰地看孩子自由玩耍

@@ -1,0 +1,38 @@
+日期：2026-05-22
+主题：清醒的幻觉——认知觉醒话语的象征性自我完成陷阱
+风格：C0 — 极简线稿
+
+== 选题来源 ==
+1. hints.txt [2026-05-21 12:30:00] 「洋八股」与心智模式损耗 — 专题2
+   概述：认知觉醒话语（打破规训/做自己/松弛感）通过命名感提前兑现改变奖励，导致行动停滞
+2. Fortune (2026-05-19): Why 70% of transformations fail — false consensus effect
+   URL: https://fortune.com/2026/05/19/why-corporate-transformations-fail-behavioral-science-bcg-julia-dhar/
+
+== 选题逻辑 ==
+今日话题类型C（成人/思辨），hints中2026-05-21线索明确给出此专题方向。
+核心论点：Gollwitzer象征性自我完成机制 + 福柯话语权力 + Bandura自我效能三层理论，
+解释为何「打破规训」话语反而抑制改变行动。
+与20260520篇（善良被操控）区别：前者讲他人利用，本文讲个体内部机制。
+
+== 去重检查 ==
+✅ 无重复主题（近20篇中无认知觉醒/话语权力/象征性自我完成相关篇目）
+近似参考：20260520「越善良的人越容易被操控」——本文差异：机制完全不同
+
+== 参考资料 ==
+- Fortune (2026-05-19): We found the real reason 70% of transformations fail
+  https://fortune.com/2026/05/19/why-corporate-transformations-fail-behavioral-science-bcg-julia-dhar/
+- Gollwitzer, P.M. (1999). Implementation intentions. American Psychologist, 54(7).
+- Bandura, A. (1997). Self-efficacy: The exercise of control.
+- Foucault, M. (1975). Discipline and Punish.
+
+== 配图说明 ==
+风格：C0 — 极简线稿（纯黑白/单色极简主义线稿，抽象人形或几何，高设计感）
+共生成 0 张图，片段场景：
+1. 人盯着精美地图站立不动——地图的诱惑与行动的停滞
+2. 大脑奖励回路激活，身体静止——多巴胺预支完成感
+3. 身份标签构成的笼子——话语标签的囚禁性
+4. 松弛表演下的内在张力——状态标签 vs 真实能力
+5. 指南针指向内部而非前方——内省迷宫
+
+== 微信推送 ==
+响应：{'media_id': 'xzyzB2R_5xd4dG_UIxp474fOP-XTh5umamVzFtfxMQJeEm-y4Rogn1UmyabLplL0', 'item': []}

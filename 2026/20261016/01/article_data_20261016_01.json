@@ -1,0 +1,49 @@
+{
+  "title": "53条规则和900个单词，让AI更会说人话",
+  "lead": "一个整天琢磨如何让AI更像人的人，给出的可读性方案是让AI说得更受约束。Karpathy，OpenAI创始成员、前特斯拉AI总监，近期在一条帖子里公开推荐了一招：让大模型用一套名为ASD-STE100的规范解释事物。这套规范原本是给航空维修手册写的，53条写作规则加一本约900个批准词的词典，所有设计只为一个目标：只允许一种可能的含义。他试过多次，觉得可读性高得多，有时会放宽到\"达到STE的80%\"，因为百分之百太严苛。",
+  "cover_image_prompt": "A mechanical filter made of interlocking metal rules and vocabulary blocks, with streams of text passing through and emerging as clear, structured sentences, in a futuristic industrial setting.",
+  "sections": [
+    {
+      "heading": "自由输出为什么不好懂",
+      "content": "人们容易认为，让AI自由发挥才能写出最自然的文字。但大语言模型做文本续写时，天然倾向把每个意思铺开、换花样重复、用修辞润色。这正是STE追求的唯一可能含义的反面。读者读不懂AI输出，很多时候不是内容太难，而是每句话都开着好几个解读分支。\n\n如果让AI用两种方式解释同一件简单的事，差异大致是这样的。自由风格：\"在进行轮胎更换操作之前，您应当首先确保车辆处于安全状态，并且使用适当的工具将车辆升起，在此过程中请注意不要造成任何损坏。\"STE风格：\"停稳车辆。用千斤顶升起车辆。取下旧轮胎。装上新轮胎。\"前者把三个动作揉进一个长句，用了被动语态、模糊的\"适当工具\"、多余的礼貌用语。后者每句一个指令，动词都是最简单的形式，没有哪个词可以读出第二种意思。\n\n这个例子不是实测数据，但它准确反映了STE规则想要消灭的东西：祈使句代替被动句，一个句子只放一个指令，描述类句子不超过25词，禁止制造歧义的-ing结构。53条规则和约900个批准词组成的滤网，把模型最擅长的说话表演关掉了，逼它把信息密度顶上来。"
+    },
+    {
+      "heading": "当约束变成参数",
+      "content": "STE这套语言，原本是给人用的。1983年，欧洲航空工业界请行业协会研制一套\"受控英语\"，因为航空维修手册要在世界各地几十种语言的机械师手里流转。美国厂商写美式英语，英国厂商写英式英语，非英语母语公司又各有各的写法。翻译成本高昂，而误读一个维修步骤可能直接要命。1985年第一版指南发布，几经升级，2013年起免费公开，2025年的第9版已是正式国际标准，适用行业从航空扩展到国防、铁路、医疗设备。\n\n给人用的STE，成本极高。写手要培训、要审计、违规要返工。规范官方自己都承认：\"要精通STE需要很好的英语功底，软件工具代替不了作者。\"只有航空这种性命攸关的行业才扛得住这套制度成本。\n\n给机器用，成本是一行提示词。Karpathy发现，大模型精通STE，不是因为模型真懂航空维修，而是因为这套语言太好押中。词汇少、句式死，续写空间被压得很窄，模型在这种低自由度的分布里几乎不会跑偏。约束从制度成本降成了参数成本。\n\n他说的是\"80% STE\"。百分之百太严，八成刚刚好。约束的价值，是对自由表达冲动的压制力度本身。它成了一个可调节的旋钮。规范的角色变了，从外部强制的管制工具，变成内部可选的纪律。它没有消失，它从围栏变成了把手。"
+    },
+    {
+      "heading": "两种为对方设计的语言",
+      "content": "这背后是语言经济学与历史角色的一次对撞。日常语言靠上下文消歧义，对话、情境、共同背景，人说话默认对方能补全弦外之音。但维修手册的读者是没有上下文的读者：不同语言、不同培训背景、不同时区的机械师，手里只有文本本身。STE是\"去上下文依赖\"语言的极端实践，它假定读者只有那一页纸。\n\n这套语言当初是\"人迁就机器\"的产物。人把话说死，是为了让维修链上每个不同背景的人都读到同一句话。而今天Karpathy让\"机器迁就人\"：AI用受控语言对人类解释世界，是为了让人类更容易理解机器。两种为对方设计的语言，终于在AI输出里碰面了。\n\n当生成能力普及到人人可用，代码、文案、图像都是如此，一切规范、标准、接口的角色都会经历同样的位移：从外部强制的管制工具，变成内部可选的纪律。会产出的人到处都是，愿意约束自己的那一下却成了稀缺品。制度没有消失，它从围栏变成了把手。"
+    },
+    {
+      "heading": "约束的边界",
+      "content": "把STE说成AI输出的万能解药，会忽略它自己的边界。规范官方明确声明，STE不能单独使用，需要写作者有很好的英语功底，软件工具代替不了人的判断。百分之百的STE输出可能过于干瘪，丢失必要的上下文或细微差别。Karpathy的80%本身就是一种妥协：他需要模型保留一点自由，让解释不至于变成电报。\n\n这套规范最初为维修程序而设计，它的强项是步骤说明、安全警告、技术描述。拿去写散文、写对话、写需要多层语义的文本，很快就会显得笨拙。约束提升可读性，有一个前提：读者想要的是清晰的信息，而不是风格或情感。\n\n还有一个容易被忽视的代价。受控语言把歧义压到最低，但也把语言的多义性、暗示力和美感一并压掉了。这在维修手册里是优点，在文学里是灾难。AI输出的可读性，取决于场景。约束是一个旋钮。知道什么时候拧紧，什么时候松开，才是那80%的真正含义。"
+    }
+  ],
+  "tips": "1980年代的欧洲航空业，为了让意大利、法国、荷兰的机械师和休斯顿的工程师读到同一句维修指令，发明了这套语言。如今它被用来让机器对全人类说人话。两种为对方设计的语言，终于碰面了。",
+  "image_prompts": [
+    "A split view of two text streams: one chaotic and tangled, the other straight and orderly, passing through a mechanical language filter, with gears and rule-engraved plates.",
+    "A large control panel with a dial labeled 'STE Level' set to 80%, connected to a complex AI machinery, with text output clarity increasing as the dial turns.",
+    "A 1980s aircraft maintenance manual with text in multiple languages, overlaid with a modern AI interface displaying the same text in simplified English, with mechanical gears linking the two eras.",
+    "A balance scale with 'Constraint' on one side and 'Free Expression' on the other, both feeding into an AI output stream, with mechanical arms adjusting the weights."
+  ],
+  "metadata": {
+    "hint_id": "ste-constrained-language-ai",
+    "writing_style": "narrative",
+    "style_code": "T0",
+    "style_name": "科技机械",
+    "slot_id": "01",
+    "generated_at": "2026-10-16T02:07:53.659176+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47xVVBLFa6YryYyHAmEYEL-Aywxqn7G32S5mVxVxBDrra",
+    "wechat_response": {
+      "media_id": "xzyzB2R_5xd4dG_UIxp47xVVBLFa6YryYyHAmEYEL-Aywxqn7G32S5mVxVxBDrra",
+      "item": []
+    },
+    "draft_verified": true,
+    "push_attempts": 1,
+    "cover_permanent": true,
+    "draft_list_total": 4,
+    "published_at": "2026-10-16T02:13:49.595432+08:00"
+  }
+}

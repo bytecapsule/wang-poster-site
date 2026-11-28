@@ -1,0 +1,48 @@
+<!DOCTYPE html><html><head><title>软件第一次有了非人类用户</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/></head><body>
+<section style="max-width:677px;margin:0 auto;font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#3d3d3d;background:#fffdf8;padding:0 12px 32px;line-height:1.9;font-size:16px;">
+
+<div style="border-left:4px solid #f4a261;background:#fff8ee;padding:14px 14px;margin:0 0 28px;border-radius:0 8px 8px 0;font-size:15px;font-weight:600;color:#555;line-height:1.8;">一个用Go写的文件转换工具，人打开浏览器上传文件，脚本用命令行批量处理，AI通过MCP协议直接调用转换函数。同一套代码，三种用法。但设计这套代码的人最初只考虑了第一种。当界面不再是唯一入口，AI第一次成了软件的用户，这个变化正在一批Go二进制项目里发生。</div>
+
+<figure style="margin:20px 0;text-align:center;"><img src="image_20261127_01_01.jpg" alt="" loading="lazy" style="max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.06);"/></figure>
+<h2 style="font-size:18px;font-weight:700;color:#3d3d3d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">五个入口，一套能力</h2>
+<p style="margin:0 0 18px;line-height:1.9;">这类项目已经成群落：文件转换工具、本地笔记应用、数据库浏览器、API调试器。它们的共同特征是README里都写着一句话：前端随Go程序嵌入分发。Go二进制打包静态资源，启动后监听本地端口，浏览器打开即用。但它们不止一个入口。</p>
+<p style="margin:0 0 18px;line-height:1.9;">图形化探索：启动服务并自动打开浏览器。<br/>纯CLI执行：直接查询、转换，不启动浏览器，结果到stdout、错误到stderr、退出码表成败。<br/>自动化输出：--json之类机器可读格式。<br/>后台服务：serve --no-open供浏览器或其他程序调用。<br/>MCP：把工具暴露给AI agent，让AI也能调同一套能力。</p>
+<p style="margin:0 0 18px;line-height:1.9;">五个入口，共享同一套核心逻辑。查询、导入、导出等能力做成独立包，CLI子命令调用它，HTTP handler调用它，浏览器通过HTTP API用它，MCP也调用它。界面只是入口之一，不是本体。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这种结构带来的好处很直接。对比Electron，每个应用都拖一个Chromium，安装包动辄上百兆。Go二进制加浏览器的组合，安装包可以小到十几兆。对比SaaS，数据锁在服务端，用户一旦断网或服务关停就失去访问权。本地优先把数据还给用户，断网时核心功能仍可用。</p>
+<p style="margin:0 0 18px;line-height:1.9;">但这些不是最要紧的变化。</p>
+<figure style="margin:20px 0;text-align:center;"><img src="image_20261127_01_02.jpg" alt="" loading="lazy" style="max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.06);"/></figure>
+<h2 style="font-size:18px;font-weight:700;color:#3d3d3d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">用户不止是人</h2>
+<p style="margin:0 0 18px;line-height:1.9;">传统软件只有一种用户：人。所以界面是唯一入口，设计师的全部心思都在人如何看、如何点。但当CLI支持--json、当MCP把能力暴露给AI，用户第一次多出了非人类的一类。</p>
+<p style="margin:0 0 18px;line-height:1.9;">AI不需要像素。它读文档、调工具、解析结构化输出。它需要的是稳定的契约：退出码的约定，JSON schema的承诺，工具描述的准确性。一套能力，多种交互方式，这个口号的潜台词是软件第一次要同时服务人眼和机器大脑。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这件事被忽略，因为大多数开发者把CLI和API看作给人用的辅助工具，而不是给另一个物种用的主入口。但AI agent不是人。一个人类用户打开网页，看到导入按钮，点击后等待进度条。如果出错，他可能刷新重试，或者联系客服。一个AI用户打开MCP工具描述，看到输入参数schema，调用后解析返回的JSON。如果返回格式不符合schema，它直接报错，不会重试，不会抱怨，只是停止工作。这两种用户的容错逻辑完全不同。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这种用户结构的改变，反过来要求核心逻辑必须独立于界面。如果转换函数写在按钮的点击事件里，AI就调不到它。如果CLI和网页各写一套导入逻辑，AI得到的结果可能和人看到的不一致。把核心逻辑抽成独立包，是为了同一个行为在不同入口下保持一致。代码整洁只是附带效果。</p>
+<figure style="margin:20px 0;text-align:center;"><img src="image_20261127_01_03.jpg" alt="" loading="lazy" style="max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.06);"/></figure>
+<h2 style="font-size:18px;font-weight:700;color:#3d3d3d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">环保不能靠架构断言</h2>
+<p style="margin:0 0 18px;line-height:1.9;">有人会说，这种本地优先的形态更环保：少打包、少下载、少占用服务器。但环保这件事不能凭架构推断。</p>
+<p style="margin:0 0 18px;line-height:1.9;">2025年ICT4S的一篇立场论文《Local-First Software for Green IT》给出了审慎的结论。作者用三个实验说明边界：</p>
+<p style="margin:0 0 18px;line-height:1.9;">协作文档场景，在线编辑的网络传输量远高于离线编辑。在线时每次按键都可能触发同步请求，离线只在最终合并时传输数据。但论文中文字描述的倍数与图表数据不一致，不宜直接引用。重要的是，这个实验只测量了网络流量，没有计入设备端计算和存储的能耗。如果设备因为本地计算而更耗电，网络节省的能源可能被抵消。</p>
+<p style="margin:0 0 18px;line-height:1.9;">报销系统模拟假设了一个特定场景：100名员工每月提交报销单，服务器处理并存储。模拟显示，将计算和存储移到本地后，服务器能耗可降约71%。但这个数字来自特定模型，不能推广为所有本地应用都省电71%。如果本地设备老旧、能效低，或者数据需要频繁同步，结果可能不同。</p>
+<p style="margin:0 0 18px;line-height:1.9;">目录搜索场景则指出，数据量大、变化快的场景，首次下载与反复同步可能抵消收益。比如一个实时更新的数据库，本地缓存要不断拉取更新，网络流量反而可能超过直接在线查询。</p>
+<p style="margin:0 0 18px;line-height:1.9;">本地优先可能减少网络负担，但也可能增加设备端计算和电池消耗。是否更省电，取决于具体工作负载和整个系统。架构变化不自动等于省电。</p>
+<p style="margin:0 0 18px;line-height:1.9;">同样需要审慎对待的还有安全。监听localhost只是不让外部网络访问，本机的其他进程仍然可以连到它。随机端口只是减少冲突，不是认证。还需要Host头校验、防CSRF、敏感操作认证等。这些不是本文重点，细节见独立笔记。</p>
+<figure style="margin:20px 0;text-align:center;"><img src="image_20261127_01_04.jpg" alt="" loading="lazy" style="max-width:100%;border-radius:8px;box-shadow:0 2px 8px rgba(0,0,0,.06);"/></figure>
+<h2 style="font-size:18px;font-weight:700;color:#3d3d3d;margin:32px 0 12px;padding-left:12px;border-left:4px solid #f4a261;">被重新看见的用户</h2>
+<p style="margin:0 0 18px;line-height:1.9;">回到开头那个文件转换工具。当AI通过MCP调用它时，调用者是一个解析JSON的程序。这个程序没有眼睛，不看按钮。它可能代表另一个人的意图，也可能是一个自动化流程的一环。无论如何，软件的使用者变了。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这种变化不是未来时态。已经有一批项目在这样设计，尽管它们最初可能只是为了减少重复代码。但当MCP协议把工具暴露给AI agent，这些项目无意中完成了一次用户扩容。</p>
+<p style="margin:0 0 18px;line-height:1.9;">人用浏览器探索，脚本用CLI批处理，AI用MCP拉取。同一套能力，三种交互方式。软件第一次同时服务人眼和机器大脑。这个事实比架构本身更值得被看见，因为它将改变我们设计软件的方式。写文档时，给AI看的参数说明必须精确。设计API时，要考虑AI的解析能力。测试时，要验证退出码和JSON schema，而不仅仅是界面显示。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这种设计自觉正在形成：每次新增一个功能，都要问一句，这个功能AI能用吗。当AI也开始用你的软件，你的用户就不止是人了。</p>
+
+<h1 style="font-size:1.35em;font-weight:700;color:#1a1a1a;margin:0 0 16px;line-height:1.4;">软件第一次有了非人类用户</h1>
+<div style="background:linear-gradient(135deg,#fff8ee,#ffecd2);border-radius:12px;padding:20px 16px;margin-top:36px;border:1px solid #f9c784;">
+<p style="margin:0 0 8px;font-size:15px;font-weight:600;color:#e76f51;">尾声</p>
+<p style="margin:0;font-size:14px;color:#666;line-height:1.9;">当AI成为用户，文档和API的稳定性就成了功能契约，不只是工程美德。这条线索与自动化模式观察共享同一个判断：AI正在成为人类基础设施的新用户。</p>
+</div>
+
+
+
+<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px dashed #f0e0c8;">
+<p style="font-size:13px;color:#aaa;margin:0;font-weight:500;">小汪老师的成长观察笔记</p>
+</div>
+
+</section>
+</body></html>

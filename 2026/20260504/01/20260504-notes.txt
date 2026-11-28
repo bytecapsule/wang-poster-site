@@ -1,0 +1,41 @@
+日期：2026-05-04
+主题：孩子沉迷手机，你越管越上瘾？
+风格：温暖漫画（mode 3）
+
+== 选题来源 ==
+采集到的主要内容：
+1. 美国儿科学会（AAP）— https://www.aap.org/en/patient-care/media-and-children/
+   概述：AAP 对儿童屏幕时间的官方指南，包含分龄建议和数字媒体管理工具
+2. Psychology Today — https://www.psychologytoday.com/us/basics/parenting
+   概述：亲子关系和儿童发展相关的专业心理学文章
+3. 美国心理学会（APA）— https://www.apa.org/topics/anxiety/children
+   概述：儿童焦虑与数字媒体使用的关联研究综述
+4. 中国疾控中心：儿童青少年健康监测数据（无直接URL，为官方报告引用）
+   概述：国内6-12岁儿童每日屏幕时间中位数超过2小时，疫情后未回落
+
+== 选题逻辑 ==
+屏幕时间管理是当下家长最高频的育儿困惑，每周都有大量相关搜索。本文从神经科学角度
+（多巴胺机制、前额叶发育）解释为何孩子难以自控，并分析「禁止策略」失效的心理原因。
+结合国内外研究数据，提供分年龄段的实操建议，具有强实用性。主题聚焦「从对抗到协商」
+的理念转变，与当下正面管教理念高度契合，预计读者共鸣强。
+
+== 参考资料 ==
+- 美国儿科学会（AAP）Media and Children：https://www.aap.org/en/patient-care/media-and-children/
+- 美国心理学会（APA）Children and Anxiety：https://www.apa.org/topics/anxiety/children
+- 中国疾控中心：儿童青少年健康监测数据（机构来源，无直接URL）
+- Psychology Today Parenting：https://www.psychologytoday.com/us/basics/parenting
+
+== 配图说明 ==
+风格：温暖漫画（mode 3）
+共生成 4 张图，场景：
+1. 20260504-01-沉迷屏幕.png — 孩子专注盯着手机屏幕，面露沉醉表情
+2. 20260504-02-禁止手机.png — 家长试图拿走手机，孩子抗拒哭闹
+3. 20260504-03-亲子协商.png — 亲子坐在一起讨论屏幕公约，轻松愉快
+4. 20260504-04-户外替代.png — 孩子在户外奔跑玩耍，充满活力
+
+== 飞书文档 ==
+文档 ID：WD6ZduF6Oo74J6xsSEwcAUIjnAc
+文档 URL：https://tutuboss.feishu.cn/docx/WD6ZduF6Oo74J6xsSEwcAUIjnAc
+
+== 线索参考 ==
+hints.txt 未发现今日新线索，采用自由选题。

@@ -1,0 +1,52 @@
+<!DOCTYPE html><html><head><title>他在百度实验室里看到了改变世界的规律</title><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/></head><body>
+<h1 style="font-size:1.35em;font-weight:700;color:#1a1a1a;margin:0 0 16px;line-height:1.4;">他在百度实验室里看到了改变世界的规律</h1>
+
+<section style="max-width:677px;margin:0 auto;font-family:'PingFang SC','Hiragino Sans GB','Microsoft YaHei',sans-serif;color:#2c2c2c;background:#fefefe;padding:0 16px 32px;line-height:1.95;font-size:16px;">
+
+<div style="border-left:3px solid #999;background:#f0f0f0;padding:14px 18px;margin:0 0 28px;border-radius:0 6px 6px 0;font-size:15px;color:#444;line-height:1.85;">2015年秋天，加州桑尼维尔。百度硅谷AI实验室的机房里，一排排GPU服务器发出持续的低频嗡鸣。达里奥·阿莫代伊站在一台显示器前，盯着几条训练曲线。曲线平滑得不像话——每次训练数据翻倍、算力翻倍，语音识别模型的错误率就稳稳地往下走。不是偶尔，是每一次。这个模式太规律了，规律到让他想起物理学里的标度律。他把这个观察记了下来。当时没有人能预见，这条曲线会在五年后成为全球大模型竞赛的底层燃料，而站在它面前的是一个意大利裔美国人、一个前物理学博士，在一家中国互联网公司的硅谷实验室里。</div>
+
+<figure style="margin:20px 0;text-align:center;"><img src="image_20260831_02_01.jpg" alt="" loading="lazy" style="max-width:100%;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.08);"/></figure>
+<h2 style="font-size:18px;font-weight:700;color:#2c2c2c;margin:32px 0 10px;padding-bottom:6px;border-bottom:1px solid #ddd;">桑尼维尔的物理学家</h2>
+<p style="margin:0 0 18px;line-height:1.9;">达里奥·阿莫代伊1983年出生在旧金山的一个意大利裔家庭。他从小展现出数学和物理天赋，高中时参加过物理学奥林匹克竞赛。大学进入加州理工学院读物理，后来转到斯坦福大学完成物理学学士学位。但他没有继续物理学的博士，而是被另一个问题吸引：智能是如何从物质中涌现的？</p>
+<p style="margin:0 0 18px;line-height:1.9;">他进入普林斯顿大学，师从神经科学家，研究神经回路的集体行为。他的博士论文聚焦于简单神经元如何通过复杂连接产生协调的群体活动——这本质上是一个复杂系统问题。2011年获得博士学位后，他留在斯坦福做博士后，继续研究大规模神经回路。这段时间，他培养出一种思维习惯：从微观规则推导宏观规律，寻找系统中的标度关系。</p>
+<p style="margin:0 0 18px;line-height:1.9;">2011年到2014年，人工智能领域开始剧烈震荡。深度学习在图像识别、语音识别上接连突破，而这些突破背后有一个共同特征：模型越大、数据越多，效果越好。达里奥意识到，他研究神经回路时的那种“从规模中寻找涌现规律”的思维，可以直接应用于人工神经网络。他决定转行。</p>
+<p style="margin:0 0 18px;line-height:1.9;">当时，他有几个选项。斯坦福和硅谷的AI圈对他敞开大门：Google Brain正在扩张，Facebook AI Research刚刚成立，多家创业公司挥舞着支票。但吴恩达给出了一个更特殊的提议。吴恩达是斯坦福教授、Google Brain的创始人之一，2014年刚被百度聘为首席科学家，正在桑尼维尔组建百度硅谷AI实验室（SVAIL）。他需要能在大规模数据和算力上做实验的研究员，而达里奥的背景——物理学、神经科学、复杂系统——恰好符合他的口味。</p>
+<p style="margin:0 0 18px;line-height:1.9;">更重要的是，百度能提供的资源在当时极为稀缺。这家中国搜索巨头拥有数亿用户每天产生的真实语音搜索请求，积累了海量的人类语音数据。同时，百度愿意为SVAIL采购成百上千块GPU，搭建起足以训练超大规模神经网络的算力集群。对于想要验证“规模假设”的研究者来说，这就像一个巨大的实验场。</p>
+<p style="margin:0 0 18px;line-height:1.9;">2014年11月，达里奥走进百度在桑尼维尔的办公室。他的工位旁边，就是那些后来改变了他技术信仰的GPU机架。他即将参与的项目叫DeepSpeech——一个雄心勃勃的计划：用端到端的深度学习，彻底取代传统的语音识别系统。</p>
+<figure style="margin:20px 0;text-align:center;"><img src="image_20260831_02_02.jpg" alt="" loading="lazy" style="max-width:100%;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.08);"/></figure>
+<h2 style="font-size:18px;font-weight:700;color:#2c2c2c;margin:32px 0 10px;padding-bottom:6px;border-bottom:1px solid #ddd;">两条曲线</h2>
+<p style="margin:0 0 18px;line-height:1.9;">DeepSpeech的目标很明确：不再使用传统语音识别中复杂的手工设计模块——声学模型、语言模型、发音词典——而是用一个巨大的神经网络，直接从声音波形映射到文字。这意味着需要喂给模型海量的语音数据和相应的文本标注，然后在GPU集群上反复训练，直到模型学会“听懂”人类语言。</p>
+<p style="margin:0 0 18px;line-height:1.9;">达里奥的日常工作就是与这些数据和算力打交道。他设计实验，调整网络结构，监控训练过程。在成百上千次训练中，他开始注意到一个规律：每次把训练数据量翻倍，同时相应增加算力，模型的错误率就会沿着一条平滑的曲线下降。这条曲线不是偶尔出现，而是几乎每次实验都能复现。他在后来的访谈中回忆，当时他把这个观察告诉同事，但可能没有人意识到它的深远含义——这个规律后来被称为Scaling Law（规模化定律），成为全球大模型竞赛的底层信仰。</p>
+<p style="margin:0 0 18px;line-height:1.9;">Scaling Law的核心思想很简单：模型的效果不是随机提升的，而是与数据规模、模型参数规模、算力规模存在幂律关系。只要你有足够的数据和算力，把模型做得更大，它就一定会更好。这个思想后来驱动了GPT系列、Claude系列、Gemini系列等所有大模型的研发——本质上，它们都在押注同一条曲线。</p>
+<p style="margin:0 0 18px;line-height:1.9;">达里奥并不是唯一观测到这个规律的人。几乎同期，Google Brain、OpenAI的研究者也在独立发现类似现象。但达里奥的观测环境很特殊：他是在一家中国公司的美国实验室里，用着中国的数据和算力，做着后来驱动美国AI霸权的基础研究。技术洞察没有国籍，它只出现在正确的数据遇到正确的算力的那个交汇点上。2014年的百度桑尼维尔实验室，恰好是那个交汇点。</p>
+<p style="margin:0 0 18px;line-height:1.9;">然而，在达里奥盯着训练曲线的同时，百度内部另一条“曲线”也在展开——组织内部的路线冲突。这场冲突的双方，后来被外界称为“学术派”和“工程派”。</p>
+<figure style="margin:20px 0;text-align:center;"><img src="image_20260831_02_03.jpg" alt="" loading="lazy" style="max-width:100%;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.08);"/></figure>
+<h2 style="font-size:18px;font-weight:700;color:#2c2c2c;margin:32px 0 10px;padding-bottom:6px;border-bottom:1px solid #ddd;">两种声音</h2>
+<p style="margin:0 0 18px;line-height:1.9;">学术派的领袖是吴恩达。他带领的硅谷实验室坚持“端到端深度学习”的纯粹路线：用单个神经网络取代传统语音识别中所有手工设计的模块。在吴恩达看来，传统混合系统——比如GMM-HMM模型加上深度学习模块——是过渡方案，迟早应该被彻底抛弃。他的底气来自实验室里那些训练曲线：随着数据增加，纯深度学习模型的效果确实在持续提升。</p>
+<p style="margin:0 0 18px;line-height:1.9;">工程派的基地在北京。技术副总裁王海峰和语音技术负责人贾磊负责的是百度搜索和语音产品的实际落地。他们每天面对的是数亿次用户请求，任何模型切换的闪失都可能造成大规模故障。工程派认为，纯深度学习虽然趋势很好，但在工业级产品中还不够稳定。传统混合系统经过多年打磨，可靠性有保障。他们主张保留传统系统的主体，只把深度学习作为辅助模块嵌入，走渐进改良的路。</p>
+<p style="margin:0 0 18px;line-height:1.9;">两派在语音识别赛道上正面碰撞。据后来记载，双方在内部会议上多次交锋。吴恩达推动激进切换，工程派则坚持“不能把鸡蛋放在一个篮子里”。达里奥作为硅谷实验室的一线研究员，亲历了这场冲突。他没有参与高层决策，但他看到了两种逻辑的不可调和：一边是对技术纯粹性的信仰，一边是对工业可靠性的执念。</p>
+<p style="margin:0 0 18px;line-height:1.9;">最终，工程派占了上风。这不难理解：百度是一家以搜索为核心业务的公司，任何可能影响核心产品稳定性的风险都会被极度放大。组织惯性天然倾向于最不冒险的路。吴恩达的纯深度学习路线在硅谷实验室里跑出了漂亮的曲线，但在北京，那条曲线还不足以说服人把整个产品押上去。</p>
+<p style="margin:0 0 18px;line-height:1.9;">2015年后，硅谷实验室逐渐边缘化。吴恩达最终离开百度，实验室人才开始流失。达里奥在2015年10月离开，加入Google。他在百度只待了大约一年。</p>
+<figure style="margin:20px 0;text-align:center;"><img src="image_20260831_02_04.jpg" alt="" loading="lazy" style="max-width:100%;border-radius:4px;box-shadow:0 1px 4px rgba(0,0,0,.08);"/></figure>
+<h2 style="font-size:18px;font-weight:700;color:#2c2c2c;margin:32px 0 10px;padding-bottom:6px;border-bottom:1px solid #ddd;">火种传递与回响</h2>
+<p style="margin:0 0 18px;line-height:1.9;">达里奥离开百度时，带走了一样东西：在GPU集群前形成的那个信念——模型规模、数据规模、算力规模，这三者之间存在可复现的规律。这个信念在Google短暂停留后，跟着他进入OpenAI。</p>
+<p style="margin:0 0 18px;line-height:1.9;">2016年，OpenAI还是一家刚成立不久的非营利组织，使命是确保通用人工智能（AGI）造福全人类。达里奥加入后，从研究员做起，很快升任研究副总裁。他参与GPT系列的核心研发，把Scaling Law的信念融入到大模型路线中。GPT-2、GPT-3的底层逻辑正是他在百度时期初见的规模化规律：把模型参数从几亿推到上千亿，把训练数据从几十GB推到整个互联网的文本，然后看着模型能力涌现出推理、翻译、编程等未曾明确训练过的技能。</p>
+<p style="margin:0 0 18px;line-height:1.9;">达里奥从“观测者”变成了“实践者”。他后来在访谈中承认，百度时期的经历是他技术直觉的重要基石。但与此同时，他也开始感到不安。当模型规模跨过某个阈值后，行为变得难以预测。安全研究跟不上能力提升的速度。OpenAI内部出现了分歧：一部分人认为应该全力冲刺更大的模型，另一部分人担心安全研究被边缘化。达里奥属于后者。</p>
+<p style="margin:0 0 18px;line-height:1.9;">2021年，达里奥和妹妹丹妮拉·阿莫代伊以及其他OpenAI资深成员离开，创立Anthropic。公司的核心定位是“AI安全”，与OpenAI形成差异化竞争。Anthropic开发了Claude系列模型，采用“宪法AI”（Constitutional AI）等方法，试图让模型的行为更可预测、更符合人类价值观。达里奥后来写了两篇广受关注的文章：《Machines of Loving Grace》和《The Adolescence of Technology》，表达对AI风险的深层忧虑。他写道，AI的风险不在于它会恨我们，而在于它会爱我们，但爱的方式我们无法承受。</p>
+<p style="margin:0 0 18px;line-height:1.9;">这种忧虑的种子，也许可以追溯到2015年桑尼维尔的机房里——当他第一次意识到“这个规律是真的，而且它会一直走下去”时，内心或许有过一丝敬畏。今天，Anthropic估值逼近万亿美元，达里奥个人净资产超150亿美元。2023年，OpenAI董事会甚至曾接触他，讨论替代Sam Altman和合并的可能，他拒绝了。</p>
+<p style="margin:0 0 18px;line-height:1.9;">十二年前在百度GPU集群前看到的那条训练曲线，最终长成了一家价值千亿美元的公司。而那个实验室所在的国家，如今正是美国AI安全政策最大的地缘关切对象。一个意大利裔美国人，在中国公司里看到的规律，后来驱动了美国AI霸权，而如今美国最担心的又是中国的AI发展。这个循环本身，比任何评论都更耐人寻味。</p>
+<p style="margin:0 0 18px;line-height:1.9;">如果2014年他没有走进百度桑尼维尔的办公室，2026年的全球AI版图会是什么样？没有人能回答。但可以确定的是，那条在百度机房里被首次记录下的平滑曲线，至今仍在向上延伸。</p>
+
+<div style="background:#f0f0f0;border-left:3px solid #999;padding:16px 20px;margin-top:36px;border-radius:0 6px 6px 0;">
+<p style="margin:0 0 6px;font-size:14px;font-weight:600;color:#666;">余波</p>
+<p style="margin:0;font-size:14px;color:#666;line-height:1.9;">截至2026年，Anthropic估值约9650亿美元。达里奥在《The Adolescence of Technology》中写道：“AI的风险不在于它会恨我们，而在于它会爱我们，但爱的方式我们无法承受。”这句话的源头，或许可以追溯到2015年桑尼维尔的那条曲线——当规律太完美时，人反而会不安。</p>
+</div>
+
+
+
+<div style="text-align:center;margin-top:32px;padding-top:20px;border-top:1px solid #e0e0e0;">
+<p style="font-size:13px;color:#bbb;margin:0;font-weight:400;">小汪老师的成长观察笔记</p>
+</div>
+
+</section>
+</body></html>

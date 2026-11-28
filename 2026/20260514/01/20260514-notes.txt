@@ -1,0 +1,55 @@
+
+日期：2026-05-14
+主题：青少年完美主义与心理健康
+风格：治愈绘本（水彩手绘，岩崎知弘风）
+
+== 选题来源 ==
+采集到的主要内容：
+1. Child Mind Institute: Understanding Perfectionism in Children and Teens
+   URL: https://www.childmind.org/article/understanding-perfectionism-in-children-and-teens/
+   概述：梳理儿童与青少年完美主义的定义、成因和干预方法，指出完美主义与焦虑、抑郁、学业回避之间的强关联。
+
+2. PubMed Central (2024): The impact of perfectionism on mental health in adolescents
+   URL: https://pmc.ncbi.nlm.nih.gov/articles/PMC11291549/
+   概述：纳入412名高中生的实证研究，发现病态完美主义者焦虑概率3.2倍、抑郁2.8倍、学业倦怠4.1倍。
+
+3. Nature npj Science of Learning (2024): Does Growth Mindset Really Help?
+   URL: https://www.nature.com/articles/s41539-024-00234-8
+   概述：12000名青少年大规模研究，成长型思维干预降低学业焦虑有效，但需家庭与学校一致信号。
+
+4. Charlie Health: Perfectionism in Teenagers
+   URL: https://www.charliehealth.com/post/perfectionism-in-teenagers
+   概述：从临床角度分析青少年完美主义的症状识别与治疗方案，强调家长识别的关键作用。
+
+5. American Psychological Association (2024): How Parenting Warmth Protects Teens from Mental Health Problems
+   概述（无直接URL）：APA报告，父母温暖型教养方式显著降低青少年焦虑和完美主义倾向。
+
+== 选题逻辑 ==
+1. 完美主义话题贴近期末备考季节点（五月中下旬），与家长痛点高度共鸣
+2. 核心反直觉：「认真」「要强」的孩子可能正处于病态心理负担中，这是家长极少意识到的
+3. 研究背景强：2024年多篇同行评审研究提供数据支撑
+4. 与近期文章的切入点有本质差异：511篇聚焦表扬方式，512篇聚焦学习动机目标；本文聚焦完美主义的行为模式识别（拖延/回避/崩溃）和父母催化机制
+
+== 参考资料 ==
+- Child Mind Institute (完美主义识别与干预): https://www.childmind.org/article/understanding-perfectionism-in-children-and-teens/
+- PMC 2024（病态完美主义与青少年心理健康数据）: https://pmc.ncbi.nlm.nih.gov/articles/PMC11291549/
+- Nature npj SoL 2024（成长型思维干预与焦虑）: https://www.nature.com/articles/s41539-024-00234-8
+- Charlie Health（青少年完美主义临床分析）: https://www.charliehealth.com/post/perfectionism-in-teenagers
+- APA 2024（父母温暖教养与青少年心理健康）：机构名，无直接URL
+
+== 配图说明 ==
+风格：治愈绘本（mode_index=0，水彩手绘，岩崎知弘风）
+共生成 5 张图，场景：
+1. 01-intro：青少年在书桌前反复检查作业，满地揉皱的纸——引言场景
+2. 02-perfectionism：少年独坐明亮房间，手持铅笔对着空白本子迟疑——完美主义症状展示
+3. 03-parent-catalyst：餐桌边父母轻触孩子肩膀，温暖灯光——父母催化剂章节
+4. 04-breaking-point：青少年躺在床上望着天花板，书包放在门边——临界崩溃时刻
+5. 05-healing：亲子在公园并肩散步，金色下午光，轻松交谈——走出完美主义结语
+
+== 话题线索使用说明 ==
+参考了 hints.txt 中 [2026-05-13 17:59] 线索：「对学习成绩过度关注反而会伤害成绩」
+融合方式：将完美主义的外在表现（追求满分、害怕犯错）与该线索的核心逻辑（过度关注结果适得其反）结合，构成文章「完美主义≠美德」的中心论点
+
+参考资料铁律遵守声明：
+所有 URL 均来自第一步内容采集委托（subagent web搜索）实际返回的链接，未编造任何路径。
+无法验证路径真实性的来源（APA报告）已仅保留机构名，不附URL。

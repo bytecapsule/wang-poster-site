@@ -1,0 +1,45 @@
+日期：2026-05-06
+主题：孩子睡不够，伤的不只是身体
+风格：简约北欧（mode=1，Minimalist Nordic 扁平几何插画风）
+
+== 线索参考 ==
+今日 hints.txt 无新增线索，自由选题。
+
+== 选题来源 ==
+采集到的主要内容：
+
+中文方向（关键词：儿童睡眠 儿童心理）：
+1. 不睡午觉的孩子太可怜了：新研究揭示，午睡不足与儿童情绪问题 — https://mp.weixin.qq.com/s/z7M5c-XdSnQ9rrgKvRtlEw
+   概述：深入解析午睡对儿童情绪调节的重要性，研究显示不睡午觉的孩子更易出现焦虑和抑郁
+2. 睡眠与心理健康：儿童青少年睡眠问题的影响与干预 — https://zhuanlan.zhihu.com/p/669968922
+   概述：探讨睡眠问题对情绪调节、认知发育和行为表现的影响，提出有效干预策略
+
+国外方向（关键词：children sleep problems child development psychology）：
+3. APA 2025新研究：不同年龄段儿童有不同睡眠需求 — https://www.apa.org/news/press/releases/2025/03/children-distinct-sleep-needs
+   概述：2025年APA发布研究，发现儿童在不同年龄段有截然不同的睡眠需求，需要个性化干预
+4. Child Mind Institute：儿童睡眠与心理健康的双向关系 — https://childmind.org/article/sleep-and-mental-health-in-children/
+   概述：治疗睡眠问题同时可改善儿童焦虑和抑郁症状，两者存在双向因果关系
+5. Psychology Today：儿童睡眠问题概述 — https://www.psychologytoday.com/us/conditions/sleep-problems-children
+   概述：涵盖儿童睡眠障碍全谱系及其对情绪、行为、认知发育的影响
+6. AAP HealthyChildren.org：儿童健康睡眠建议 — https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx
+   概述：美国儿科学会按年龄段给出儿童睡眠时长推荐，以及健康睡眠习惯建议
+
+== 选题逻辑 ==
+多个权威来源（APA 2025新研究、Child Mind Institute、AAP）同时指向儿童睡眠与心理健康这一主题，且APA刚于2025年3月发布新研究，时效性强。近期早报已覆盖焦虑（05-02/05-05）、父母情绪（05-03）、手机成瘾（05-04），睡眠主题尚未涉及，是很好的补充。睡眠问题是大量家长每天都在经历的痛点，文章有直接的实操价值。
+
+== 参考资料 ==
+- https://www.apa.org/news/press/releases/2025/03/children-distinct-sleep-needs
+- https://childmind.org/article/sleep-and-mental-health-in-children/
+- https://www.psychologytoday.com/us/conditions/sleep-problems-children
+- https://www.healthychildren.org/English/healthy-living/sleep/Pages/Healthy-Sleep-Habits-How-Many-Hours-Does-Your-Child-Need.aspx
+- https://zhuanlan.zhihu.com/p/669968922
+- https://mp.weixin.qq.com/s/z7M5c-XdSnQ9rrgKvRtlEw
+
+== 配图说明 ==
+风格：简约北欧（Minimalist Nordic，扁平几何插画，莫兰迪低饱和色系）
+共生成5张图，片段场景：
+1. 01-morning-struggle：疲惫孩子在早餐桌前，家长担心地陪伴
+2. 02-brain-during-sleep：孩子熟睡，大脑在柔和月光下悄悄整理记忆
+3. 03-emotional-meltdown：孩子情绪崩溃，家长蹲下来温柔回应
+4. 04-bedtime-ritual：亲子睡前共读绘本，温馨仪式感
+5. 05-no-screens：晚间关掉屏幕，父母与孩子轻松交谈

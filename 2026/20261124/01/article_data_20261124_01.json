@@ -1,0 +1,49 @@
+{
+  "title": "SBOM 的诚实考题：真不知道，还是不想说",
+  "lead": "GitHub 为每个仓库提供了一键导出软件物料清单的功能。导出的 SPDX 文件里，每个组件都有一个标准的 PURL 定位符，但 Supplier 字段是空的。监管机构要这个字段，买家要这个字段，而 GitHub 不给。想要补全，又不愿为 Black Duck 这类商业知识库付费，工业界给出的答案不是某个单一替代工具。它是一套组合：用 PURL 作主键去查公共聚合库回填、在构建期从原生元数据提取、把填不出的地方按规范声明为 NOASSERTION，再配一张私有包映射表兜底。方案是通的，但监管同时正在收窄“NOASSERTION 是不是够用”这个答案。",
+  "cover_image_prompt": "A minimalist Nordic-style illustration of a digital document with a question mark over the Supplier field, clean lines, white and blue palette, conveying the theme of uncertainty in software supply chains.",
+  "sections": [
+    {
+      "heading": "一个字段的消失",
+      "content": "GitHub 的 Dependency Graph 可以生成 SPDX 2.3 JSON 格式的 SBOM。它给每个组件分配了 PURL，精确到包管理器和命名空间，却没有 Supplier 字段。这并非技术疏漏。GitHub 的定位是代码托管平台，不是供应链数据的权威来源。它知道自己不知道每个组件的供应商是谁，于是选择不填。这种做法在 2021 年 NTIA 发布的最小要素基线里是被允许的：无法判定的字段可以保留 NOASSERTION，代表“未作断言”。\n\n问题出在买家侧。企业采购软件时，SBOM 里的 Supplier 字段直接关联风险评估：一个组件来自维护者明确的组织，还是来自身份模糊的个人仓库，应对策略完全不同。医疗器械厂商面对 FDA 审查、汽车零部件商应对 UN R155 认证、云服务商通过 FedRAMP 评估，都在被要求提供越来越完整的供应商信息。买家向软件供应商要 SBOM，软件供应商向开源社区要元数据，但开源社区没有义务提供。这条责任链断在最上游，压力全部传导到中间集成商身上。\n\n自然的反应是购买商业知识库。Black Duck、Snyk、Sonatype 这些平台维护着庞大的组件-供应商映射表，能自动补全大部分依赖的 Supplier 字段。但成本不低，而且把企业锁进了一个封闭的数据源：你得到的答案来自一个黑箱，你无法验证它为什么这样填，也无法在知识库覆盖不到的地方自行扩展。\n\n于是出现了另一条路：把“知识库垄断”拆成标准主键、开放数据和流程三块，各自动手。"
+    },
+    {
+      "heading": "绕开黑箱的三条路径",
+      "content": "第一条路径是后置增强。GitHub 导出的 SBOM 虽然没有 Supplier，但 PURL 是完整的。PURL 是软件包的身份标识，形如 pkg:npm/left-pad@1.3.0，它本身就是查表的钥匙。Snyk 的开源工具 parlay 可以直接读取 SPDX 文件，提取每个组件的 PURL，实时查询 ecosyste.ms，一个聚合了 36 个以上公共注册表的开放服务，把维护者、仓库、许可证信息回填进 Supplier 字段。PR #79 合并之后，parlay 已经支持写入 SPDX。成本极低，但边界清晰：公共 API 覆盖有限，历史版本元数据缺失时会有回退偏差，私有包完全查不到。\n\n第二条路径是构建期原生提取。OWASP 的 cdxgen 加上插件，能从 Alpine APK、Debian DPKG、RPM 等系统包和 Go、Rust 等语言生态直接读取维护者元数据，原生态填充 Supplier。Microsoft 的 sbom-tool 较早支持 SPDX 3.0，但它的 -ps 参数只声明主包自身的供应商，不补第三方依赖，这是最常见的误区。构建期提取的好处是数据来自源头，不受公共 API 可用性影响，但它要求组织有能力在 CI 流水线里维护一套生成规则，私有包和内部依赖依然需要另案处理。\n\n第三条路径是编辑组装与私有兜底。Interlynk 的 sbomasm 可以合并、注入字段，脚本解析 PURL 里的组织命名空间（@mycompany/*），比对内部资产表，批量给私有包写上规范的法务主体名。OWASP Dependency-Track 是免费的集中管理与 VEX 跟踪底座，但它只管管理不管补全，数据质量取决于上游输入。这三条路径合在一起，构成了一个从公共数据到私有映射的完整补全链。\n\n但补全链只是技术方案。真正决定这套方案是否合规的，是规范对填不出这件事的定义。"
+    },
+    {
+      "heading": "当占位符变成疑点",
+      "content": "SPDX 规范对两个字段值的区分一直很严格：NOASSERTION 表示“对该字段未作任何断言”，NONE 表示“确认客观上不存在”。查证过但得不出结论、没去查、或者有意不提供，这三种情况都可以合法填 NOASSERTION。填 NONE 则意味着你断言这个组件没有供应商，这几乎不可能成立，因为一个软件包总有一个来源。\n\n但在实践中，大量 SBOM 文件把 NOASSERTION 当作万能占位符。更糟的是，很多文件直接违反规范，把包管理器或代码托管网站当成供应商填进去。“Organization: NPM”、“OpenEmbedded”、“pypi” 这类值是常见反模式。SPDX 2.3 明确规定供应商必须是“组织或公认作者”，网站不是供应商。Medcrypt 等机构的避坑指南直接指出，这类值过不了 NTIA 和 FDA 审查。\n\n监管正在让这个问题的性质发生变化。2021 年的 NTIA 基线允许无法判定的组件保留 NOASSERTION，“已知的未知”是被默许的。CISA 在 2025 年 8 月发布的 2026 新版最小要素草案里，把 Supplier Name 调整为 Component Producer，要求明确区分“真正未知”与“刻意隐瞒或脱敏”。德国 BSI 的 TR-03183-2 直接零容忍：NONE、NOASSERTION、非规范自由文本一律不接受，还要求新建 SBOM 必须用 CycloneDX 1.6 以上或 SPDX 3.0.1 以上。SPDX 3.0.0 差一个补丁版本都不行。\n\n三条线的斜率不同，方向却一致。NTIA 容忍未知，CISA 开始审查未知的性质，BSI 直接拒绝未知。监管不要求你全知，它要求你分清“搜过没搜到”和“压根没搜”。NOASSERTION 依然合法，但监管开始追问：你是真不知道，还是不想说。\n\n这个追问把 SBOM 从一个技术交付件变成了一个声明责任文件。过去信任建立在“你给出答案”，现在建立在“你诚实标注答案的边界”。诚实声明，NOASSERTION 加上 Cover Note 说明“该信息非上游一手声明”，永远优于虚假填充。这个逻辑从 Supplier 字段出发，放大了看就是整套现代合规的转向：不考核你是否全知，考核你是否把已知、未知、疑点分得清清楚楚。"
+    },
+    {
+      "heading": "知识不再是护城河",
+      "content": "工具侧的组合方案能够替代商业知识库，这件事本身也说明了一个更深的变化。商业知识库的护城河是封闭的映射表：它们投入大量人力维护组件与供应商之间的对应关系，然后把查询能力打包成订阅服务。但 PURL 作为标准主键出现之后，公共注册表、开放聚合服务、语言生态的元数据可以直接被机器读取和关联。知识本身从锁在某个公司数据库里的资产，变成了一种可以被标准协议访问的公共资源。\n\n护城河转移到了另一个地方：把知识组织成可验证声明的能力。商业知识库依然有价值，它们的价值在于提供经过审计的、可追溯的、附带法律责任的数据源，不限于我知道你不知道。对于需要向监管证明“我确实查过了”的企业，可审计的查询记录比数据本身更重要。\n\n结果是诚实成本的上升。过去填一个 NOASSERTION 就结束了，现在你要准备回答：这个字段为什么是 NOASSERTION，你查了什么来源，查不到的原因是什么，你是否在 Cover Note 里做了说明。组合工具降低了技术成本，但监管分化增加了声明成本。两者相抵，总成本未必下降，只是从采购预算转移到了流程治理上。\n\n回到开头那个矛盾。GitHub 不给 Supplier 字段，它选择诚实：它知道自己不知道，所以不填。下游集成商拿到这份 SBOM 之后，必须自己决定哪些能补、哪些补不了、补不了的怎么声明。这个决定过去可以模糊处理，现在不行了。监管检查的重心从字段的值转向了值背后的决策过程。\n\n你是真不知道，还是不想说？这个问题的答案，会写在你交付的每一份 SBOM 里。"
+    }
+  ],
+  "tips": "与硬件供应链的呼应：芯片出口管制把验证最终用途的责任从管制方转嫁给出口商，软件供应链把验证供应商的责任从采购方转嫁给声明方。两条线都在重划责任边界，诚实声明的成本最终由谁承担，是接下来值得观察的问题。",
+  "image_prompts": [
+    "A minimalist Nordic-style illustration of an SPDX document with the Supplier field highlighted as blank, clean lines, blue and white palette.",
+    "Three converging paths represented as clean geometric lines leading to a digital document, Nordic minimalism, cool tones.",
+    "A magnifying glass over a NOASSERTION label, turning it into a question mark, minimalist Nordic style, grey and blue.",
+    "An open database icon replacing a closed fortress, clean geometric shapes, Nordic minimalism, white background with subtle blue accents."
+  ],
+  "metadata": {
+    "hint_id": "sbom-supplier-field-compliance",
+    "writing_style": "narrative",
+    "style_code": "Q1",
+    "style_name": "简约北欧",
+    "slot_id": "01",
+    "generated_at": "2026-11-24T09:33:32.657956+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47za3i9qkki4P8db-3MOEjGdGKeV3NeNY3eN_mQZVecWr",
+    "wechat_response": {
+      "media_id": "xzyzB2R_5xd4dG_UIxp47za3i9qkki4P8db-3MOEjGdGKeV3NeNY3eN_mQZVecWr",
+      "item": []
+    },
+    "draft_verified": true,
+    "push_attempts": 1,
+    "cover_permanent": true,
+    "draft_list_total": 1,
+    "published_at": "2026-11-24T09:38:25.532700+08:00"
+  }
+}

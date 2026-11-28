@@ -1,0 +1,32 @@
+制作说明 — 20260523
+
+标题：受害者逻辑——一种能自我增殖的认知病毒
+类型：C（成人/思辨）
+文字风格：Pattern C — 清醒犀利，有知识密度
+配图风格：C1 信息视觉化
+
+选题来源：
+- 专题线索（2026-05-23 12:57:00）：沈奕斐教授被举报事件
+- 核心洞察：受害者身份从保护机制异化为自我增殖的认知框架
+
+选题理由：
+基于今日线索切入「受害者身份武器化」这一成人思辨话题。受害身份固化后，产生三重锁死效应（自我叙事冻结、外部评估敌对化、痛苦道德资本化），系统性威胁专业判断的存在空间。
+与近期文章差异：
+- 0520「越善良的人越容易被操控」：外部利用他人共情 vs 本文从受害者内部视角，身份固化机制不同
+- 0522「清醒的幻觉」：认知觉醒话语 vs 本文聚焦受害者身份框架
+
+参考来源：
+- Phys.org (2026). Why workplace change keeps failing. https://phys.org/news/2026-05-workplace-framework-mindset-real-barrier.html
+- Times of India (2026). Why emotional intelligence matters more than academic scores. https://timesofindia.indiatimes.com/life-style/parenting/parentology/parenting-and-you/why-emotional-intelligence-matters-more-than-academic-scores-for-kids/articleshow/131256263.cms
+- Gabor Maté — 创伤事件与创伤身份区分理论
+- Festinger — 认知一致性理论
+
+产出文件：
+- 20260523-article.txt — 纯文本正文
+- 20260523-article.html — 公众号 HTML（从 push_draft 获取）
+- 20260523-01-身份固化三重锁.png — 配图 1（C1 信息视觉化风格）
+- 20260523-02-专业判断靶心.png — 配图 2
+- 20260523-03-正反馈传染循环.png — 配图 3
+- 20260523-04-灰色地带光谱.png — 配图 4
+
+标签：受害者身份、认知框架、专业判断、举报文化、身份固化、成年人

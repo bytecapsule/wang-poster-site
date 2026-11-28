@@ -1,0 +1,29 @@
+日期：2026-05-18
+主题：严厉管教与儿童压力调节系统发育
+风格：水墨国风
+
+== 选题来源 ==
+1. Penn State University (2026). Harshly parented children show poorer development of stress regulation.
+   https://medicalxpress.com/news/2026-05-harshly-parented-children-poorer-stress.html
+2. Medical Xpress (2026). Puberty may hide rising anxiety in children.
+   https://medicalxpress.com/news/2026-05-puberty-anxiety-children-parent-awareness.html
+3. Center on the Developing Child, Harvard University. Serve and Return Interaction Shapes Brain Architecture.
+4. American Academy of Pediatrics. The Lifelong Effects of Early Childhood Adversity and Toxic Stress.
+
+== 选题逻辑 ==
+Penn State 2026年5月新研究直接指向严厉管教损害儿童压力调节系统，与国内"严是爱"文化认知形成强反差。
+话题贴近中国家长日常场景（吼叫管教），研究背书有力，家长代入感强。
+
+== 参考资料 ==
+- Penn State/Medical Xpress: https://medicalxpress.com/news/2026-05-harshly-parented-children-poorer-stress.html
+- Medical Xpress 青春期焦虑研究: https://medicalxpress.com/news/2026-05-puberty-anxiety-children-parent-awareness.html
+- 哈佛儿童发展中心
+- 美国儿科学会
+
+== 配图说明 ==
+风格：水墨国风（mode_index=4，2026-04-24为基准第0天）
+共生成4张图，场景：
+1. 孩子愣在原地，眼神空空（brain freeze）
+2. 杏仁核报警，情绪压倒（amygdala overwhelm）
+3. 妈妈温柔相抱（tender hold）
+4. 蹲下来道歉修复关系（repair apology）

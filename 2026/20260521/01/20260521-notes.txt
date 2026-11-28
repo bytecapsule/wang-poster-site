@@ -1,0 +1,32 @@
+日期：2026-05-21
+主题：悦己经济——你买的不是快乐，是剧本
+风格：C3 — 暗系概念插画
+
+== 选题来源 ==
+采集到的主要内容：
+1. 今日线索：「洋八股」与心智模式损耗 — 「不被定义、悦己、松弛感、不讨好、打破规训、活人感……」
+   概述：这批词汇表面上是自我解放的话语，实际上是一套预制好的认知模板。越声称「做自己」，越是在消费一个被工业化生产出来的「自己」的概念。
+2. Fortune (2026-05-19): We found the real reason 70% of transformations fail
+   URL: https://fortune.com/2026/05/19/why-corporate-transformations-fail-behavioral-science-bcg-julia-dhar/
+   概述：认知偏误（虚假共识效应）是变革失败的核心原因，与「预制话语框架」主题呼应。
+3. Forbes (2026-05-17): Overconfidence: The Cognitive Bias That Toppled Intel
+   URL: https://www.forbes.com/sites/brycehoffman/2026/05/17/overconfidence-the-cognitive-bias-that-toppled-intel/
+   概述：认知偏误的系统性危害，支持「工业化话语操控欲望认知」论点。
+
+== 选题逻辑 ==
+今日线索明确指向「悦己经济」专题，核心洞察是消费话语如何将个人欲望重新编码为「自我满足」。
+C类话题，使用Pattern C文字风格（清醒犀利，知识密度高）。
+去重检查：近期文章主要覆盖青少年/亲子议题，成人思辨主题上次为20260520《越善良的人，越容易被操控》，
+本文切入角度（消费话语重新编码欲望）与20260520（共情武器化）完全不同，无重复。
+
+== 参考资料 ==
+- Fortune (2026-05-19): https://fortune.com/2026/05/19/why-corporate-transformations-fail-behavioral-science-bcg-julia-dhar/
+- Forbes (2026-05-17): https://www.forbes.com/sites/brycehoffman/2026/05/17/overconfidence-the-cognitive-bias-that-toppled-intel/
+
+== 配图说明 ==
+风格：C3 — 暗系概念插画（深色底+单色高亮，表达张力强，带点压抑但有力量感，适合批判性话题）
+共生成 4 张图，片段场景：
+1. 01-shopping-bags: 被购物袋环绕的人物，暗示消费驱动的伪自由
+2. 02-mirror-puppet: 镜中反射——一侧是自信的人，另一侧是被线控制的傀儡
+3. 03-crowd-silhouettes: 手持相同标语行进的人群剪影，象征预制认知模板
+4. 04-phone-spotlight: 被奢侈品包围、凝视手机的孤独人物，质疑「悦己」的本质

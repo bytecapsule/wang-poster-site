@@ -1,0 +1,54 @@
+{
+  "title": "七成技能已可交给AI，招聘却转向机器不会的事",
+  "lead": "一项新研究显示，72%的工作技能已经达到可以交给AI的标准，但招聘风向却转向了机器暂时做不到的事。这个数字听起来像警报，又像悖论：既然AI能做这么多，为什么企业还在找人？记者决定从定义开始，追问这个数字背后的机制、代价和那个被重新定义的问题。",
+  "cover_image_prompt": "A journalist in a sharp suit leans forward, notebook in hand, across a table from Teacher Xiao Wang, who gestures toward a holographic chart showing '72%'. The room is modern, with subtle AI-related visuals on screens.",
+  "sections": [
+    {
+      "heading": "72%是怎么算出来的？",
+      "content": "记者：最近一份报告说，72%的工作技能已经符合AI委派的标准。这个数字很大，它具体指什么？\n\n小汪老师：先明确一点，这个数字来自Xobin的《人类vs AI技能报告》2026年中版。它说的是，在现有的技能清单里，有72%在技术标准上可以由AI系统执行，不意味着这些技能已经被替代了，也不等于相关岗位会消失。关键在“委派标准”这个词：只要一项技能可以分解成明确的输入输出，有足够的数据训练模型，并且执行结果可以量化评估，它就进入了AI的可委派范围。\n\n记者：那“委派”和“替代”的区别在哪里？\n\n小汪老师：委派是把这件任务交给AI去做，但人类可能还在监督、复核，或者做上游决策。替代是整个岗位被取消。现在很多技能只是可委派，但企业会不会真的委派，还要看成本、可靠性、法规和客户的接受度。比如，客服聊天机器人可以委派80%的常见咨询，但复杂投诉还是转人工。这项技能“符合委派标准”，但企业只委派了一部分。\n\n记者：这个72%有没有可能高估了？技能清单是谁定的？\n\n小汪老师：报告没有公开完整方法论，所以边界确实模糊。这类研究一般会把职位描述拆成技能单元，再对照当前AI能力基准。高估的风险在于，有些技能被拆得太细，看起来像独立任务，实际工作中需要连续判断和情境理解。比如“撰写邮件”可以委派，但“商务谈判中的邮件”需要揣摩对方情绪，AI做的可能不合用。所以72%更接近上限，实际委派比例会低很多。"
+    },
+    {
+      "heading": "招聘为什么转向人？",
+      "content": "记者：即使实际委派比例低一些，趋势还是明显的。报告同时说，招聘正在转向机器还不能做的事。这个转向具体指什么？\n\n小汪老师：指的是企业招聘时，对岗位要求的描述正在从“熟练掌握XX工具”转向“能解决没有标准答案的问题”“能在跨部门协作中推动共识”“能在信息不全时做决策”。这些能力目前很难拆成可委派的技能单元。\n\n记者：这些不都是老生常谈的软技能吗？为什么说现在才转向？\n\n小汪老师：过去企业也说要沟通能力，但筛选时还是看硬技能证书。现在AI把硬技能的门槛拉低了，一个应届生借助AI工具可能做出以前五年经验才能做的数据分析。这时候，企业要区分候选人，就只能看那些AI无法直接输出的部分：比如，你能不能判断这个分析在业务上意味着什么，敢不敢据此推翻老板的假设，能不能让不同部门的人接受你的方案。这些能力变得可以定价了。\n\n记者：有没有可能，这些“机器不能做的事”也只是暂时的？AI不是也在学情感计算和创造性吗？\n\n小汪老师：确实边界在移动。AI可以生成共情语句，可以组合出新颖方案，但它在负责任的决策上存在根本限制：它不承担后果。当决策出错时，AI不会损失奖金、不会被解雇、不会内疚。人类组织之所以把决策权留给人，不是因为人更聪明，而是因为人可以追责。只要追责制度还在，那些需要“签字负责”的能力就暂时委派不出去。这是一个制度问题，不是技术问题。"
+    },
+    {
+      "heading": "被委派的技能，谁买单？",
+      "content": "记者：那对于技能已经被委派的人，会发生什么？他们能顺利转向那些新能力吗？\n\n小汪老师：这就是代价所在。一个做了十年报表分析的人，当报表生成完全自动化后，他的经验贬值了。他需要转向解读报表、推动决策，但这些能力不是自动长出来的。再培训的成本谁出？如果企业只愿意高薪招现成的“决策型人才”，那这批人可能被卡在中间：旧技能不值钱，新技能没机会练。\n\n记者：企业不是应该投资员工再培训吗？很多公司都在喊“技能重塑”。\n\n小汪老师：喊和做是两回事。行为经济学里有一个“双曲贴现”，企业也倾向于看重短期成本。培训一个现有员工需要时间，还可能失败，不如直接招一个。除非劳动力市场极度紧张，或者有制度约束，否则企业会优先选择外部招聘。Xobin的报告也暗示了这一点：招聘风向转向新能力，而不是改造旧员工。所以，技能过时的人承担了主要代价，而企业享受了AI效率提升和人才挑选的便利。\n\n记者：那社会层面呢？这会拉大收入差距吗？\n\n小汪老师：很可能。如果只有少数人能掌握那些“不可委派”的能力，而多数人的技能被委派后价值下降，劳动力市场会出现两极分化。高决策层和低端服务业可能保留，中间层被压缩。这不是预言，在一些自动化程度高的行业已经看到了。"
+    },
+    {
+      "heading": "员工为什么不愿离开旧技能？",
+      "content": "记者：从个人角度，如果我的技能正在被委派，我为什么会犹豫转型？理性上应该赶紧学新东西。\n\n小汪老师：理性上没错，但人不是完全理性的。行为经济学里有个“损失厌恶”：人们感受到的损失痛苦大约是同等收益的两倍。放弃已经熟练的技能，去学一个可能学不会的新能力，在心理上是先看到损失。还有“现状偏见”：只要还能用旧技能找到工作，哪怕收入在降，很多人会选择维持现状，直到被彻底淘汰。这就是为什么我们看到一些岗位的人，明明知道自动化要来，却很少主动离开。\n\n记者：那企业可以利用这些偏差吗？比如故意压价，等员工接受低薪？\n\n小汪老师：这正是材料里第一篇文章讲的现象：伤害受害者接受低报价，部分原因就是认知偏差。企业当然可能利用员工的损失厌恶和不确定性焦虑，提供“有保障但降薪”的转岗方案，让员工接受低于市场价值的待遇。这不是阴谋，是系统性的行为经济学应用。员工越觉得外部机会渺茫，越容易接受低报价。"
+    },
+    {
+      "heading": "问题被重新定义了吗？",
+      "content": "记者：我们聊到这里，最初那个“72%”的数字似乎没那么重要了。真正的问题是什么？\n\n小汪老师：真正的问题不是AI能做什么，而是当技能的定义权从人类转到算法手里，我们怎么衡量人的价值。过去技能是稳定的，学会就能用一辈子。现在技能变成流动的，随时可能被委派。如果社会只用“不可委派”的能力来定价人，那大部分人的价值会被低估，因为人的很多价值不在工作任务里，比如养育、陪伴、社区互助。这些不在招聘标准里，但社会需要。\n\n记者：那教育系统应该教什么？如果技能边界一直在变。\n\n小汪老师：这是一个现在还没有明确答案的问题。可能教育需要从“传授固定技能”转向“培养面对不确定性的判断力”。但“判断力”怎么教，怎么考核，目前没有成熟方案。我们可能处在一个尴尬期：旧标准失效了，新标准还没建立起来。这个真空期会产生很多冲突。\n\n记者：所以，我们现在讨论的，其实是一个过渡期的代价分配问题？\n\n小汪老师：对。技术可以委派技能，但委派不了代价。谁承担转型的代价，这个问题需要制度来回答，而不是交给市场自动解决。市场自动解决的结果，往往是让最不能承受代价的人承担最多。"
+    }
+  ],
+  "tips": "也许下次我们可以专门聊一聊，判断力到底能不能被教。Xobin那份报告的完整数据如果公开，会让我们更清楚这个过渡期的坡度。",
+  "image_prompts": [
+    "A journalist points at a tablet displaying a bar chart labeled '72% of skills', while Teacher Xiao Wang explains, gesturing at a diagram showing skill decomposition. A whiteboard behind them has notes on 'AI delegation criteria'.",
+    "A split scene: on one side, a robot conducts a technical interview with a candidate; on the other, a human interviewer observes a group discussion, evaluating soft skills. The contrast is highlighted by arrows showing the shift in hiring focus.",
+    "A worker sits on a bench, holding outdated skill certificates, watching an automated system perform his former tasks. In the background, corporate recruiters interview fresh candidates for decision-making roles, ignoring the experienced workers.",
+    "A person stands at a crossroads, one path labeled 'Old Skills (Risk of Automation)', the other 'New Skills (Uncertainty)'. He looks hesitant, with a scale tipping heavily toward 'Loss' behind him, symbolizing loss aversion.",
+    "The journalist and Teacher Xiao Wang stand before a giant question mark composed of words like 'Skill', 'Value', 'Cost'. They look up, deep in thought, as the question mark begins to reshape into a new form."
+  ],
+  "metadata": {
+    "hint_id": null,
+    "writing_style": "dialogue",
+    "style_code": "P2",
+    "style_name": "美漫记者",
+    "slot_id": "01",
+    "generated_at": "2026-10-05T02:03:42.628839+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47wEHjJaYAyOv6_fX6PIhyPoX_hEV-OzB6U1wJd9u7oSw",
+    "wechat_response": {
+      "media_id": "xzyzB2R_5xd4dG_UIxp47wEHjJaYAyOv6_fX6PIhyPoX_hEV-OzB6U1wJd9u7oSw",
+      "item": []
+    },
+    "draft_verified": true,
+    "push_attempts": 1,
+    "cover_permanent": true,
+    "draft_list_total": 6,
+    "published_at": "2026-10-05T02:07:02.557186+08:00"
+  }
+}

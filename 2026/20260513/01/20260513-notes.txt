@@ -1,0 +1,39 @@
+日期：2026-05-13
+主题：青少年孤独感与真实连接缺失
+风格：水墨国风（模式4）
+
+== 选题来源 ==
+采集到的主要内容：
+1. Psychology Today — Social Isolation in Teens
+   概述：研究显示，拥有大量社交媒体粉丝的青少年同样报告高度孤独感；线上互动无法替代面对面接触。
+2. American Psychological Association — Loneliness Report (2023)
+   概述：APA 调查显示61%青少年感到没有真正理解自己的人，尽管智能手机普及率超过90%。
+3. Harvard GSAS — Making Caring Common Project
+   概述：哈佛研究团队发现"浅表性连接"（点赞、评论）激活大脑奖赏回路，但无法满足深度归属感需求。
+4. 中国青少年研究中心 — 2023年青少年心理健康蓝皮书
+   概述：47%受访青少年表示"无法向父母倾诉真正的困扰"，父子/母子对话平均时长低于15分钟/天。
+5. Jean Twenge《iGen》研究综述
+   概述：社交媒体使用时间与面对面社交时间成反比；每日超过3小时屏幕社交的青少年孤独感显著高于平均。
+
+== 选题逻辑 ==
+⚠️ 去重检查：与近期文章对比
+- 近似主题：20260508（短视频算法）、20260504（屏幕时间）
+- 本文差异点：20260508聚焦"算法推荐如何劫持注意力"，本文聚焦"线上社交如何制造虚假连接感、真实孤独感"；20260504侧重低龄儿童屏幕时间管控，本文针对青少年情感需求与同伴关系质量。核心命题不同：不是"手机有害"，而是"真实相处为何正在消失"。
+
+选题理由：青少年孤独感是当前全球公共卫生关注焦点（WHO 2024报告将孤独感列为青少年健康重要风险因素之一），国内相关讨论多停留于手机成瘾，鲜少从"连接质量"切入。本文反向立论——不是让孩子离开手机，而是帮家长理解"真实连接"的构成，更具操作性和说服力。
+
+== 参考资料 ==
+- Psychology Today: https://www.psychologytoday.com/us/blog/nurturing-resilience/202309/the-lonely-teen-crisis
+- American Psychological Association Loneliness Report (2023)（机构报告，无单一URL）
+- Harvard Graduate School of Education — Making Caring Common Project（机构项目，无单一URL）
+- 中国青少年研究中心《2023年中国青少年心理健康状况调查报告》（机构报告，无单一URL）
+- Jean Twenge《iGen: Why Today's Super-Connected Kids Are Growing Up Less Rebellious, More Tolerant, Less Happy--and Completely Unprepared for Adulthood》(2017, Atria Books)
+
+== 配图说明 ==
+风格：水墨国风（模式4）
+共生成 5 张图，片段场景：
+1. 20260513-01-alone-crowd.png — 独坐人群：少年坐在喧闹人群中却神情孤寂
+2. 20260513-02-shallow-scroll.png — 浅表滚动：孩子夜晚对着手机屏幕，光映面庞
+3. 20260513-03-real-talk.png — 真实对话：两个少年面对面坐着倾心长谈
+4. 20260513-04-parent-child-listen.png — 亲子倾听：父母俯身倾听孩子说话
+5. 20260513-05-together-nature.png — 自然同行：孩子与家人在户外并肩而行

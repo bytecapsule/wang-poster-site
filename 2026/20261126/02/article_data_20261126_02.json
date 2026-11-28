@@ -1,0 +1,49 @@
+{
+  "title": "那个只会说英语的AI健康助手，正在错过最需要它的人",
+  "lead": "大多数用来普及健康知识的AI聊天机器人，是为英语使用者设计的。它们需要稳定的网络连接。在宫颈癌死亡率最高的地区，许多女性既不说英语，也常面对断网。这个错位，让一项本应弥合健康鸿沟的技术，成了新的筛选器。",
+  "cover_image_prompt": "A woman in a simple room looking at her phone screen, which displays a chatbot response in English: 'I'm sorry, I didn't understand.' The phone has a low signal icon.",
+  "sections": [
+    {
+      "heading": "英语的屏障",
+      "content": "2026年11月，一项发表在PLOS Digital Health上的研究，试图用AI聊天机器人提高资源有限地区HIV感染女性的宫颈癌筛查意识。研究团队遇到的第一道坎，不是算法，不是资金，是语言。市面上现成的聊天机器人，几乎都默认用户说英语，且网络稳定。而他们的目标用户，大多不讲英语，也常面对断网。\n\n这个发现并不意外。过去十年，不少数字健康项目在试点后无疾而终，原因往往不是技术不行，而是用不起来。全球健康领域的数字工具，长期以来有一个默认设定：使用者是英语用户，拥有智能手机和稳定的数据连接。设计者并非心怀恶意，只是他们所处环境决定了默认起点。但当产品被推向资源有限地区时，这个起点就成了排斥条件。\n\n研究者没有硬塞一个英文机器人然后期待用户自学英语。他们采用了共同设计方法。他们找到这些女性，听她们说自己的语言，了解她们的手机习惯，弄清楚她们对隐私的担忧，然后才动手开发。"
+    },
+    {
+      "heading": "技术的最后一公里",
+      "content": "对数字工具的乐观想象，常常停在了开发完成这一步。之后的事情被简化为用户自然会用。这种想象在技术界有深厚的土壤：它假设只要工具被制造出来，分发和采纳会自动发生。但现实是，分发和采纳本身需要设计。一项技术从实验室到被目标人群真正用起来，中间隔着语言、网络、文化、信任等一系列条件。这些条件不是附加项，是使用能力本身。\n\n以语言为例。一个只说英语的聊天机器人，在英语人口不足20%的地区，天然排除了大多数人。问题不在技术，在设计决策。网络条件同样直接决定了工具形态：如果用户只能偶尔连上2G，那么依赖云端大模型实时推理的方案就不成立，可能要用离线轻量模型，或主要通过短信交互。\n\n该研究的共同设计方法，正是把这些条件从后期适配提前到了起点定义。研究者没有先做出一个英文原型再翻译，而是从目标女性的日常交流方式出发，确定交互形式、语言、以及信息传递的节奏。这个过程慢，但绕开了技术空转的陷阱。"
+    },
+    {
+      "heading": "让使用者成为设计者",
+      "content": "共同设计不是开个焦点小组讨论会。它是一种权力关系的调整：把定义问题的权力，部分交还给受问题影响最深的人。这种调整需要设计者暂时放下自己的专业框架，承认自己不知道答案。\n\n在医疗健康领域，专家和工程师习惯从生物医学框架出发：宫颈癌由HPV引起，筛查方法有A、B、C，信息传递应强调科学性和准确性。但一位生活在偏远村落的HIV感染女性，她对宫颈癌的理解可能始于邻居的离世、丈夫的沉默、诊所的缺失。她最关心的可能不是病毒亚型，而是“检查会不会痛”“如果查出来，我治得起吗”“别人会怎么看我”。\n\n当设计过程纳入这些视角，最终产出的聊天机器人就不再是一个微型医生，而更像一个知道本地苦衷的同伴。它可以用她熟悉的比喻解释筛查，用她习惯的称呼方式问候，在她突然下线时不追问原因。材料中的研究团队没有公布最终产品的效果数据，但至少，共同设计解决了一个最根本的失败模式：工具在技术上可行，在社会情境中不可用。"
+    },
+    {
+      "heading": "慢方法的代价",
+      "content": "共同设计有明显的代价。它慢。从招募参与者、建立信任、多轮迭代到测试，周期远长于直接套用现成框架。它贵。需要本地协调者、翻译、定性研究者，以及愿意为流程买单的资助方。它也不保证能规模化。为一个村庄的方言和习惯定制的交互设计，搬到三百公里外的另一个族群可能完全失效。\n\n另外，即使聊天机器人完美贴合用户，它也只是健康促进链条上的一环。如果筛查诊所太远、费用太高、医护人员缺乏培训，那么意识提高之后，行动仍然会卡住。技术不能替代基础设施。\n\n这些代价容易让人得出一个结论：共同设计是学术项目的奢侈品，与真实世界的产品无关。但这个结论跳过了关键一步。共同设计并非奢侈品，它更像一个提醒：当一项技术被宣称能服务边缘人群时，第一个问题不应该是“它的算法有多强”，而是“它的设计过程有没有包括那些人”。如果答案是没有，那么它大概率只是在服务设计者想象中的边缘人群。材料中的研究是一个正面案例，但它也依赖了研究经费和学术驱动。如何让共同设计原则进入商业产品或政府招标标准，是更难的问题。也许答案不是每次都做完整的共同设计，而是在设计流程中固定一个环节：让目标用户从第一天就坐在房间里。"
+    }
+  ],
+  "tips": "下一次看到“AI解决医疗不平等”的新闻，不妨找找三个信息：目标用户说哪种语言，产品需要多少网络流量，以及设计团队里有没有来自那个社区的人。如果找不到，那个解决方案可能只是在纸面上普惠。",
+  "image_prompts": [
+    "A chatbot interface on a phone screen. On the left, a message in a local African language; on the right, the chatbot replies in English: 'I don't understand.'",
+    "A smartphone with a spinning loading icon on screen, signal bars showing only one bar. The background is a rural village with a thatched roof hut.",
+    "A group of women sitting in a circle, some holding mobile phones, talking with a facilitator who is taking notes.",
+    "A long, winding road from a smartphone in the foreground to a distant clinic building. The road has a gap in the middle."
+  ],
+  "metadata": {
+    "topic_id": null,
+    "writing_style": "narrative",
+    "style_code": "Q4",
+    "style_name": "极简线稿",
+    "slot_id": "02",
+    "generated_at": "2026-11-26T15:47:12.583553+08:00",
+    "pipeline_version": 1,
+    "wechat_draft_media_id": "xzyzB2R_5xd4dG_UIxp47ycve6Kk_41wBkxC6xq2FwQ8mYweRffbtvAj9v6eBRZI",
+    "wechat_response": {
+      "media_id": "xzyzB2R_5xd4dG_UIxp47ycve6Kk_41wBkxC6xq2FwQ8mYweRffbtvAj9v6eBRZI",
+      "item": []
+    },
+    "draft_verified": true,
+    "push_attempts": 1,
+    "cover_permanent": true,
+    "draft_list_total": 2,
+    "published_at": "2026-11-26T15:54:43.848548+08:00"
+  }
+}

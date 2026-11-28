@@ -1,0 +1,66 @@
+日期：2026-05-07
+主题：每天少动30分钟，孩子的大脑正在悄悄变差
+风格：治愈绘本（模式0）
+
+== 话题线索 ==
+参考线索：[2026-05-06 19:50:28] 体育相关话题：儿童体育运动、运动与成长、体育教育等方向
+融合方式：以「运动与大脑发育/专注力/情绪调节」为主轴，直接回应体育运动方向线索，角度聚焦于前额叶和执行功能的脑科学视角。
+
+== 去重检查 ==
+与近期12篇文章对比：
+- 近似主题：无（体育/运动相关标签在历史文章中零覆盖）
+- 本文切入角度：运动对大脑结构（海马体/前额叶）的直接影响，以及当代儿童失去运动时间的现实困境
+
+== 选题来源 ==
+采集到的主要内容：
+
+1. Child Mind Institute: How Exercise Helps Kids Think and Learn
+   URL: https://childmind.org/article/how-exercise-helps-kids-think-and-learn/
+   概述：综合多项研究，哪怕一次短暂有氧运动即可立即改善儿童注意力、工作记忆和信息处理速度。
+
+2. Child Mind Institute: The Benefits of Sports for Kids
+   URL: https://childmind.org/article/the-benefits-of-sports-for-kids/
+   概述：团队运动与儿童自尊、情绪调节、焦虑抑郁降低有显著关联，挫折经历是情绪调节能力的「演习场」。
+
+3. Psychology Today: Exercise Can Boost Children's Brain Development
+   URL: https://www.psychologytoday.com/us/blog/the-athletes-way/201311/exercise-can-boost-childrens-brain-development
+   概述：脑成像研究发现运动可增大儿童海马体体积，直接改善记忆和学习转化能力。
+
+4. Harvard Graduate School of Education: Active Bodies, Active Minds
+   URL: https://www.gse.harvard.edu/ideas/usable-knowledge/23/09/active-bodies-active-minds-how-exercise-improves-learning
+   概述：课间10-20分钟活动可提升随后课堂注意力集中度，运动是学习的组成部分而非休息。
+
+5. NIH/PubMed: Physical Activity, Fitness, Cognitive Function and Academic Achievement
+   URL: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6214671/
+   概述：系统综述证实体育活动、体能、认知功能与学业成绩存在正相关，6-13岁儿童尤为显著。
+
+6. British Journal of Sports Medicine: Sport participation and children's mental health
+   URL: https://bjsm.bmj.com/content/55/14/776
+   概述：系统综述汇总数十项研究，团队运动儿童焦虑抑郁发生率显著更低，心理韧性更好。
+
+7. American Academy of Pediatrics (AAP): Movement and Learning
+   概述：AAP推荐6-17岁儿童每日至少60分钟中等至高强度体育活动。
+
+== 选题逻辑 ==
+今日线索明确指向「体育运动」方向。历史文章无任何运动/体育相关主题，选题空间充足。
+切入角度选择「运动→大脑发育」的脑科学路径，比泛泛而谈「体育好处」更有深度和反直觉冲击力。
+标题「每天少动30分钟，孩子的大脑正在悄悄变差」采用「损失框架+悄悄」营造紧迫感，驱动家长共鸣。
+文章覆盖：专注力（即时效果）→ 大脑结构（海马体/前额叶）→ 情绪智力（团队运动）→ 现实困境（中国家庭作业挤压运动时间）。
+
+== 参考资料 ==
+- Child Mind Institute: https://childmind.org/article/how-exercise-helps-kids-think-and-learn/
+- Child Mind Institute: https://childmind.org/article/the-benefits-of-sports-for-kids/
+- Psychology Today: https://www.psychologytoday.com/us/blog/the-athletes-way/201311/exercise-can-boost-childrens-brain-development
+- Harvard GSE: https://www.gse.harvard.edu/ideas/usable-knowledge/23/09/active-bodies-active-minds-how-exercise-improves-learning
+- NIH/PubMed: https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6214671/
+- BJSM: https://bjsm.bmj.com/content/55/14/776
+- American Academy of Pediatrics (AAP)
+
+== 配图说明 ==
+风格：治愈绘本（模式0）- 水彩/蜡笔手绘，岩崎知弘风
+共生成 5 张图，片段场景：
+1. 20260507-01-孩子发呆写作业.png — 孩子坐在书桌前发呆，家长在门口担忧地看着
+2. 20260507-02-孩子操场奔跑.png — 两个孩子在阳光下操场奔跑，张开双臂欢笑
+3. 20260507-03-大脑与运动神奇连接.png — 孩子在公园踢足球，充满活力与动感
+4. 20260507-04-团队运动友谊.png — 三个孩子在公园玩团队运动，击掌庆祝
+5. 20260507-05-亲子户外时光.png — 亲子骑自行车，绿树成荫小路，阳光温暖

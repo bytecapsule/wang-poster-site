@@ -1,0 +1,41 @@
+日期：2026-05-17
+主题：青少年睡眠剥夺与心理健康危机
+风格：温暖漫画（Style 3）
+
+== 选题来源 ==
+采集到的主要内容：
+1. 中国儿童青少年睡眠健康白皮书（2025年3月）
+   概述：60%以上青少年睡眠不足，校内压力与手机使用是主因
+2. NIH 2025研究：睡眠与青少年抑郁/焦虑直接关联
+   概述：睡眠少于7小时的青少年抑郁风险显著上升
+3. 国际睡眠科学 2025研究：中国青少年平均睡眠仅6.7小时
+   概述：与推荐的8-10小时存在重大差距
+4. Child Mind Institute报告：手机与蓝光推迟睡眠时间
+   概述：蓝光抑制褪黑素，加重睡眠剥夺
+
+== 选题逻辑 ==
+睡眠剥夺是儿童心理问题的高度被低估的根源，2025年新发布的中国白皮书给出了本土数据支撑。
+近20篇文章未涉及睡眠主题，时效性强，与家长日常高度相关（起床难、脾气暴躁等场景感强）。
+标题从家长最熟悉的症状（爱发脾气）切入，反转揭示睡眠才是核心，符合内容策略。
+
+== 参考资料 ==
+- 《中国儿童青少年睡眠健康白皮书》（2025年3月，中国睡眠研究会）
+- NIH National Institute of Mental Health，2025年青少年睡眠与心理健康研究
+- 《Journal of Sleep Research》，China adolescent sleep patterns 2025
+- Child Mind Institute，Sleep and Teen Mental Health 报告
+- American Academy of Sleep Medicine，Teen Sleep Guidelines
+- 《中国教育报》，青少年睡眠问题专题报道
+- Harvard Medical School Sleep Research Center，Adolescent Sleep Study
+
+== 配图说明 ==
+风格：温暖漫画（Style 3，warm single-panel comic, bold outlines, vibrant warm colors）
+共生成 5 张图，片段场景：
+1. 20260517-01-morning-struggle.png — 早晨起床困难，孩子疲惫不堪
+2. 20260517-02-brain-overload.png — 睡眠不足导致大脑超载
+3. 20260517-03-school-system.png — 学校早到时间与睡眠的矛盾
+4. 20260517-04-bedtime-phone.png — 睡前刷手机推迟入睡时间
+5. 20260517-05-parent-child-sleep.png — 家长与孩子一起建立健康睡眠习惯
+
+== 去重检查 ==
+✅ 无重复主题 — 近20篇文章均未涉及睡眠剥夺/青少年睡眠主题
+本文角度：从日常症状（脾气暴躁）反转切入睡眠根因，聚焦心理影响机制而非睡眠卫生技巧
